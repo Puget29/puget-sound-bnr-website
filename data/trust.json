@@ -1,0 +1,144 @@
+{
+  "note": "One row per logo: {name, slug, group, url, verified, scale, rights?, invert?}. The file is found by convention: site/assets/logos/<slug>.svg, .webp or .png. No file means a clean text tile marked data-confirm=logo-missing. invert marks a white or reversed logo, which gets the dark tile. white marks a logo file with an opaque white background (white tile). scale (default 1) nudges the optical size of one logo so every logo carries the same visual weight. rights marks logos whose brand rules need a check with the client. A tile is a link only when verified is true and url is set. candidateUrl keeps an unverified address so one flag flips it on. Supplier brands are labels, never links. Never redraw a mark. No rating, accreditation or partnership is claimed.",
+  "items": [
+    {
+      "name": "Google",
+      "slug": "google",
+      "group": "profiles",
+      "url": "https://www.google.com/maps/place/Puget+Sound+Builders+%26+Renovation/@47.420154,-122.145572,13z/data=!4m6!3m5!1s0x54905d4b2eab6f75:0x2ad4580dc612257!8m2!3d47.4201538!4d-122.1455718!16s%2Fg%2F11vl475kgm?hl=en&gl=us",
+      "status": "Opens the Google Maps place page of Puget Sound Builders & Renovation (Bellevue, phone matches). Same link as on the live WordPress contact page. The earlier share.google link points at the same Google entity but showed a bot check page, so the Maps link is used.",
+      "verified": true,
+      "verifiedOn": "2026-10-29",
+      "method": "browser",
+      "scale": 0.86
+    },
+    {
+      "name": "BBB",
+      "slug": "bbb",
+      "group": "profiles",
+      "url": "https://www.bbb.org/us/wa/bellevue/profile/general-contractor/puget-sound-builders-and-renovations-1296-1000164509",
+      "status": "bbb.org blocks every browser from this PC (403). The fetch tool read the page: Puget Sound Builders and Renovations, Bellevue, phone (425) 696-7586. Not shown on the page: the BBB profile lists Accredited and A+; The client must confirm before any claim.",
+      "rights": true,
+      "verified": true,
+      "verifiedOn": "2026-10-29",
+      "method": "fetch",
+      "scale": 1.0
+    },
+    {
+      "name": "Yelp",
+      "slug": "yelp",
+      "group": "profiles",
+      "url": "",
+      "candidateUrl": "https://m.yelp.com/biz/puget-sound-builders-and-renovation-bellevue-3",
+      "status": "Candidate supplied earlier. Blocked (403) in Chromium, Firefox and the built-in browser on 2026-10-29, so not proven BNR and not linked",
+      "rights": true,
+      "invert": true,
+      "verified": false,
+      "scale": 0.95
+    },
+    {
+      "name": "Houzz",
+      "slug": "houzz",
+      "group": "profiles",
+      "url": "",
+      "status": "Not found, not linked",
+      "rights": true,
+      "invert": true,
+      "verified": false,
+      "scale": 0.9
+    },
+    {
+      "name": "Angi",
+      "slug": "angi",
+      "group": "profiles",
+      "status": "URL given by the client, but angi.com blocks every browser and fetch from this PC (Cloudflare 403), so it could not be proven. Not linked. Open it on a phone and set verified to true.",
+      "candidateUrl": "https://www.angi.com/companylist/us/wa/bellevue/puget-sound-builders-and-renovations-reviews-10974240.htm",
+      "url": "",
+      "verified": false,
+      "scale": 1.0,
+      "white": true
+    },
+    {
+      "name": "Facebook",
+      "slug": "facebook",
+      "group": "profiles",
+      "url": "https://www.facebook.com/PugetSoundbnr",
+      "status": "Page title \"Puget sound Builders & Renovation | Bellevue WA | Facebook\", phone matches.",
+      "rights": true,
+      "verified": true,
+      "verifiedOn": "2026-10-29",
+      "method": "browser",
+      "scale": 1.0
+    },
+    {
+      "name": "Trex",
+      "slug": "trex",
+      "group": "brands",
+      "url": "",
+      "status": "Official file not found (the trex.com logo is a 30 years anniversary mark, not used). Text tile until the client supplies the file.",
+      "rights": true,
+      "verified": false,
+      "scale": 1
+    },
+    {
+      "name": "GAF",
+      "slug": "gaf",
+      "group": "brands",
+      "url": "",
+      "status": "Company specific listing not found. Label only.",
+      "rights": true,
+      "verified": false,
+      "scale": 1.05
+    },
+    {
+      "name": "James Hardie",
+      "slug": "james-hardie",
+      "group": "brands",
+      "url": "",
+      "status": "Official SVG from jameshardie.com (james-hardie-vector-logo.svg), 2026-10-30.",
+      "rights": true,
+      "verified": false,
+      "scale": 1.1
+    },
+    {
+      "name": "Milgard",
+      "slug": "milgard",
+      "group": "brands",
+      "url": "",
+      "status": "milgard.com answers 403 to automated requests, no official file fetched. Text tile until the client supplies the file.",
+      "rights": true,
+      "verified": false,
+      "scale": 1
+    },
+    {
+      "name": "Floor & Decor",
+      "slug": "floor-and-decor",
+      "group": "brands",
+      "url": "",
+      "status": "Company specific listing not found. Label only.",
+      "verified": false,
+      "scale": 0.92,
+      "rights": true
+    },
+    {
+      "name": "The Home Depot",
+      "slug": "home-depot",
+      "group": "brands",
+      "url": "",
+      "status": "Company specific listing not found. Label only.",
+      "verified": false,
+      "scale": 1.2,
+      "rights": true
+    },
+    {
+      "name": "Sherwin-Williams",
+      "slug": "sherwin-williams",
+      "group": "brands",
+      "url": "",
+      "status": "Official SVG from sherwin-williams.com (global gateway logo-text.svg), 2026-10-30.",
+      "rights": true,
+      "verified": false,
+      "scale": 1.13
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "puget-sound-bnr-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Source for the Puget Sound BNR website: static page generators, assets and the WordPress plugins that serve them.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "stage": "node scripts/stage.mjs",
+    "build": "python tools/home-live.py",
+    "preview": "node scripts/serve-home-live.mjs 8830"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "note": "Services photo cards, in this order. One photo per card from projects.json (project ids). A card with an empty photo is skipped and renders by itself once a photo id is set (Siding: data-confirm=photo-needed, the client has no siding photo yet, the Siding pill shows until then). line is the descriptor shown on hover or tap: plain description only, no timelines, prices, warranties, licenses or results. The client approves the lines. chip is the form chip the quote action selects (Something else when the form has no chip for that service). Never put a photo under a service it does not show. The last 8 cards are stock photo cards: photo is a file stem in site/assets/projects/ (stem-640.webp and stem-960.webp, 960 by 640), empty means a neutral placeholder card; stock true marks a stock photo the client can swap for a project photo; service is the name sent in the hidden origin_service field; enabled false hides a card. Electrical, plumbing, HVAC and mold may need separate Washington licenses. Desktop shows the first 6, the rest sit behind Show all services. category is Inside, Outside or Add space. placeholder true marks a card that still has no photo; it shows a dark card with a line icon and the name.",
+  "cards": [
+    {
+      "photo": "project-01",
+      "label": "Kitchen remodeling",
+      "chip": "Kitchen",
+      "focal": "50% 50%",
+      "line": "Layouts, cabinets, counters and finishes.",
+      "enabled": true,
+      "category": "Inside",
+      "slug": "kitchen-remodeling"
+    },
+    {
+      "photo": "project-07",
+      "label": "Bathroom remodeling",
+      "chip": "Bathroom",
+      "focal": "50% 55%",
+      "line": "Showers, vanities, tile and fixtures.",
+      "enabled": true,
+      "category": "Inside",
+      "slug": "bathroom-remodeling"
+    },
+    {
+      "photo": "project-13",
+      "label": "ADU and DADU construction",
+      "chip": "ADU or DADU",
+      "focal": "50% 50%",
+      "line": "Backyard and detached living space.",
+      "enabled": true,
+      "category": "Add space",
+      "slug": "adu-and-dadu-construction"
+    },
+    {
+      "photo": "project-10",
+      "label": "Porch and deck",
+      "chip": "Decks and outdoor",
+      "focal": "50% 62%",
+      "line": "Porches, decks and outdoor living.",
+      "enabled": true,
+      "category": "Outside",
+      "slug": "porch-and-deck"
+    },
+    {
+      "photo": "project-11",
+      "label": "Full house remodeling",
+      "chip": "Something else",
+      "focal": "50% 50%",
+      "line": "Whole home updates, room by room.",
+      "enabled": true,
+      "category": "Inside",
+      "slug": "full-house-remodeling"
+    },
+    {
+      "photo": "project-12",
+      "label": "Flooring",
+      "chip": "Something else",
+      "focal": "50% 50%",
+      "line": "New floors from room to room.",
+      "enabled": true,
+      "category": "Inside",
+      "slug": "flooring"
+    },
+    {
+      "photo": "project-05",
+      "label": "Roofing",
+      "chip": "Roofing",
+      "focal": "50% 50%",
+      "line": "Roof work for your home.",
+      "enabled": true,
+      "category": "Outside",
+      "slug": "roofing"
+    },
+    {
+      "photo": "project-14",
+      "label": "Siding",
+      "chip": "Something else",
+      "focal": "80% 50%",
+      "line": "Siding replacement for your home.",
+      "enabled": true,
+      "category": "Outside",
+      "slug": "siding"
+    },
+    {
+      "photo": "",
+      "label": "Electrical and plumbing",
+      "chip": "Something else",
+      "service": "Electrical and plumbing",
+      "focal": "20% 50%",
+      "line": "Wiring, plumbing and fixtures as part of your project.",
+      "alt": "Electrician working at an open wall panel",
+      "stock": true,
+      "enabled": true,
+      "category": "Inside",
+      "slug": "electrical-and-plumbing"
+    },
+    {
+      "photo": "",
+      "label": "HVAC and insulation",
+      "chip": "Something else",
+      "service": "HVAC and insulation",
+      "focal": "50% 50%",
+      "line": "Insulation and comfort upgrades for your home.",
+      "alt": "Insulation installed between wall studs",
+      "stock": true,
+      "enabled": true,
+      "category": "Inside",
+      "slug": "hvac-and-insulation"
+    },
+    {
+      "photo": "",
+      "label": "Mold remediation",
+      "chip": "Something else",
+      "service": "Mold remediation",
+      "focal": "88% 8%",
+      "line": "Moisture and mold concerns, handled with care.",
+      "alt": "Moisture damaged wall being inspected",
+      "stock": true,
+      "enabled": true,
+      "category": "Inside",
+      "slug": "mold-remediation"
+    },
+    {
+      "photo": "",
+      "label": "Windows installation",
+      "chip": "Something else",
+      "service": "Windows installation",
+      "focal": "50% 50%",
+      "line": "Replacement windows for light and comfort.",
+      "alt": "New window installed in a home wall",
+      "stock": true,
+      "enabled": true,
+      "category": "Outside",
+      "slug": "windows-installation"
+    },
+    {
+      "photo": "",
+      "label": "Room additions",
+      "chip": "Something else",
+      "service": "Room additions",
+      "focal": "50% 50%",
+      "line": "More space with a planned addition.",
+      "alt": "Home addition under construction",
+      "stock": true,
+      "enabled": true,
+      "category": "Add space",
+      "slug": "room-additions"
+    },
+    {
+      "photo": "",
+      "label": "Driveways, pavers and concrete",
+      "chip": "Something else",
+      "service": "Driveways, pavers and concrete",
+      "focal": "50% 50%",
+      "line": "Driveways, pavers and concrete surfaces.",
+      "alt": "Paver driveway in front of a house",
+      "stock": true,
+      "enabled": true,
+      "category": "Outside",
+      "slug": "driveways-pavers-and-concrete"
+    },
+    {
+      "photo": "",
+      "label": "Landscaping and hardscaping",
+      "chip": "Something else",
+      "service": "Landscaping and hardscaping",
+      "focal": "50% 50%",
+      "line": "Planting, paths and hardscape features.",
+      "alt": "Stone path through a planted garden",
+      "stock": true,
+      "enabled": true,
+      "category": "Outside",
+      "slug": "landscaping-and-hardscaping"
+    },
+    {
+      "photo": "",
+      "label": "Garage remodel",
+      "chip": "Something else",
+      "service": "Garage remodel",
+      "focal": "50% 50%",
+      "line": "Turn your garage into usable space.",
+      "alt": "Garage interior with a finished wall and floor",
+      "stock": true,
+      "enabled": true,
+      "category": "Add space",
+      "slug": "garage-remodel"
+    }
+  ],
+  "no_photo": []
+}

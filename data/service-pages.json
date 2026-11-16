@@ -1,0 +1,631 @@
+{
+  "note": "Service landing pages (general, no city). One entry per page: slug, H1, title, description, form chip value (must match a chip in services.json), photos (project ids from projects.json, in display order), handle (What we handle list, only items the old WordPress site supports), faq (extra questions), published. No prices, timelines, warranties or claims. services.json holds the form chips and pills. New keys (all optional, a missing key keeps the old output): h1Service, gallery [{file, alt, focus}], aboutPhoto (gallery index), aboutHeading, about {intro, offer[], options, expect}, process [{title, text}], why [{title, text}]. Five pages in total: kitchen-remodeling, bathroom-remodeling, deck-building, adu-garage-conversion (was adu-construction), roofing. New keys: aboutPhotoId (a project id for the About photo when there is no gallery).",
+  "pages": [
+    {
+      "slug": "kitchen-remodeling",
+      "h1": "Kitchen Remodeling Company",
+      "service": "Kitchen",
+      "title": "Kitchen Remodeling Company | Puget Sound BNR",
+      "description": "Free consultation for kitchen remodeling with Puget Sound Builders & Renovation. Call (425) 696-4004.",
+      "chip": "Kitchen",
+      "photos": [
+        "project-01",
+        "project-04"
+      ],
+      "handle": [
+        "Kitchen remodeling",
+        "Kitchen cabinets",
+        "Refaced kitchen cabinets"
+      ],
+      "heroParagraph": "Kitchen remodeling for homes in the Puget Sound area: layouts, cabinets, countertops, flooring and finishes, from the first free consultation to the final walkthrough.",
+      "heroAlt": "Remodeled kitchen with white cabinets and a butcher block island",
+      "whoParagraph": "Puget Sound Builders & Renovation remodels kitchens across the Puget Sound area, from layouts and cabinets to countertops, flooring and finishes. A kitchen is the room your family uses every day, so we plan each project around how you cook, gather and live, and we stay with it from the first free consultation to the final walkthrough. We are licensed in Washington, fully insured and bonded, and our customers rate us five stars on Google.",
+      "reviewIds": [],
+      "formService": "Kitchen remodeling",
+      "formHeading": "Free kitchen remodeling consultation",
+      "okLine": "We will contact you soon about your kitchen.",
+      "closingHeading": "Ready to talk about your kitchen?",
+      "faqReplace": true,
+      "faq": [
+        [
+          "What kitchen projects do you take on?",
+          "Kitchen remodeling, including layouts, cabinets, countertops, flooring and finishes, up to a full kitchen remodel. Tell us what you have in mind in the form on this page or call {{PHONE}}."
+        ],
+        [
+          "Can you remodel just part of my kitchen?",
+          "Yes. Some people want new cabinets or counters, others want the whole room redone. We talk through the scope with you in the free consultation."
+        ],
+        [
+          "How much does a kitchen remodel cost?",
+          "It depends on the size of the kitchen, the materials you choose and how much of the room changes. We go over it with you in the free consultation."
+        ],
+        [
+          "How long does a kitchen remodel take?",
+          "It depends on the scope of the work. We plan it with you in the free consultation."
+        ],
+        [
+          "What should I have ready for the free consultation?",
+          "Photos of your kitchen, any ideas or examples you like, and a rough idea of your budget and timing. If you do not have all of that yet, that is fine. Nothing else is required."
+        ],
+        [
+          "Which areas do you serve?",
+          "We are licensed in Washington, fully insured and bonded, and we work in Bellevue, Kirkland, Redmond, Seattle, Issaquah, Sammamish, Renton, Kent, Bothell, Tacoma, Federal Way and Des Moines."
+        ]
+      ],
+      "published": true,
+      "workName": "kitchen",
+      "h1Service": "Kitchen Remodeling",
+      "gallery": [
+        "kitchen-01",
+        "project-19",
+        "kitchen-02",
+        "project-24",
+        "kitchen-03",
+        "project-20",
+        "kitchen-04",
+        "project-22",
+        "kitchen-05",
+        "project-21",
+        "kitchen-06",
+        "project-23",
+        "kitchen-07",
+        "kitchen-08"
+      ],
+      "aboutPhoto": 12,
+      "aboutHeading": "Kitchen remodeling in the Puget Sound area",
+      "about": {
+        "intro": "A kitchen remodel can be as focused as new cabinets and countertops or as complete as a new layout. We talk through your space and your goals in the free consultation and recommend the scope that fits.",
+        "offer": [
+          "Kitchen layouts and reconfiguration",
+          "Cabinets, new or refaced",
+          "Countertops",
+          "Flooring",
+          "Backsplash, fixtures, lighting and finishes"
+        ],
+        "options": "Cabinet styles and colors, countertop materials, tile backsplashes and flooring types are all part of the conversation. We help you compare the options for your style, your budget and the way you use the kitchen.",
+        "expect": "You can expect a free consultation, a plan you understand before work begins, clear communication from the first call to the final walkthrough, and a finished kitchen we are proud to hand over."
+      },
+      "process": [
+        {
+          "title": "Free consultation and inspection",
+          "text": "Tell us about your kitchen by phone or through the form. We look at the space with you and talk through your goals, budget and timing."
+        },
+        {
+          "title": "Planning",
+          "text": "We turn your ideas into a plan for the layout, the scope of work and the schedule."
+        },
+        {
+          "title": "Material selection",
+          "text": "We help you choose cabinets, countertops, flooring and finishes that fit your style and your budget."
+        },
+        {
+          "title": "Construction",
+          "text": "Our crew carries out the work and keeps you updated along the way."
+        },
+        {
+          "title": "Final walkthrough",
+          "text": "We walk through the finished kitchen with you and make sure you are happy with the result."
+        }
+      ],
+      "why": [
+        {
+          "title": "Professionalism",
+          "text": "Licensed in Washington, fully insured and bonded, and clear about what happens next."
+        },
+        {
+          "title": "Communication",
+          "text": "You know where your project stands at every step, and you can call us at {{PHONE}} with questions."
+        },
+        {
+          "title": "Attention to detail",
+          "text": "Cabinet lines, finishes and the small decisions get the same care as the big ones."
+        },
+        {
+          "title": "Quality standards",
+          "text": "Where Quality Meets Reliability is how we work on every kitchen, from the first plan to the last walkthrough."
+        }
+      ],
+      "photoService": "kitchen",
+      "heroPhoto": "project-01",
+      "heroFocal": "50% 55%"
+    },
+    {
+      "slug": "bathroom-remodeling",
+      "h1": "Bathroom Remodeling Company",
+      "service": "Bathroom",
+      "title": "Bathroom Remodeling Company | Puget Sound BNR",
+      "description": "Free consultation for bathroom remodeling with Puget Sound Builders & Renovation. Call (425) 696-4004.",
+      "chip": "Bathroom",
+      "photos": [
+        "project-15"
+      ],
+      "handle": [
+        "Bathroom remodeling",
+        "Walk in and tiled showers",
+        "Vanities and storage"
+      ],
+      "faq": [
+        [
+          "What bathroom projects do you take on?",
+          "Bathroom remodeling, including layouts, showers, tubs, vanities, tile, fixtures and finishes, up to a full bathroom remodel. Tell us what you have in mind in the form on this page or call {{PHONE}}."
+        ],
+        [
+          "Can you remodel just part of my bathroom?",
+          "Yes. Some people want a new shower or vanity, others want the whole room redone. We talk through the scope with you in the free consultation."
+        ],
+        [
+          "How much does a bathroom remodel cost?",
+          "It depends on the size of the project, the materials you choose and how much changes. We go over it with you in the free consultation."
+        ],
+        [
+          "How long does a bathroom remodel take?",
+          "It depends on the scope of the work. We plan it with you in the free consultation."
+        ],
+        [
+          "What should I have ready for the free consultation?",
+          "Photos of your bathroom, any ideas or examples you like, and a rough idea of your budget and timing. If you do not have all of that yet, that is fine. Nothing else is required."
+        ],
+        [
+          "Which areas do you serve?",
+          "We are licensed in Washington, fully insured and bonded, and we work in Bellevue, Kirkland, Redmond, Seattle, Issaquah, Sammamish, Renton, Kent, Bothell, Tacoma, Federal Way and Des Moines."
+        ]
+      ],
+      "published": true,
+      "workName": "bathroom",
+      "h1Service": "Bathroom Remodeling",
+      "photoService": "bathroom",
+      "heroPhoto": "project-15",
+      "heroFocal": "70% 50%",
+      "gallery": [
+        "project-15",
+        "project-25",
+        "project-16",
+        "project-26",
+        "project-17",
+        "project-27",
+        "project-18"
+      ],
+      "formService": "Bathroom remodeling",
+      "formHeading": "Free bathroom remodeling consultation",
+      "okLine": "We will contact you soon about your bathroom.",
+      "closingHeading": "Ready to talk about your bathroom?",
+      "faqReplace": true,
+      "heroParagraph": "Bathroom remodeling for homes in the Puget Sound area: layouts, showers, tubs, vanities, tile and finishes, from the first free consultation to the final walkthrough.",
+      "heroAlt": "Remodeled bathroom with a tiled walk in shower and a wood bench",
+      "whoParagraph": "Puget Sound Builders & Renovation remodels bathrooms across the Puget Sound area, from layouts and showers to vanities, tile and finishes. A bathroom is a small room you use every day, so we plan each project around how you and your family use it, and we stay with it from the first free consultation to the final walkthrough. We are licensed in Washington, fully insured and bonded, and our customers rate us five stars on Google.",
+      "reviewIds": [],
+      "aboutPhoto": 2,
+      "aboutHeading": "Bathroom remodeling in the Puget Sound area",
+      "about": {
+        "intro": "A bathroom remodel can be as focused as a new vanity and fixtures or as complete as a new layout with a tiled shower. We talk through your space and your goals in the free consultation and recommend the scope that fits.",
+        "offer": [
+          "Bathroom layouts and reconfiguration",
+          "Walk in and tiled showers",
+          "Tubs",
+          "Vanities and storage",
+          "Flooring and tile",
+          "Fixtures, lighting and finishes"
+        ],
+        "options": "Tile styles, shower and tub types, vanity styles, fixtures and finishes are all part of the conversation. We help you compare the options for your style, your budget and the way you use the bathroom.",
+        "expect": "You can expect a free consultation, a plan you understand before work begins, clear communication from the first call to the final walkthrough, and a finished bathroom we are proud to hand over."
+      },
+      "process": [
+        {
+          "title": "Free consultation and inspection",
+          "text": "Tell us about your bathroom by phone or through the form. We look at the space with you and talk through your goals, budget and timing."
+        },
+        {
+          "title": "Planning",
+          "text": "We turn your ideas into a plan for the layout, the scope of work and the schedule."
+        },
+        {
+          "title": "Material selection",
+          "text": "We help you choose tile, fixtures, a vanity and finishes that fit your style and your budget."
+        },
+        {
+          "title": "Construction",
+          "text": "Our crew carries out the work and keeps you updated along the way."
+        },
+        {
+          "title": "Final walkthrough",
+          "text": "We walk through the finished bathroom with you and make sure you are happy with the result."
+        }
+      ],
+      "why": [
+        {
+          "title": "Professionalism",
+          "text": "Licensed in Washington, fully insured and bonded, and clear about what happens next."
+        },
+        {
+          "title": "Communication",
+          "text": "You know where your project stands at every step, and you can call us at {{PHONE}} with questions."
+        },
+        {
+          "title": "Attention to detail",
+          "text": "Tile lines, fixtures, finishes and the small decisions get the same care as the big ones."
+        },
+        {
+          "title": "Quality standards",
+          "text": "Where Quality Meets Reliability is how we work on every bathroom, from the first plan to the last walkthrough."
+        }
+      ]
+    },
+    {
+      "slug": "deck-building",
+      "h1": "Deck Building Company",
+      "service": "Deck",
+      "title": "Deck Building Company | Puget Sound BNR",
+      "description": "Free consultation for deck building with Puget Sound Builders & Renovation. Call (425) 696-4004.",
+      "chip": "Decks and outdoor",
+      "photos": [
+        "project-10"
+      ],
+      "handle": [
+        "New decks",
+        "Deck rebuilds and replacements",
+        "Railings and stairs"
+      ],
+      "workName": "deck",
+      "published": true,
+      "h1Service": "Deck Building",
+      "formService": "Deck building",
+      "formHeading": "Free deck building consultation",
+      "okLine": "We will contact you soon about your deck.",
+      "closingHeading": "Ready to talk about your deck?",
+      "faqReplace": true,
+      "heroParagraph": "Deck building for homes in the Puget Sound area: new decks, rebuilds, railings, stairs and multi level decks, from the first free consultation to the final walkthrough.",
+      "heroAlt": "Covered patio with wide composite steps beside a house",
+      "whoParagraph": "Puget Sound Builders & Renovation builds decks across the Puget Sound area, from new decks and rebuilds to railings, stairs and multi level designs. A deck is where your family spends time outside, so we plan each project around how you use your yard and your home, and we stay with it from the first free consultation to the final walkthrough. We are licensed in Washington, fully insured and bonded, and our customers rate us five stars on Google.",
+      "reviewIds": [
+        "g2",
+        "g1"
+      ],
+      "aboutPhotoId": "project-10",
+      "aboutHeading": "Deck building in the Puget Sound area",
+      "about": {
+        "intro": "A deck project can be a new deck, a rebuild of an old one or a multi level design for a sloped yard. We talk through your space and your goals in the free consultation and recommend the scope that fits.",
+        "offer": [
+          "New decks",
+          "Deck rebuilds and replacements",
+          "Railings and stairs",
+          "Decking materials, wood and composite",
+          "Multi level decks"
+        ],
+        "options": "Wood and composite decking, railing styles, stair layouts and the size and shape of the deck are all part of the conversation. We help you compare the options for your style, your budget and the way you use the space.",
+        "expect": "You can expect a free consultation, a plan you understand before work begins, clear communication from the first call to the final walkthrough, and a finished deck we are proud to hand over."
+      },
+      "process": [
+        {
+          "title": "Free consultation and inspection",
+          "text": "Tell us about your deck project by phone or through the form. We look at the space with you and talk through your goals, budget and timing."
+        },
+        {
+          "title": "Planning",
+          "text": "We turn your ideas into a plan for the design, the scope of work and the schedule."
+        },
+        {
+          "title": "Material selection",
+          "text": "We help you choose decking, railings and finishes that fit your style and your budget."
+        },
+        {
+          "title": "Construction",
+          "text": "Our crew carries out the work and keeps you updated along the way."
+        },
+        {
+          "title": "Final walkthrough",
+          "text": "We walk through the finished deck with you and make sure you are happy with the result."
+        }
+      ],
+      "why": [
+        {
+          "title": "Professionalism",
+          "text": "Licensed in Washington, fully insured and bonded, and clear about what happens next."
+        },
+        {
+          "title": "Communication",
+          "text": "You know where your project stands at every step, and you can call us at {{PHONE}} with questions."
+        },
+        {
+          "title": "Attention to detail",
+          "text": "Railing lines, stair details and the small decisions get the same care as the big ones."
+        },
+        {
+          "title": "Quality standards",
+          "text": "Where Quality Meets Reliability is how we work on every deck, from the first plan to the last walkthrough."
+        }
+      ],
+      "faq": [
+        [
+          "What deck projects do you take on?",
+          "New decks, deck rebuilds and replacements, railings and stairs, and multi level decks, in wood or composite. Tell us what you have in mind in the form on this page or call {{PHONE}}."
+        ],
+        [
+          "Can you rebuild or replace my existing deck?",
+          "Yes. Some people need a full rebuild, others want to replace parts of an old deck. We look at it with you in the free consultation."
+        ],
+        [
+          "How much does a deck cost?",
+          "It depends on the size of the project, the materials you choose and how much changes. We go over it with you in the free consultation."
+        ],
+        [
+          "How long does it take to build a deck?",
+          "It depends on the scope of the work. We plan it with you in the free consultation."
+        ],
+        [
+          "What should I have ready for the free consultation?",
+          "Photos of your yard and any existing deck, any ideas or examples you like, and a rough idea of your budget and timing. If you do not have all of that yet, that is fine. Nothing else is required."
+        ],
+        [
+          "Which areas do you serve?",
+          "We are licensed in Washington, fully insured and bonded, and we work in Bellevue, Kirkland, Redmond, Seattle, Issaquah, Sammamish, Renton, Kent, Bothell, Tacoma, Federal Way and Des Moines."
+        ]
+      ],
+      "photoService": "deck",
+      "heroPhoto": "project-47",
+      "heroFocal": "50% 62%",
+      "gallery": [
+        "project-43",
+        "project-47",
+        "project-44",
+        "project-45",
+        "project-48",
+        "project-46",
+        "project-10"
+      ],
+      "aboutPhoto": 6
+    },
+    {
+      "slug": "adu-garage-conversion",
+      "h1": "ADU and Garage Conversion Company",
+      "service": "ADU and garage conversion",
+      "title": "ADU and Garage Conversion Company | Puget Sound BNR",
+      "description": "Free consultation for ADU, garage conversion and DADU projects with Puget Sound Builders & Renovation. Call (425) 696-4004.",
+      "chip": "ADU or DADU",
+      "photos": [
+        "project-13",
+        "project-03",
+        "project-09",
+        "project-06"
+      ],
+      "handle": [
+        "Accessory dwelling units (ADUs)",
+        "Detached accessory dwelling units (DADUs)",
+        "Garage conversions"
+      ],
+      "workName": "ADU and garage conversion",
+      "published": true,
+      "h1Service": "ADU and Garage Conversion",
+      "formService": "ADU or garage conversion",
+      "formHeading": "Free ADU and garage conversion consultation",
+      "okLine": "We will contact you soon about your project.",
+      "closingHeading": "Ready to talk about your ADU or garage conversion?",
+      "faqReplace": true,
+      "heroParagraph": "ADU, garage conversion and DADU projects for homes in the Puget Sound area: backyard units, converted garages, planning, finishes and systems, from the first free consultation to the final walkthrough.",
+      "heroAlt": "ADU under construction in a backyard with framing lumber beside the new slab",
+      "whoParagraph": "Puget Sound Builders & Renovation builds ADUs, DADUs and garage conversions across the Puget Sound area, from planning the space and layout to finishes and systems. An ADU or a converted garage adds living space to your property, so we plan each project around how the space will be used, and we stay with it from the first free consultation to the final walkthrough. We are licensed in Washington, fully insured and bonded, and our customers rate us five stars on Google.",
+      "reviewIds": [],
+      "gallery": [
+        "project-60",
+        "project-03",
+        "project-59",
+        "project-09",
+        "project-58",
+        "project-06",
+        "project-13"
+      ],
+      "aboutPhoto": 3,
+      "aboutHeading": "ADU and garage conversion in the Puget Sound area",
+      "about": {
+        "intro": "An ADU is an accessory dwelling unit. It can be a detached unit in the backyard, called a DADU, or a garage converted into living space. We talk through your property and your goals in the free consultation and recommend the approach that fits.",
+        "offer": [
+          "Backyard ADUs and DADUs",
+          "Garage conversions",
+          "Planning the space and layout",
+          "Finishes and systems",
+          "Guidance from the first consultation to the final walkthrough"
+        ],
+        "options": "The size and layout of the space, the finishes and the systems it needs are all part of the conversation. We help you compare the options for your property, your budget and the way you plan to use the space.",
+        "expect": "You can expect a free consultation, a plan you understand before work begins, clear communication from the first call to the final walkthrough, and a finished ADU or garage conversion we are proud to hand over."
+      },
+      "process": [
+        {
+          "title": "Free consultation and inspection",
+          "text": "Tell us about your ADU or garage conversion by phone or through the form. We look at the property with you and talk through your goals, budget and timing."
+        },
+        {
+          "title": "Planning",
+          "text": "We turn your ideas into a plan for the space, the layout, the scope of work and the schedule."
+        },
+        {
+          "title": "Material selection",
+          "text": "We help you choose finishes, fixtures and materials that fit your style and your budget."
+        },
+        {
+          "title": "Construction",
+          "text": "Our crew carries out the work and keeps you updated along the way."
+        },
+        {
+          "title": "Final walkthrough",
+          "text": "We walk through the finished space with you and make sure you are happy with the result."
+        }
+      ],
+      "why": [
+        {
+          "title": "Professionalism",
+          "text": "Licensed in Washington, fully insured and bonded, and clear about what happens next."
+        },
+        {
+          "title": "Communication",
+          "text": "You know where your project stands at every step, and you can call us at {{PHONE}} with questions."
+        },
+        {
+          "title": "Attention to detail",
+          "text": "Layouts, finishes and the small decisions get the same care as the big ones."
+        },
+        {
+          "title": "Quality standards",
+          "text": "Where Quality Meets Reliability is how we work on every ADU and garage conversion, from the first plan to the last walkthrough."
+        }
+      ],
+      "faq": [
+        [
+          "What ADU and garage conversion projects do you take on?",
+          "Backyard ADUs and DADUs and garage conversions, from planning the space to the finishes. Tell us what you have in mind in the form on this page or call {{PHONE}}."
+        ],
+        [
+          "What is the difference between an ADU, a DADU and a garage conversion?",
+          "An ADU is an accessory dwelling unit on your property. A DADU is a detached ADU, usually in the backyard. A garage conversion turns an existing garage into living space. We help you decide which fits your property in the free consultation."
+        ],
+        [
+          "Can a basement become an ADU?",
+          "Many homeowners turn a basement into an accessory dwelling unit. Specific regulations and codes must be followed, so talk it through with us in a free consultation. Use the form on this page or call {{PHONE}}."
+        ],
+        [
+          "How much does an ADU or garage conversion cost?",
+          "It depends on the size of the project, the materials you choose and how much changes. We go over it with you in the free consultation."
+        ],
+        [
+          "How long does an ADU or garage conversion take?",
+          "It depends on the scope of the work. We plan it with you in the free consultation."
+        ],
+        [
+          "Which areas do you serve?",
+          "We are licensed in Washington, fully insured and bonded, and we work in Bellevue, Kirkland, Redmond, Seattle, Issaquah, Sammamish, Renton, Kent, Bothell, Tacoma, Federal Way and Des Moines."
+        ]
+      ],
+      "photoService": "adu",
+      "heroPhoto": "project-03",
+      "heroFocal": "50% 55%"
+    },
+    {
+      "slug": "roofing",
+      "h1": "Roofing Company",
+      "service": "Roofing",
+      "title": "Roofing Company | Puget Sound BNR",
+      "description": "Free consultation for roofing with Puget Sound Builders & Renovation. Call (425) 696-4004.",
+      "chip": "Roofing",
+      "photos": [
+        "project-05"
+      ],
+      "handle": [
+        "Roof inspections",
+        "Roof repairs",
+        "Roof replacement"
+      ],
+      "workName": "roofing",
+      "published": true,
+      "h1Service": "Roofing",
+      "formService": "Roofing",
+      "formHeading": "Free roofing consultation",
+      "okLine": "We will contact you soon about your roof.",
+      "closingHeading": "Ready to talk about your roof?",
+      "faqReplace": true,
+      "heroParagraph": "Roofing for homes in the Puget Sound area: roof inspections, repairs, replacement, flashing, gutters and material options, from the first free consultation to the final walkthrough.",
+      "heroAlt": "New shingle roof with a ridge line and two skylights",
+      "whoParagraph": "Puget Sound Builders & Renovation handles roofing across the Puget Sound area, from inspections and repairs to full roof replacement. A roof protects everything under it, so we plan each project around what your roof needs, and we stay with it from the first free consultation to the final walkthrough. We are licensed in Washington, fully insured and bonded, and our customers rate us five stars on Google.",
+      "reviewIds": [],
+      "gallery": [
+        "project-52",
+        "project-53",
+        "project-29",
+        "project-55",
+        "project-28",
+        "project-56",
+        "project-31",
+        "project-51",
+        "project-57",
+        "project-32",
+        "project-34",
+        "project-05",
+        "project-38",
+        "project-50",
+        "project-54",
+        "project-61",
+        "project-62"
+      ],
+      "aboutPhoto": 6,
+      "aboutHeading": "Roofing in the Puget Sound area",
+      "about": {
+        "intro": "A roofing project can be an inspection, a repair or a full replacement. We look at your roof in the free consultation and recommend the scope that fits.",
+        "offer": [
+          "Roof inspections",
+          "Roof repairs",
+          "Roof replacement",
+          "Flashing and gutters",
+          "Material options"
+        ],
+        "options": "Roofing materials, colors and styles are part of the conversation. We help you compare the options for your home and your budget.",
+        "expect": "You can expect a free consultation, a plan you understand before work begins, clear communication from the first call to the final walkthrough, and a finished roof we are proud to hand over."
+      },
+      "process": [
+        {
+          "title": "Free consultation and roof inspection",
+          "text": "Tell us about your roof by phone or through the form. We look at the roof with you and talk through your goals, budget and timing."
+        },
+        {
+          "title": "Planning",
+          "text": "We turn your findings into a plan for the scope of work and the schedule."
+        },
+        {
+          "title": "Material selection",
+          "text": "We help you choose roofing materials and colors that fit your home and your budget."
+        },
+        {
+          "title": "Construction",
+          "text": "Our crew carries out the work and keeps you updated along the way."
+        },
+        {
+          "title": "Final walkthrough",
+          "text": "We walk through the finished roof with you and make sure you are happy with the result."
+        }
+      ],
+      "why": [
+        {
+          "title": "Professionalism",
+          "text": "Licensed in Washington, fully insured and bonded, and clear about what happens next."
+        },
+        {
+          "title": "Communication",
+          "text": "You know where your project stands at every step, and you can call us at {{PHONE}} with questions."
+        },
+        {
+          "title": "Attention to detail",
+          "text": "Flashing, edges and the small decisions get the same care as the big ones."
+        },
+        {
+          "title": "Quality standards",
+          "text": "Where Quality Meets Reliability is how we work on every roof, from the first inspection to the last walkthrough."
+        }
+      ],
+      "faq": [
+        [
+          "What roofing projects do you take on?",
+          "Roof inspections, repairs and replacement, plus flashing and gutters. Tell us what you have in mind in the form on this page or call {{PHONE}}."
+        ],
+        [
+          "Do I need a full roof replacement?",
+          "Not always. Some roofs need a repair, others need a full replacement. We inspect the roof with you in the free consultation and explain the options."
+        ],
+        [
+          "How much does a roof repair or replacement cost?",
+          "It depends on the size of the project, the materials you choose and how much changes. We go over it with you in the free consultation."
+        ],
+        [
+          "How long does a roofing project take?",
+          "It depends on the scope of the work. We plan it with you in the free consultation."
+        ],
+        [
+          "What should I have ready for the free consultation?",
+          "Photos of your roof, any leaks or damage you have noticed, and a rough idea of your budget and timing. If you do not have all of that yet, that is fine. Nothing else is required."
+        ],
+        [
+          "Which areas do you serve?",
+          "We are licensed in Washington, fully insured and bonded, and we work in Bellevue, Kirkland, Redmond, Seattle, Issaquah, Sammamish, Renton, Kent, Bothell, Tacoma, Federal Way and Des Moines."
+        ]
+      ],
+      "photoService": "roofing",
+      "heroPhoto": "project-33",
+      "heroFocal": "50% 22%"
+    }
+  ]
+}

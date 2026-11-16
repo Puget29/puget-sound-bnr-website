@@ -1,0 +1,173 @@
+{
+  "pages": [
+    {
+      "slug": "siding",
+      "h1": "Siding Replacement",
+      "h1Service": "Siding Replacement",
+      "service": "Siding",
+      "title": "Siding Replacement | Puget Sound Builders & Renovation",
+      "description": "Siding replacement and installation for homes in the Puget Sound area. Book a free consultation with Puget Sound Builders & Renovation.",
+      "chip": "Something else",
+      "photos": ["project-14"],
+      "handle": ["Siding replacement", "New siding installation", "Material and color choices"],
+      "workName": "siding",
+      "gallery": ["project-14"],
+      "formService": "Siding",
+      "formHeading": "Free siding consultation",
+      "okLine": "We will contact you soon about your siding project.",
+      "closingHeading": "Ready to talk about your siding?",
+      "faqReplace": true,
+      "heroParagraph": "Siding replacement and installation for homes in the Puget Sound area, with material and finish choices discussed during a free consultation.",
+      "aboutPhoto": 0,
+      "aboutHeading": "Siding replacement in the Puget Sound area",
+      "about": {
+        "intro": "Siding can change the look of a home's exterior. We talk through the existing siding, your goals and the available materials before agreeing on a project scope.",
+        "offer": [
+          "Siding replacement",
+          "New siding installation",
+          "Wood and fiber cement options",
+          "Color and material combinations",
+          "Guidance on local permits and codes"
+        ],
+        "options": "Compare wood, fiber cement and other available siding materials. Colors and combinations can be discussed with your home's architecture and preferences in mind.",
+        "expect": "We review the scope, material selections and project needs with you before work begins. Local permit and code questions can be part of the planning conversation."
+      },
+      "process": [
+        {"title": "Free consultation", "text": "Tell us about the home and the siding you want to replace or add. We discuss your goals and the areas involved."},
+        {"title": "Review the exterior", "text": "We look at the existing siding with you and talk through the options for the project."},
+        {"title": "Plan the scope", "text": "We agree on the siding materials, finish choices and work included in the project."},
+        {"title": "Install the siding", "text": "Our team carries out the agreed siding work and keeps you informed as it progresses."},
+        {"title": "Final walkthrough", "text": "We walk around the finished exterior with you and review the completed work."}
+      ],
+      "why": [
+        {"title": "Licensed and insured", "text": "Licensed in Washington, insured and bonded, with a clear scope before work begins."},
+        {"title": "Material guidance", "text": "Talk through wood, fiber cement and finish options for your home's exterior."},
+        {"title": "Clear communication", "text": "We keep you informed as the siding project moves from plan to installation."},
+        {"title": "Care with the details", "text": "Material transitions, edges and finish choices are part of the project review."}
+      ],
+      "faq": [
+        ["What siding work do you take on?", "We handle siding replacement and new siding installation. Tell us what you have in mind during a free consultation or call {{PHONE}}."],
+        ["What siding materials can we discuss?", "Options include wood and fiber cement, along with other available materials. We can talk through the choices for your home and project."],
+        ["Can you help with permits and local requirements?", "We can discuss local permit and code questions as part of planning your siding project."],
+        ["How do I get a siding estimate?", "Start with a free consultation so we can learn about the exterior and the work you are considering. Call {{PHONE}} or use the form on this page."],
+        ["Which areas do you serve?", "We work in the Puget Sound area. Tell us your location when you contact us and we can discuss your project."]
+      ],
+      "photoService": "siding",
+      "heroPhoto": "project-14",
+      "heroFocal": "80% 50%"
+    },
+    {
+      "slug": "flooring",
+      "h1": "Flooring Replacement",
+      "h1Service": "Flooring Replacement",
+      "service": "Flooring",
+      "title": "Flooring Replacement | Puget Sound Builders & Renovation",
+      "description": "Flooring replacement for homes in the Puget Sound area. Compare material options and book a free consultation.",
+      "chip": "Something else",
+      "photos": ["project-12"],
+      "handle": ["Flooring replacement", "Hardwood, laminate and vinyl plank", "Tile and carpet"],
+      "workName": "flooring",
+      "gallery": ["project-12"],
+      "formService": "Flooring",
+      "formHeading": "Free flooring consultation",
+      "okLine": "We will contact you soon about your flooring project.",
+      "closingHeading": "Ready to talk about your floors?",
+      "faqReplace": true,
+      "heroParagraph": "Flooring replacement for homes in the Puget Sound area, with material options and installation scope planned around the space.",
+      "aboutPhoto": 0,
+      "aboutHeading": "Flooring replacement in the Puget Sound area",
+      "about": {
+        "intro": "Flooring choices depend on the room, the existing floor and how you use the space. We discuss the material options and project scope with you during a free consultation.",
+        "offer": [
+          "Hardwood flooring",
+          "Laminate and vinyl plank",
+          "Tile flooring",
+          "Carpet",
+          "Flooring replacement"
+        ],
+        "options": "Compare hardwood, laminate, vinyl plank, tile and carpet for the rooms in your project. We can discuss the look, care and practical needs of each option.",
+        "expect": "Subfloor condition and moisture are considered as part of installation planning. We review the work included, material selection and floor layout with you before installation."
+      },
+      "process": [
+        {"title": "Free consultation", "text": "Tell us which rooms and floors you are considering. We discuss the space, your preferences and the project scope."},
+        {"title": "Review the existing floor", "text": "We look at the areas with you and discuss the condition of the current flooring and subfloor."},
+        {"title": "Choose materials and layout", "text": "Compare flooring materials and decide how the new floor should work across the rooms in scope."},
+        {"title": "Prepare and install", "text": "We carry out the agreed flooring work and keep you updated as installation progresses."},
+        {"title": "Final walkthrough", "text": "We review the finished floors with you and walk through the completed work."}
+      ],
+      "why": [
+        {"title": "Licensed and insured", "text": "Licensed in Washington, insured and bonded, with a clear scope before work begins."},
+        {"title": "Material guidance", "text": "Compare wood, laminate, vinyl plank, tile and carpet with the needs of each room in mind."},
+        {"title": "Clear communication", "text": "We keep you informed as the flooring work moves from planning to installation."},
+        {"title": "Attention to detail", "text": "Subfloor condition, layout and transitions are part of the installation discussion."}
+      ],
+      "faq": [
+        ["What flooring materials can I choose from?", "We can discuss hardwood, laminate, vinyl plank, tile and carpet for your project."],
+        ["Is subfloor preparation part of flooring work?", "We review the existing floor and subfloor as part of planning the installation and agreeing on the project scope."],
+        ["Does moisture matter when choosing flooring?", "Moisture can affect flooring and subfloor conditions. We can discuss what you are seeing in the space during a consultation."],
+        ["How much does flooring replacement cost?", "The price depends on the rooms, materials and work included. We can discuss the scope during a free consultation."],
+        ["Which areas do you serve?", "We work in the Puget Sound area. Tell us your location when you contact us and we can discuss your project."]
+      ],
+      "photoService": "flooring",
+      "heroPhoto": "project-12",
+      "heroFocal": "50% 50%"
+    },
+    {
+      "slug": "painting",
+      "h1": "Interior and Exterior Painting",
+      "h1Service": "Painting",
+      "service": "Painting",
+      "title": "Interior and Exterior Painting | Puget Sound Builders & Renovation",
+      "description": "Interior and exterior painting for Puget Sound homes. Discuss your project and book a free consultation.",
+      "chip": "Something else",
+      "photos": [],
+      "handle": ["Interior painting", "Exterior painting"],
+      "workName": "painting",
+      "gallery": ["asset:painting-card"],
+      "galleryHeading": "A painting example.",
+      "galleryIntro": "A painter applies a fresh coat to an interior wall.",
+      "formService": "Painting",
+      "formHeading": "Free painting consultation",
+      "okLine": "We will contact you soon about your painting project.",
+      "closingHeading": "Ready to talk about painting?",
+      "faqReplace": true,
+      "heroParagraph": "Interior and exterior painting to finish a home project, planned with you from a free consultation to the final walkthrough.",
+      "aboutPhoto": 0,
+      "aboutHeading": "Painting for Puget Sound homes",
+      "about": {
+        "intro": "Fresh paint can finish a room or refresh an exterior. We talk through the areas you want painted, the finish you have in mind and the work included before setting a project scope.",
+        "offer": [
+          "Interior painting",
+          "Exterior painting",
+          "Color and finish choices",
+          "Painting as part of a larger remodeling project"
+        ],
+        "options": "We discuss the rooms or exterior areas in scope and the finish you want to see. The plan is based on the areas you choose to include in the project.",
+        "expect": "We agree on the painting scope with you, carry out the planned work and walk through the finished areas together."
+      },
+      "process": [
+        {"title": "Free consultation", "text": "Tell us which rooms or exterior areas you want painted and what finish you have in mind."},
+        {"title": "Review the space", "text": "We look at the areas with you and discuss the scope and project details."},
+        {"title": "Confirm the plan", "text": "We agree on the areas, finish choices and painting work included in the project."},
+        {"title": "Complete the painting", "text": "Our team carries out the agreed painting work and keeps you informed as it progresses."},
+        {"title": "Final walkthrough", "text": "We walk through the painted areas with you and review the finished work."}
+      ],
+      "why": [
+        {"title": "Licensed and insured", "text": "Licensed in Washington, insured and bonded, with a clear scope before work begins."},
+        {"title": "Clear project scope", "text": "We agree on which areas are included before the painting work starts."},
+        {"title": "One team", "text": "Painting can be planned as part of a wider remodeling project with one team."},
+        {"title": "Thoughtful finish choices", "text": "Talk through color and finish choices for the rooms or exterior areas in scope."}
+      ],
+      "faq": [
+        ["Do you paint inside and outside?", "Yes. We can discuss interior and exterior painting during a free consultation."],
+        ["Can painting be part of a remodeling project?", "Painting can be planned as part of a larger remodeling project. Tell us what you want to change and we can discuss the scope."],
+        ["How do you decide what is included?", "We discuss the rooms or exterior areas and agree on the painting scope before work begins."],
+        ["How long does a painting project take?", "Timing depends on the areas and work in scope. We discuss it with you as part of planning."],
+        ["Which areas do you serve?", "We work in the Puget Sound area. Tell us your location when you contact us and we can discuss your project."]
+      ],
+      "photoService": "painting",
+      "heroPhoto": "asset:painting-card",
+      "heroFocal": "50% 42%"
+    }
+  ]
+}

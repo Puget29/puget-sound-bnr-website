@@ -1,0 +1,22 @@
+{
+  "note": "Real WordPress URLs for the nav, footer and buttons of the home page. Change a path here, then run V4_ROOT=1 python tools/v4-gen.py.",
+  "about": "/about/",
+  "contact": "/contact-us/",
+  "services": "/our-services/",
+  "projects": "/remodeling-projects/",
+  "blog": "/blog/",
+  "privacy": "/ppc-assets/privacy/",
+  "servicePages": {
+    "overview": "/our-services/",
+    "kitchen-remodeling": "/kitchen-remodel-seattle/",
+    "bathroom-remodeling": "/bathroom-remodel-seattle/",
+    "roofing": "/roof-repair-company-in-seattle/",
+    "deck-building": "/our-services/deck-building/",
+    "adu-garage-conversion": "/our-services/adu-garage-conversion/",
+    "siding": "/siding-replacement/",
+    "flooring": "/flooring-replacement-in-seattle/",
+    "painting": "/our-services/painting/"
+  },
+  "siding": "/siding-replacement/",
+  "flooring": "/flooring-replacement-in-seattle/"
+}

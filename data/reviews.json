@@ -1,0 +1,29 @@
+[
+  {
+    "id": "g1",
+    "name": "Paris Goettel",
+    "rating": 5,
+    "text": "I had the pleasure of working with Puget Sound B&R while I was in town for a year visiting my mother-in-law and her husband, and I was able to be involved every step of the way throughout their backyard landscaping and remodeling project, including the addition of a new deck. I was genuinely impressed.\n\nFrom the very beginning, the company operated with professionalism, organization, and clear communication. Every detail was explained thoroughly, timelines were respected, and any questions were addressed promptly. It’s clear that Puget Sound B&R is very well run — the coordination between the team members, scheduling, and execution of the work was seamless.\n\nThe quality of the craftsmanship truly stood out. The landscaping completely transformed the yard, and the new deck was beautifully built and thoughtfully designed to complement the space. Watching the project unfold from start to finish, I could see the care and pride they take in their work.\n\nIt’s not often you come across a company that delivers both exceptional results and an excellent customer experience, but Puget Sound B&R absolutely does. I would highly recommend them to anyone looking for a professional, well-managed team that delivers outstanding work.",
+    "featured": true,
+    "verified": true,
+    "sample": false
+  },
+  {
+    "id": "g2",
+    "name": "Hong Shi",
+    "rating": 5,
+    "text": "Matt and his crew did my two level deck in the winter of 2024/2025. The deck turned out beautifully with top notch Trex material. Mauro is the master deck builder and very communicative. His helper Jimmy is also very nice. The deck took longer to build as the weather was not great and the day light  was shorter. It’s also partially because Mauro and Jimmy paid attention to every detail. Thank you for a job well done! I look forward to warmer days when I can enjoy the deck.  I highly recommend Matt and his crew.",
+    "featured": true,
+    "verified": true,
+    "sample": false
+  },
+  {
+    "id": "g3",
+    "name": "Sho Yeh",
+    "rating": 5,
+    "text": "Matt was referred by a friend of mine at work for our remodeling project. Our schedule was very tight for the scope of work due to our rental property end day. Him and his team completed the entire project  with a few unexpected minor issues, they repaired the unexpected and stay on the original schedule. The workmanship is good and Matt/his team always reach out to confirm what we want before they starts. We enjoy the newly remodeled home and appreciate what his team has done for us.",
+    "featured": true,
+    "verified": true,
+    "sample": false
+  }
+]

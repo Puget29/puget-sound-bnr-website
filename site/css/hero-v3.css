@@ -1,0 +1,299 @@
+/* =========================================================
+   Hero v3. Loaded AFTER site.css.
+   v3 = hero draft v2 plus these design review fixes:
+   - headline in Outfit at a real display size (was Hanken 33 px, same weight tier as the nav)
+   - quieter announcement band, slower, pausable (was a loud gold bar looping forever)
+   - tap-to-call on phones, one button shape family (pills), skip control on the scroll bar
+   - shorter scroll runway, taller phone video frame, proof line at the final stage
+   - placeholder sections follow the dark palette and the nav anchors now land somewhere
+   Dark palette. Video and scrub behaviour are unchanged.
+   ========================================================= */
+:root {
+  --ink: #0c0c0c;
+  --card: #1a1a1a;
+  --paper: #ffffff;
+  --on-dark: #ffffff;
+  --on-dark-2: rgba(255, 255, 255, 0.8);
+  --line-dark: rgba(255, 255, 255, 0.16);
+  --muted: #888888;
+  --gold: #d4af37;
+  --gold-2: #c5a059;
+  --gold-l: #e6cf86;
+  --text: #f2f2f0;                       /* v3 ink: near-neutral bone (#f6f1e7 and #f3f1ed read as yellow-cream) */
+  --text-2: rgba(242, 242, 240, 0.84);   /* nav links at rest */
+  --banner-h: 36px;
+  --runway: 250; /* 190 for the video plus a 60 hold at the end (HOLD in js/hero-v3.js), the last line stays pinned */
+}
+.hero { background: var(--ink); }
+.hero__stick { background: #0a0d12; }
+
+/* ---------- Announcement band: quieter, slower, pausable ---------- */
+.banner {
+  position: fixed; inset: 0 0 auto 0; z-index: 90; height: var(--banner-h);
+  display: flex; align-items: center; overflow: hidden;
+  background: #121212; color: var(--gold-l);
+}
+.banner__track { display: flex; width: max-content; animation: bslide 70s linear infinite; }
+/* pause on pointer over the text, on keyboard focus, or when the button is pressed (a mouse click on the button is not keyboard focus) */
+.banner:has(:focus-visible) .banner__track, .banner.is-paused .banner__track { animation-play-state: paused; }
+@media (hover: hover) and (pointer: fine) { .banner__track:hover { animation-play-state: paused; } }
+.banner__group { display: flex; flex: none; }
+.banner__item {
+  display: inline-flex; align-items: center; gap: 28px; padding-left: 28px; white-space: nowrap;
+  font-size: 0.84rem; font-weight: 500; letter-spacing: 0.04em;
+}
+.banner__item::after { content: ""; width: 4px; height: 4px; border-radius: 50%; background: var(--gold); opacity: 0.7; }
+.banner__pause { /* WCAG 2.2.2: a way to stop motion that runs longer than 5 seconds */
+  position: absolute; right: 0; top: 0; z-index: 2; width: 40px; height: 100%; display: grid; place-items: center;
+  border: 0; cursor: pointer; color: var(--gold-l);
+  background: #121212;
+}
+.banner__pause:focus-visible { outline: 2px solid var(--gold-l); outline-offset: -3px; }
+.banner__pause svg { display: block; width: 12px; height: 12px; }
+.banner__pause .i-play { display: none; }
+.banner.is-paused .banner__pause .i-pause { display: none; }
+.banner.is-paused .banner__pause .i-play { display: block; }
+@keyframes bslide { to { transform: translateX(-50%); } }
+
+/* the header also owns the banner's strip, so hero.js's "solid bar" threshold stays right */
+.site-header { height: calc(var(--nav-h) + var(--banner-h)); padding-top: var(--banner-h); }
+.site-header::before { background: linear-gradient(to bottom, rgba(12, 12, 12, 0.82), rgba(12, 12, 12, 0)); }
+/* after the hero: a solid bar (same tone as the band above it, no blur, no hairline) that slides away on scroll down and back on scroll up */
+.site-header.is-solid { background: #121212; border-bottom-color: transparent; -webkit-backdrop-filter: none; backdrop-filter: none; }
+.site-header, .banner { transition: transform 0.45s cubic-bezier(0.22, 0.8, 0.2, 1), background-color 0.35s var(--ease), border-color 0.35s var(--ease), z-index 0s linear 0.5s; } /* z-index waits for the panel to finish sliding out */
+.site-header.is-hidden, .banner.is-hidden { transform: translateY(-100%); }
+.brand { flex-direction: row; align-items: center; gap: 10px; }
+.brand__mark { display: block; height: 38px; width: auto; flex: none; }
+.brand__name { font-family: var(--sans); font-weight: 600; font-size: 1.02rem; line-height: 1.08; letter-spacing: 0.01em; color: var(--text); } /* white: the copper from site.css disappeared against the bright sky at the final frame */
+@media (max-width: 900px) { .brand__mark { height: 34px; } .brand__name { font-size: 0.98rem; } }
+.pill { background: transparent; border: 0; box-shadow: none; padding: 0; gap: 6px; -webkit-backdrop-filter: none; backdrop-filter: none; }
+.site-header.is-solid .pill { background: transparent; }
+
+/* Flat navbar: no pill, no glass, bold white links, phone, outlined button. */
+.nav {
+  position: relative; height: 46px; margin-right: 0; padding: 0; gap: 4px; border-radius: 0; overflow: visible;
+  background: transparent; border: 0; box-shadow: none;
+  -webkit-backdrop-filter: none; backdrop-filter: none;
+}
+.nav .dock__item { z-index: 10; height: 100%; padding: 0 16px; font-size: 1rem; font-weight: 500; color: var(--text-2); transition: color 0.2s; }
+@media (hover: hover) and (pointer: fine) { .nav .dock__item:hover { color: var(--text); } }
+@media (hover: hover) and (pointer: fine) { .nav .dock__item:hover .dock__label { text-decoration: underline; text-decoration-color: var(--gold); text-decoration-thickness: 2px; text-underline-offset: 9px; } } /* flat gold underline, no glow */
+.nav .dock__item:focus-visible { outline: 2px solid rgba(255, 255, 255, 0.5); outline-offset: -2px; border-radius: 8px; }
+/* GlassDock effect (js/dock.js, subtle mode) */
+.dock__glass { display: none; }
+.nav .dock__item { transition: transform 0.25s ease; }
+.nav .dock__item.is-hover { transform: translateY(-1px); }
+.dock__tip { border-radius: 8px; box-shadow: none; }
+.dock__tipText span { font-size: 0.84rem; font-weight: 500; letter-spacing: 0.01em; }
+
+/* ---------- Buttons: one shape family (pills) ---------- */
+.btn, .pill__cta {
+  display: inline-flex; align-items: center; justify-content: center; height: 54px; padding: 0 30px; border-radius: 100px;
+  border: 1.5px solid rgba(255, 255, 255, 0.6); background: rgba(12, 12, 12, 0.62); color: var(--text);
+  font-family: var(--sans); font-weight: 600; font-size: 1.02rem; white-space: nowrap; cursor: pointer;
+  transition: background-color 0.25s, border-color 0.25s, color 0.25s;
+}
+@media (hover: hover) and (pointer: fine) { .btn:hover, .pill__cta:hover { background: rgba(255, 255, 255, 0.16); border-color: #fff; } }
+.btn:focus-visible, .pill__cta:focus-visible { outline: 2px solid var(--gold-l); outline-offset: 3px; }
+.pill__cta { border-color: var(--gold); }
+@media (hover: hover) and (pointer: fine) { .pill__cta:hover { background: rgba(212, 175, 55, 0.22); border-color: var(--gold-l); } }
+
+/* Primary CTA: gold pill, ink bold text, a solid ink circle holding a gold arrow. Hover goes lighter gold and the arrow nudges. */
+.btn.btn--primary {
+  height: 60px; padding: 8px 8px 8px 28px; border: 0; border-radius: 100px;
+  background: var(--gold); color: #0c0c0c; font-weight: 700; font-size: 1.0625rem; letter-spacing: 0; justify-content: center;
+  transition: background-color 0.2s, transform 0.2s;
+}
+@media (hover: hover) and (pointer: fine) { .btn.btn--primary:hover { background: var(--gold-l); } }
+.btn.btn--primary:active { transform: scale(0.97); }
+.btn.btn--primary:focus-visible { outline: 2px solid var(--gold-l); outline-offset: 3px; }
+.btn__arrow { width: 44px; height: 44px; margin-left: 16px; flex: none; color: #0c0c0c; transition: transform 0.3s ease-in-out; }
+.btn__arrow circle { fill: currentColor; stroke: none; }
+.btn__arrow path { fill: var(--gold); }
+@media (hover: hover) and (pointer: fine) { .btn--primary:hover .btn__arrow { transform: translateX(4px); } }
+
+/* header phone and button */
+.pill__cta { height: 46px; padding: 0 22px; font-size: 0.95rem; }
+
+/* ---------- Hero copy: bottom-left, headline in Outfit at display size ---------- */
+.hero__scrim {
+  background:
+    radial-gradient(ellipse 70% 80% at 0% 100%, rgba(12, 12, 12, 0.86) 0%, rgba(12, 12, 12, 0.54) 50%, rgba(12, 12, 12, 0) 100%),
+    linear-gradient(to top, rgba(12, 12, 12, 0.45) 0%, rgba(12, 12, 12, 0) 30%);
+}
+.hero__copy {
+  left: 0; right: auto; bottom: 0; width: min(100%, 52rem); text-align: left; align-items: flex-start;
+  padding-bottom: clamp(28px, 5vh, 52px);
+}
+.hero h1, .hero__flip {
+  font-family: var(--display); font-weight: 400; font-size: clamp(2.2rem, 4.2vw, 4rem); line-height: 1.08;
+  letter-spacing: -0.02em; max-width: 13em; text-wrap: balance; color: var(--text);
+}
+.hero__proof { /* the proof beat at the final stage: facts the client confirmed (Bellevue address, 5+ years, 27 cities) */
+  margin: 12px 0 0; min-height: 1.5em; font-size: 0.95rem; font-weight: 500; color: var(--gold-l); letter-spacing: 0.01em;
+  opacity: 0; transform: translateY(6px); transition: opacity 0.6s ease 0.25s, transform 0.6s ease 0.25s;
+}
+.hero.is-final .hero__proof { opacity: 1; transform: none; }
+.hero__cta .btn { height: 60px; }
+.hero__cta { margin-top: clamp(18px, 3vh, 26px); display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+
+/* ---------- Scroll cue: progress bar on the right, now also the skip control ----------
+   .hero__cue is the clickable container (24 px wide hit area). The 2 px line, its idle shimmer and its fill live in
+   .hero__cue-bar so they stay clipped to the line. */
+.hero__cue {
+  display: block; left: auto; bottom: auto; top: 50%; transform: translateY(-50%);
+  right: calc(max(var(--pad), env(safe-area-inset-right, 0px)) - 11px);
+  width: 24px; height: clamp(150px, 32svh, 320px); background: none; overflow: visible; cursor: pointer; --p: 0;
+}
+.hero__cue::after { display: none; } /* site.css draws the shimmer on the container, v3 draws it on the bar */
+.hero__cue.is-gone { opacity: 1; visibility: visible; }
+.hero__cue-bar { position: absolute; right: 11px; top: 0; width: 2px; height: 100%; border-radius: 2px; background: rgba(255, 255, 255, 0.2); overflow: hidden; }
+.hero__cue-bar::after { content: ""; position: absolute; inset: 0 0 auto 0; height: 50%; background: var(--on-dark); animation: cue 1.9s var(--ease) infinite; }
+.hero__cue-fill {
+  position: absolute; inset: 0 0 auto 0; height: calc(var(--p) * 100%); border-radius: 2px; background: var(--on-dark);
+  opacity: 0; transition: height 0.18s linear, opacity 0.25s;
+}
+.hero__cue.is-scrolling { opacity: clamp(0, calc((1 - var(--p)) * 10), 1); }
+.hero__cue.is-scrolling .hero__cue-bar::after { animation: none; opacity: 0; }
+.hero__cue.is-scrolling .hero__cue-fill { opacity: calc(0.4 + var(--p) * 0.6); }
+.hero__cue-label {
+  position: absolute; right: 24px; top: 50%; transform: translateY(-50%); white-space: nowrap;
+  font-size: 0.84rem; font-weight: 500; color: var(--text); opacity: 0; transition: opacity 0.2s; pointer-events: none;
+}
+.hero__cue:focus-visible .hero__cue-label { opacity: 1; }
+@media (hover: hover) and (pointer: fine) { .hero__cue:hover .hero__cue-label { opacity: 1; } }
+.hero__cue:focus-visible { outline: 2px solid var(--gold-l); outline-offset: 4px; border-radius: 4px; }
+
+/* ---------- Scroll-driven headline (FlipText effect, js/hero-v3-flip.js) ---------- */
+.js-flip .hero h1, .hero.has-flip h1 { /* js-flip is set in the head, so the plain h1 never flashes before the flip text */ position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.hero__flip { display: none; }
+.hero.has-flip .hero__flip { display: block; position: relative; margin: 0; perspective: 900px; min-height: 2.2em; width: 100%; }
+.hero__flip .fl { position: absolute; left: 0; bottom: 0; width: 100%; } /* bottom-anchored: a one-line stage sits next to the buttons, the empty line falls above it, over the video */
+.hero__flip .fw { display: inline-block; white-space: nowrap; transform-style: preserve-3d; }
+.hero__flip .fc { display: inline-block; transform-style: preserve-3d; backface-visibility: hidden; }
+.hero__flip .fl.is-in .fc { animation: fc-in 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) var(--d, 0s) both; }
+.hero__flip .fl.is-out .fc { animation: fc-out 0.36s cubic-bezier(0.5, 0, 0.9, 0.5) var(--d, 0s) both; }
+@keyframes fc-in {
+  from { opacity: 0; transform: rotateX(calc(var(--dir, 1) * -85deg)) translateY(calc(var(--dir, 1) * 0.3em)); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes fc-out {
+  from { opacity: 1; transform: none; }
+  to { opacity: 0; transform: rotateX(calc(var(--dir, 1) * 85deg)) translateY(calc(var(--dir, 1) * -0.3em)); }
+}
+
+/* ---------- Placeholder sections (dark palette, and the nav anchors land somewhere) ---------- */
+.next { min-height: 60svh; background: var(--ink); color: var(--on-dark); padding: clamp(64px, 12vh, 140px) max(var(--pad), env(safe-area-inset-left, 0px)); }
+.next p { margin: 0; font-size: 0.85rem; color: var(--on-dark-2); }
+.next h2 { margin: 12px 0 0; font-family: var(--display); font-weight: 300; font-size: clamp(1.8rem, 3.4vw, 3rem); letter-spacing: -0.02em; line-height: 1.1; max-width: 18em; }
+.next--stub { min-height: 36svh; padding-top: 56px; padding-bottom: 56px; padding-left: 24px; padding-right: 24px; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  :root { --banner-h: 34px; --runway: 260; } /* 200 for the video plus the 60 hold */
+  .pill__cta { display: none; } /* the Menu button takes over */
+  .hero__copy { width: 100%; padding-bottom: clamp(24px, 4.5vh, 44px); }
+  .site-header.menu-open { background: transparent; } /* the side panel and scrim sit over the header */
+}
+@media (max-width: 900px) and (orientation: portrait) {
+  .hero__stick:has(.hero__flip) .hero__cta { position: relative; top: clamp(29px, calc(168px - 9.9vw), 130px); }
+}
+@media (min-width: 901px) {
+  .hero__stick:has(.hero__flip) .hero__cta { position: relative; top: 13px; }
+}
+@media (min-width: 901px) and (max-width: 1399px) {
+  .hero__stick:has(.hero__flip) .hero__cta { top: 4px; }
+}
+/* Short phone viewports need the CTA group to clear the brand strip before the sticky stage releases. */
+@media (max-width: 700px) and (orientation: portrait) and (max-height: 630px) {
+  .hero { margin-bottom: 40px; }
+  .hero__stick:has(.hero__flip) .hero__cta { top: 0; }
+}
+@media (max-width: 700px) and (orientation: portrait) and (min-height: 631px) and (max-height: 680px) {
+  .hero__stick:has(.hero__flip) .hero__cta { top: 42px; }
+}
+@media (max-width: 700px) and (orientation: portrait) and (min-height: 681px) and (max-height: 760px) {
+  .hero__stick:has(.hero__flip) .hero__cta { top: calc(clamp(29px, calc(168px - 9.9vw), 130px) - max(61px, calc(772px - 100svh))); }
+}
+@media (max-width: 700px) and (orientation: portrait) {
+  .hero__stick { background: var(--ink); }
+  .hero__video { top: calc(var(--nav-h) + var(--banner-h) + 1svh); height: 50svh; } /* was 38svh: bigger frame, smaller dead band */
+  .hero__scrim { background: linear-gradient(to top, rgba(12, 12, 12, 0.92) 0%, rgba(12, 12, 12, 0) 40%); }
+  .hero h1, .hero__flip { font-size: clamp(1.9rem, 8.4vw, 2.5rem); }
+  .hero__proof { font-size: 0.88rem; margin-top: 10px; }
+  .hero__cta { gap: 10px; }
+  .hero__cta .btn--primary { flex: 1 1 100%; height: 56px; }
+  .btn__arrow { width: 40px; height: 40px; }
+  .hero__cta .btn--explore { flex: 1 1 100%; height: 48px; padding: 0 12px; }
+  .hero__cue { right: -2px; height: clamp(110px, 22svh, 190px); }
+  .hero__cue-label { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .banner__track { animation: none !important; }
+}
+#services, #process { background: #121212; } /* tone step between placeholder sections instead of a rule */
+.brand, .hero h1, .hero__flip { text-shadow: none; }
+
+/* ---------- Mobile menu: a side panel that slides in from the right (reference: modeinspect.com) ---------- */
+.menu-scrim {
+  position: fixed; inset: 0; z-index: 75; background: rgba(12, 12, 12, 0.62);
+  opacity: 0; visibility: hidden; transition: opacity 0.4s ease, visibility 0s linear 0.4s;
+}
+.menu-scrim.is-open { opacity: 1; visibility: visible; transition: opacity 0.4s ease, visibility 0s; }
+.menu {
+  position: fixed; z-index: 80; top: calc(var(--banner-h) + 8px); right: 8px; bottom: 8px; left: auto;
+  width: min(calc(100% - 16px), 440px); padding: 72px 12px 12px 24px; border-radius: 22px; /* top room for the Menu button, which stays above the panel and turns into the cross */
+  background: #151515; display: flex; flex-direction: column; gap: 0;
+  opacity: 1; visibility: hidden; transform: translateX(calc(100% + 24px));
+  transition: transform 0.5s cubic-bezier(0.22, 0.8, 0.2, 1), visibility 0s linear 0.5s;
+}
+.menu.is-open { visibility: visible; transform: none; transition: transform 0.5s cubic-bezier(0.22, 0.8, 0.2, 1), visibility 0s; }
+.menu__links { display: flex; flex-direction: column; margin-top: 20px; }
+.menu a.menu__link {
+  padding: 10px 0; border-bottom: 0; color: var(--text);
+  font-family: var(--display); font-weight: 300; font-size: clamp(2rem, 9.4vw, 2.7rem); line-height: 1.15; letter-spacing: -0.02em;
+  opacity: 0; transform: translateX(18px); transition: opacity 0.2s ease, transform 0s linear 0.5s, color 0.2s; /* leaving: a quick fade while the panel slides out, no drift, then reset */
+}
+@media (hover: hover) and (pointer: fine) { .menu a.menu__link:hover { color: var(--gold-l); } }
+.menu.is-open a.menu__link { opacity: 1; transform: none; transition: opacity 0.35s ease, transform 0.45s cubic-bezier(0.22, 0.8, 0.2, 1), color 0.2s; }
+.menu.is-open a.menu__link:nth-child(1) { transition-delay: 0.14s, 0.14s, 0s; }
+.menu.is-open a.menu__link:nth-child(2) { transition-delay: 0.20s, 0.20s, 0s; }
+.menu.is-open a.menu__link:nth-child(3) { transition-delay: 0.26s, 0.26s, 0s; }
+.menu.is-open a.menu__link:nth-child(4) { transition-delay: 0.32s, 0.32s, 0s; }
+.menu__foot { margin-top: auto; display: block; padding: 10px; border-radius: 16px; background: #1d1d1d; }
+.menu__foot .btn { width: 100%; height: 56px; }
+
+/* ---------- Menu button (phones): three right-aligned bars on a flat tile, in BNR colours ---------- */
+.menu-toggle__label { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; } /* the name stays for screen readers, the icon is the visual */
+.menu-toggle__icon { display: flex; flex-direction: column; justify-content: space-between; align-items: flex-end; width: 24px; height: 18px; transition: transform 0.4s cubic-bezier(0.22, 0.8, 0.2, 1); }
+.menu-toggle__icon i { display: block; width: 100%; height: 3px; border-radius: 2px; background: var(--text); transition: width 0.4s cubic-bezier(0.22, 0.8, 0.2, 1), transform 0.4s cubic-bezier(0.22, 0.8, 0.2, 1), background-color 0.3s; }
+.menu-toggle__icon i:nth-child(2) { width: 75%; }
+.menu-toggle__icon i:nth-child(3) { width: 50%; }
+@media (hover: hover) { /* mouse only, so a tap on a phone never leaves the icon stuck in its hover pose */
+  .menu-toggle:hover .menu-toggle__icon { transform: rotate(-90deg); }
+  .menu-toggle:hover .menu-toggle__icon i { width: 3px; transform: translateX(-8px); background: var(--gold); }
+}
+@media (max-width: 900px) {
+  .menu-toggle {
+    width: 48px; height: 48px; padding: 0; gap: 0; justify-content: center; border: 0; border-radius: 16px;
+    background: #181818; transition: background-color 0.2s;
+    -webkit-backdrop-filter: none; backdrop-filter: none;
+  }
+  .menu-toggle { transition: background-color 0.2s, transform 0.2s cubic-bezier(0.22, 0.8, 0.2, 1); }
+  .menu-toggle:active { background: #232323; transform: scale(0.94); }
+  .menu-toggle:active .menu-toggle__icon i { background: var(--gold); } /* press only changes colour and size: the shape change belongs to hover (mouse) and open (click), so a tap never fights the morph */
+  .menu-toggle:focus-visible { outline: 2px solid var(--gold-l); outline-offset: 3px; }
+}
+
+/* Open: the same button turns into a cross (outer bars cross, middle one fades). Last in the file so it beats the hover and press poses above. */
+.menu-toggle__icon i:nth-child(2) { transition: width 0.4s cubic-bezier(0.22, 0.8, 0.2, 1), transform 0.4s cubic-bezier(0.22, 0.8, 0.2, 1), background-color 0.3s, opacity 0.2s; }
+.menu-toggle[aria-expanded="true"] .menu-toggle__icon { transform: none; }
+.menu-toggle[aria-expanded="true"] .menu-toggle__icon i { width: 100%; background: var(--text); transform: none; }
+.menu-toggle[aria-expanded="true"] .menu-toggle__icon i:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+.menu-toggle[aria-expanded="true"] .menu-toggle__icon i:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.menu-toggle[aria-expanded="true"] .menu-toggle__icon i:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
+@media (max-width: 900px) { .menu-toggle[aria-expanded="true"] { background: #232323; } }
+@media (hover: hover) { .menu-toggle[aria-expanded="true"]:hover .menu-toggle__icon i { background: var(--gold); } } /* no turn while open: closing with the pointer still on it would spin the icon the wrong way */
+.menu-toggle[aria-expanded="true"]:active .menu-toggle__icon i { background: var(--gold); }
+
+.site-header.menu-open { z-index: 85; transition: transform 0.45s cubic-bezier(0.22, 0.8, 0.2, 1), background-color 0.35s var(--ease), border-color 0.35s var(--ease), z-index 0s; } /* above the panel (80), so the Menu button stays in place and works as the close control */

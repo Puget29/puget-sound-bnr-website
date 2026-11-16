@@ -1,0 +1,27 @@
+# dependencies
+node_modules/
+
+# build output (recreated by the build commands in README.md)
+build/
+dist-live-home/
+dist-live-home-zips/
+site/v4/_root/
+site/v4/*.html
+site/v4/*/index.html
+site/css/site.min.css
+site/js/site.min.js
+
+# local files
+.env
+.env.*
+*.log
+npm-debug.log*
+__pycache__/
+*.pyc
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

@@ -1,0 +1,33 @@
+{
+  "note": "One list feeds the hero chips and the What we build section. Every item traces to the client's flyer (client-flyer), the client list of 2026-10-16 (client-list) or the main site. Items with no flyer source stay hidden (hidden: true, data-confirm=service) until the client confirms. Cards come from service-photos.json, this file keeps the form chips and the compact pill list (more).",
+  "chips": [
+    {
+      "value": "Kitchen",
+      "label": "Kitchen"
+    },
+    {
+      "value": "Bathroom",
+      "label": "Bathroom"
+    },
+    {
+      "value": "ADU or DADU",
+      "label": "ADU or DADU"
+    },
+    {
+      "value": "full-house-remodeling",
+      "label": "Full house"
+    },
+    {
+      "value": "Roofing",
+      "label": "Roofing"
+    },
+    {
+      "value": "Decks and outdoor",
+      "label": "Decks and outdoor"
+    },
+    {
+      "value": "Something else",
+      "label": "Something else"
+    }
+  ]
+}

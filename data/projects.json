@@ -1,0 +1,1183 @@
+[
+  {
+    "id": "project-01",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 960,
+    "alt": "Kitchen with white cabinets, a butcher block island and wood floors",
+    "caption": "",
+    "service": "kitchen"
+  },
+  {
+    "id": "project-02",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 1920,
+    "alt": "Aerial view of a shingle roof on a two story home with a covered porch",
+    "caption": "",
+    "service": "roofing"
+  },
+  {
+    "id": "project-03",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 960,
+    "alt": "ADU construction in a backyard with framing lumber stacked beside the new slab",
+    "caption": "",
+    "service": "adu"
+  },
+  {
+    "id": "project-04",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 2160,
+    "alt": "Kitchen window with a stainless faucet over a patterned tile backsplash",
+    "caption": "",
+    "service": "kitchen"
+  },
+  {
+    "id": "project-05",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 1080,
+    "alt": "Roof and upper windows of a two story home seen from above",
+    "caption": "",
+    "service": "roofing"
+  },
+  {
+    "id": "project-06",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 960,
+    "alt": "Stacks of framing lumber ready on site next to a new ADU slab",
+    "caption": "",
+    "service": "adu"
+  },
+  {
+    "id": "project-07",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 2160,
+    "alt": "Bathroom with a tiled glass shower and a white vanity",
+    "caption": "",
+    "service": "bathroom"
+  },
+  {
+    "id": "project-08",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 1920,
+    "alt": "Aerial view of a home's roof and siding from the side",
+    "caption": "",
+    "service": "roofing"
+  },
+  {
+    "id": "project-09",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 960,
+    "alt": "Crew framing the floor of an ADU on a concrete foundation",
+    "caption": "",
+    "service": "adu"
+  },
+  {
+    "id": "project-10",
+    "widths": [
+      640,
+      960
+    ],
+    "w": 960,
+    "h": 960,
+    "alt": "Deck with two black rocking chairs and a metal railing overlooking hills",
+    "caption": "",
+    "src": "client-oct30/deck.jpg",
+    "service": "deck"
+  },
+  {
+    "id": "project-11",
+    "widths": [
+      640,
+      960
+    ],
+    "w": 960,
+    "h": 639,
+    "alt": "Open living area with a kitchen island, staircase and wood floors",
+    "caption": "",
+    "src": "client-oct30/full-house.jpg",
+    "service": "kitchen"
+  },
+  {
+    "id": "project-12",
+    "widths": [
+      640,
+      960
+    ],
+    "w": 960,
+    "h": 540,
+    "alt": "Close up of light wood flooring planks",
+    "caption": "",
+    "src": "client-oct30/flooring.jpg",
+    "service": "flooring"
+  },
+  {
+    "id": "project-13",
+    "widths": [
+      640,
+      960
+    ],
+    "w": 960,
+    "h": 538,
+    "alt": "Two story house with wood framing at a construction site",
+    "caption": "",
+    "src": "client-oct30/adu-house.jpg",
+    "service": "adu"
+  },
+  {
+    "id": "project-14",
+    "widths": [
+      612,
+      960
+    ],
+    "w": 612,
+    "h": 459,
+    "alt": "Blue house siding with a white corner post",
+    "caption": "",
+    "src": "client-oct30/siding.jpg",
+    "service": "siding"
+  },
+  {
+    "id": "kitchen-01",
+    "service": "kitchen",
+    "job": "kitchen-green",
+    "real": true,
+    "stock": false,
+    "orientation": "landscape",
+    "widths": [
+      640,
+      960,
+      1440,
+      1920
+    ],
+    "w": 1920,
+    "h": 1280,
+    "alt": "Open kitchen with green cabinets, a butcher block island and bar stools",
+    "caption": "",
+    "objectPosition": "50% 50%"
+  },
+  {
+    "id": "kitchen-02",
+    "service": "kitchen",
+    "job": "kitchen-gray",
+    "real": true,
+    "stock": false,
+    "orientation": "landscape",
+    "widths": [
+      640,
+      960,
+      1440,
+      1920
+    ],
+    "w": 1920,
+    "h": 1280,
+    "alt": "Kitchen with white cabinets, a dark island and a sliding glass door to the yard",
+    "caption": "",
+    "objectPosition": "50% 50%"
+  },
+  {
+    "id": "kitchen-03",
+    "service": "kitchen",
+    "job": "kitchen-green",
+    "real": true,
+    "stock": false,
+    "orientation": "landscape",
+    "widths": [
+      640,
+      960,
+      1440,
+      1920
+    ],
+    "w": 1920,
+    "h": 1280,
+    "alt": "Kitchen with green cabinets, a butcher block island and a stainless sink",
+    "caption": "",
+    "objectPosition": "50% 50%"
+  },
+  {
+    "id": "kitchen-04",
+    "service": "kitchen",
+    "job": "kitchen-gray",
+    "real": true,
+    "stock": false,
+    "orientation": "landscape",
+    "widths": [
+      640,
+      960,
+      1440,
+      1920
+    ],
+    "w": 1920,
+    "h": 1280,
+    "alt": "Kitchen sink under a window with white cabinets and a black range",
+    "caption": "",
+    "objectPosition": "50% 50%"
+  },
+  {
+    "id": "kitchen-05",
+    "service": "kitchen",
+    "job": "kitchen-green",
+    "real": true,
+    "stock": false,
+    "orientation": "landscape",
+    "widths": [
+      640,
+      960,
+      1440,
+      1920
+    ],
+    "w": 1920,
+    "h": 1280,
+    "alt": "Green cabinets, a stainless refrigerator and a range in a remodeled kitchen",
+    "caption": "",
+    "objectPosition": "50% 50%"
+  },
+  {
+    "id": "kitchen-06",
+    "service": "kitchen",
+    "job": "kitchen-gray",
+    "real": true,
+    "stock": false,
+    "orientation": "landscape",
+    "widths": [
+      640,
+      960,
+      1440,
+      1920
+    ],
+    "w": 1920,
+    "h": 1280,
+    "alt": "White cabinets, a tile backsplash, a range hood and a quartz counter",
+    "caption": "",
+    "objectPosition": "50% 50%"
+  },
+  {
+    "id": "kitchen-07",
+    "service": "kitchen",
+    "job": "kitchen-green",
+    "real": true,
+    "stock": false,
+    "orientation": "landscape",
+    "widths": [
+      640,
+      960,
+      1440,
+      1920
+    ],
+    "w": 1920,
+    "h": 1280,
+    "alt": "Kitchen with green cabinets and an island open to the living room",
+    "caption": "",
+    "objectPosition": "50% 50%"
+  },
+  {
+    "id": "kitchen-08",
+    "service": "kitchen",
+    "job": "kitchen-green",
+    "real": true,
+    "stock": false,
+    "orientation": "landscape",
+    "widths": [
+      640,
+      960,
+      1440,
+      1920
+    ],
+    "w": 1920,
+    "h": 1280,
+    "alt": "Green kitchen cabinets with white quartz counters and a stainless dishwasher",
+    "caption": "",
+    "objectPosition": "50% 50%"
+  },
+  {
+    "id": "project-15",
+    "widths": [
+      640,
+      960,
+      1440,
+      1920
+    ],
+    "w": 1440,
+    "h": 960,
+    "alt": "Walk in shower with tile walls and a bench next to a stacked washer and dryer",
+    "caption": "",
+    "service": "bathroom",
+    "job": "bathroom-shower",
+    "real": true,
+    "stock": false,
+    "orientation": "landscape",
+    "objectPosition": "70% 50%"
+  },
+  {
+    "id": "project-16",
+    "widths": [
+      640,
+      960,
+      1440,
+      1920
+    ],
+    "w": 1440,
+    "h": 2160,
+    "alt": "Walk in shower with tile walls, a bench and a rain shower head",
+    "caption": "",
+    "service": "bathroom",
+    "job": "bathroom-shower",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 62%"
+  },
+  {
+    "id": "project-17",
+    "widths": [
+      640,
+      960,
+      1440,
+      1920
+    ],
+    "w": 1440,
+    "h": 2160,
+    "alt": "Tiled walk in shower with a glass door and a wood bench",
+    "caption": "",
+    "service": "bathroom",
+    "job": "bathroom-shower",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 62%"
+  },
+  {
+    "id": "project-18",
+    "widths": [
+      640,
+      960,
+      1440,
+      1920
+    ],
+    "w": 1440,
+    "h": 2160,
+    "alt": "Bathroom with a tiled walk in shower, a white vanity and wood look flooring",
+    "caption": "",
+    "service": "bathroom",
+    "job": "bathroom-shower",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 55%"
+  },
+  {
+    "id": "project-19",
+    "widths": [
+      640,
+      960
+    ],
+    "w": 960,
+    "h": 1280,
+    "alt": "Finished kitchen with dark cabinets and a white quartz island",
+    "caption": "",
+    "service": "kitchen",
+    "job": "kitchen-navy",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 62%"
+  },
+  {
+    "id": "project-20",
+    "widths": [
+      640,
+      960
+    ],
+    "w": 960,
+    "h": 1280,
+    "alt": "Kitchen with dark cabinets and a long white quartz counter",
+    "caption": "",
+    "service": "kitchen",
+    "job": "kitchen-navy",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 70%"
+  },
+  {
+    "id": "project-21",
+    "widths": [
+      640,
+      960
+    ],
+    "w": 960,
+    "h": 1280,
+    "alt": "Dark cabinets, a stainless microwave and a marble look backsplash",
+    "caption": "",
+    "service": "kitchen",
+    "job": "kitchen-navy",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 45%"
+  },
+  {
+    "id": "project-22",
+    "widths": [
+      640,
+      960
+    ],
+    "w": 960,
+    "h": 1280,
+    "alt": "Kitchen with dark cabinets, a quartz counter and a wood look floor",
+    "caption": "",
+    "service": "kitchen",
+    "job": "kitchen-navy",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 55%"
+  },
+  {
+    "id": "project-23",
+    "widths": [
+      640,
+      960
+    ],
+    "w": 960,
+    "h": 1280,
+    "alt": "Kitchen with a white quartz island and dark cabinets",
+    "caption": "",
+    "service": "kitchen",
+    "job": "kitchen-navy",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 65%"
+  },
+  {
+    "id": "project-24",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 1920,
+    "alt": "Finished kitchen with sage green cabinets and a white quartz counter",
+    "caption": "",
+    "service": "kitchen",
+    "job": "kitchen-green-wife",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 55%"
+  },
+  {
+    "id": "project-25",
+    "widths": [
+      640,
+      960
+    ],
+    "w": 960,
+    "h": 1461,
+    "alt": "Bathroom with a glass shower, marble look tile and a freestanding tub",
+    "caption": "",
+    "service": "bathroom",
+    "job": "bathroom-wife",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 55%"
+  },
+  {
+    "id": "project-26",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 1920,
+    "alt": "Shower with marble look tile and a black framed glass door",
+    "caption": "",
+    "service": "bathroom",
+    "job": "bathroom-wife",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 50%"
+  },
+  {
+    "id": "project-27",
+    "widths": [
+      640,
+      960
+    ],
+    "w": 900,
+    "h": 1600,
+    "alt": "Bathroom with a white vanity, a framed mirror and marble look floor tile",
+    "caption": "",
+    "service": "bathroom",
+    "job": "bathroom-wife",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 55%"
+  },
+  {
+    "id": "project-28",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 1080,
+    "alt": "Roof with new shingles and two skylights",
+    "caption": "",
+    "service": "roofing",
+    "job": "roof-skylights",
+    "real": true,
+    "stock": false,
+    "orientation": "landscape",
+    "objectPosition": "50% 55%"
+  },
+  {
+    "id": "project-29",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 1080,
+    "alt": "Roof with new shingles, a ridge and skylights",
+    "caption": "",
+    "service": "roofing",
+    "job": "roof-skylights",
+    "real": true,
+    "stock": false,
+    "orientation": "landscape",
+    "objectPosition": "50% 55%"
+  },
+  {
+    "id": "project-30",
+    "widths": [
+      640,
+      960
+    ],
+    "w": 960,
+    "h": 1280,
+    "alt": "Skylight on a new shingle roof",
+    "caption": "",
+    "service": "roofing",
+    "job": "roof-skylights",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 42%"
+  },
+  {
+    "id": "project-31",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 1920,
+    "alt": "Skylight set into a new shingle roof",
+    "caption": "",
+    "service": "roofing",
+    "job": "roof-skylights",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 45%"
+  },
+  {
+    "id": "project-32",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 1920,
+    "alt": "New shingle roof with a ridge line and skylights",
+    "caption": "",
+    "service": "roofing",
+    "job": "roof-skylights",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 35%"
+  },
+  {
+    "id": "project-33",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 1920,
+    "alt": "New shingle roof with a ridge line and two skylights",
+    "caption": "",
+    "service": "roofing",
+    "job": "roof-skylights",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 35%"
+  },
+  {
+    "id": "project-34",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 1920,
+    "alt": "New shingle roof with a skylight",
+    "caption": "",
+    "service": "roofing",
+    "job": "roof-skylights",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 50%"
+  },
+  {
+    "id": "project-35",
+    "widths": [
+      640,
+      960
+    ],
+    "w": 960,
+    "h": 1280,
+    "alt": "Close view of a skylight on a new shingle roof",
+    "caption": "",
+    "service": "roofing",
+    "job": "roof-skylights",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 40%"
+  },
+  {
+    "id": "project-36",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 1920,
+    "alt": "Ridge cap and new shingles on a roof",
+    "caption": "",
+    "service": "roofing",
+    "job": "roof-skylights",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 45%"
+  },
+  {
+    "id": "project-37",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 1920,
+    "alt": "Roof with new shingles, flashing and skylights",
+    "caption": "",
+    "service": "roofing",
+    "job": "roof-skylights",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 40%"
+  },
+  {
+    "id": "project-38",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 1920,
+    "alt": "Roof deck with plywood sheathing in progress",
+    "caption": "",
+    "service": "roofing",
+    "job": "roof-decking",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 50%"
+  },
+  {
+    "id": "project-39",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 1920,
+    "alt": "Roof deck and underlayment during a roof replacement",
+    "caption": "",
+    "service": "roofing",
+    "job": "roof-decking",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 55%"
+  },
+  {
+    "id": "project-40",
+    "widths": [
+      640,
+      960
+    ],
+    "w": 960,
+    "h": 540,
+    "alt": "Aerial view of a roof with the old shingles removed",
+    "caption": "",
+    "service": "roofing",
+    "job": "roof-tearoff",
+    "real": true,
+    "stock": false,
+    "orientation": "landscape",
+    "objectPosition": "50% 50%",
+    "lowres": true
+  },
+  {
+    "id": "project-41",
+    "widths": [
+      640,
+      960
+    ],
+    "w": 960,
+    "h": 540,
+    "alt": "Home with a roof tear off in progress",
+    "caption": "",
+    "service": "roofing",
+    "job": "roof-tearoff",
+    "real": true,
+    "stock": false,
+    "orientation": "landscape",
+    "objectPosition": "50% 50%",
+    "lowres": true
+  },
+  {
+    "id": "project-42",
+    "widths": [
+      640,
+      960
+    ],
+    "w": 960,
+    "h": 540,
+    "alt": "Aerial view of a home with a dark roof beside the water",
+    "caption": "",
+    "service": "roofing",
+    "job": "roof-aerial-water",
+    "real": true,
+    "stock": false,
+    "orientation": "landscape",
+    "objectPosition": "50% 60%",
+    "lowres": true
+  },
+  {
+    "id": "project-43",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 1080,
+    "alt": "Composite deck with a black railing",
+    "caption": "",
+    "service": "deck",
+    "job": "deck-composite-black-rail",
+    "real": true,
+    "stock": false,
+    "orientation": "landscape",
+    "objectPosition": "50% 55%"
+  },
+  {
+    "id": "project-44",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 1080,
+    "alt": "Composite deck with a black railing along a sloped yard",
+    "caption": "",
+    "service": "deck",
+    "job": "deck-composite-black-rail",
+    "real": true,
+    "stock": false,
+    "orientation": "landscape",
+    "objectPosition": "50% 55%"
+  },
+  {
+    "id": "project-45",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 1080,
+    "alt": "Composite deck boards with a black metal railing",
+    "caption": "",
+    "service": "deck",
+    "job": "deck-composite-black-rail",
+    "real": true,
+    "stock": false,
+    "orientation": "landscape",
+    "objectPosition": "50% 55%"
+  },
+  {
+    "id": "project-46",
+    "widths": [
+      640,
+      960
+    ],
+    "w": 960,
+    "h": 1280,
+    "alt": "Composite deck with a black railing beside the house",
+    "caption": "",
+    "service": "deck",
+    "job": "deck-composite-black-rail",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 40%"
+  },
+  {
+    "id": "project-47",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 1080,
+    "alt": "Covered patio with wide steps down to the yard",
+    "caption": "",
+    "service": "deck",
+    "job": "deck-covered-patio",
+    "real": true,
+    "stock": false,
+    "orientation": "landscape",
+    "objectPosition": "50% 55%"
+  },
+  {
+    "id": "project-48",
+    "widths": [
+      640,
+      960
+    ],
+    "w": 960,
+    "h": 1280,
+    "alt": "Deck corner with a black railing",
+    "caption": "",
+    "service": "deck",
+    "job": "deck-rail-corner",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 55%"
+  },
+  {
+    "id": "project-49",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 959,
+    "alt": "Open living area with a hardwood floor and a kitchen island",
+    "caption": "",
+    "service": "general",
+    "job": "hero-living",
+    "real": true,
+    "stock": false,
+    "orientation": "landscape",
+    "objectPosition": "50% 62%"
+  },
+  {
+    "id": "project-50",
+    "widths": [
+      640,
+      900
+    ],
+    "w": 900,
+    "h": 1600,
+    "alt": "Roof with new shingles and a vent",
+    "caption": "",
+    "service": "roofing",
+    "job": "roof-nov4",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 78%"
+  },
+  {
+    "id": "project-51",
+    "widths": [
+      640,
+      900
+    ],
+    "w": 900,
+    "h": 1600,
+    "alt": "Roof with new shingles and a metal edge",
+    "caption": "",
+    "service": "roofing",
+    "job": "roof-nov4",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 55%"
+  },
+  {
+    "id": "project-52",
+    "widths": [
+      640,
+      900
+    ],
+    "w": 900,
+    "h": 1600,
+    "alt": "Roof with new shingles and a ridge",
+    "caption": "",
+    "service": "roofing",
+    "job": "roof-nov4",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 35%"
+  },
+  {
+    "id": "project-53",
+    "widths": [
+      640,
+      900
+    ],
+    "w": 900,
+    "h": 1600,
+    "alt": "Roof with new shingles and a skylight",
+    "caption": "",
+    "service": "roofing",
+    "job": "roof-nov4",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 25%"
+  },
+  {
+    "id": "project-54",
+    "widths": [
+      640,
+      900
+    ],
+    "w": 900,
+    "h": 1600,
+    "alt": "Wide roof surface with new shingles",
+    "caption": "",
+    "service": "roofing",
+    "job": "roof-nov4",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 30%"
+  },
+  {
+    "id": "project-55",
+    "widths": [
+      640,
+      900
+    ],
+    "w": 900,
+    "h": 1600,
+    "alt": "Roof with new shingles and a ridge cap",
+    "caption": "",
+    "service": "roofing",
+    "job": "roof-nov4",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 45%"
+  },
+  {
+    "id": "project-56",
+    "widths": [
+      640,
+      900
+    ],
+    "w": 900,
+    "h": 1600,
+    "alt": "Roof with new shingles and a chimney",
+    "caption": "",
+    "service": "roofing",
+    "job": "roof-nov4",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 20%"
+  },
+  {
+    "id": "project-57",
+    "widths": [
+      640,
+      900
+    ],
+    "w": 900,
+    "h": 1600,
+    "alt": "Roof with new shingles and a ridge line",
+    "caption": "",
+    "service": "roofing",
+    "job": "roof-nov4",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 45%"
+  },
+  {
+    "id": "project-58",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 1920,
+    "alt": "ADU with a finished second story and siding in a backyard",
+    "caption": "",
+    "service": "adu",
+    "job": "adu-nov5",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 45%"
+  },
+  {
+    "id": "project-59",
+    "widths": [
+      640,
+      960
+    ],
+    "w": 960,
+    "h": 720,
+    "alt": "Wood framed shell of a two story ADU under construction",
+    "caption": "",
+    "service": "adu",
+    "job": "adu-nov5",
+    "real": true,
+    "stock": false,
+    "orientation": "landscape",
+    "objectPosition": "50% 50%"
+  },
+  {
+    "id": "project-60",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 1920,
+    "alt": "ADU under construction with a framed second story and house wrap",
+    "caption": "",
+    "service": "adu",
+    "job": "adu-nov5",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 40%"
+  },
+  {
+    "id": "project-61",
+    "widths": [
+      640,
+      960,
+      1440
+    ],
+    "w": 1440,
+    "h": 1080,
+    "alt": "Aerial view of a home with a new shingle roof",
+    "caption": "",
+    "service": "roofing",
+    "job": "roof-nov5",
+    "real": true,
+    "stock": false,
+    "orientation": "landscape",
+    "objectPosition": "50% 45%"
+  },
+  {
+    "id": "project-62",
+    "widths": [
+      640,
+      960
+    ],
+    "w": 960,
+    "h": 1281,
+    "alt": "Aerial view of a home with a new roof among tall trees",
+    "caption": "",
+    "service": "roofing",
+    "job": "roof-nov5",
+    "real": true,
+    "stock": false,
+    "orientation": "portrait",
+    "objectPosition": "50% 68%"
+  }
+]

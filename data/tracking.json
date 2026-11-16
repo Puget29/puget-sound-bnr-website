@@ -1,0 +1,11 @@
+{
+  "note": "Google tags for the live pages only (tools/home-live.py). Each part can be switched off with enabled false. GTM and the Ads tag can double count if the Ads tag is also fired inside the GTM container.",
+  "gtm": {
+    "enabled": true,
+    "id": "GTM-5GWHPH4F"
+  },
+  "googleAds": {
+    "enabled": true,
+    "id": "AW-11407351767"
+  }
+}

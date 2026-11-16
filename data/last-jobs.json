@@ -1,0 +1,20 @@
+{
+  "note": "Check our last jobs. Ordered ids from projects.json: real finished or in progress jobs only (real true, stock false, no renders, no before photos). Add the client's later photos by editing this list only. Keep neighbors from different services and no lowres photo in the first six. limitInitial is how many tiles show before Show more.",
+  "limitInitial": 6,
+  "ids": [
+    "kitchen-01",
+    "project-43",
+    "project-28",
+    "project-15",
+    "project-19",
+    "project-47",
+    "project-29",
+    "project-26",
+    "kitchen-03",
+    "project-44",
+    "project-31",
+    "project-16",
+    "project-24",
+    "project-48"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "google": {
+    "file": "/assets/logos/ppc/google.svg",
+    "w": 103,
+    "h": 33
+  },
+  "bbb": {
+    "file": "/assets/logos/ppc/bbb.svg",
+    "w": 98,
+    "h": 40
+  },
+  "yelp": {
+    "file": "/assets/logos/ppc/yelp.svg",
+    "w": 99,
+    "h": 38
+  },
+  "houzz": {
+    "file": "/assets/logos/ppc/houzz.svg",
+    "w": 108,
+    "h": 35
+  },
+  "angi": {
+    "file": "/assets/logos/ppc/angi.webp",
+    "w": 67,
+    "h": 40
+  },
+  "facebook": {
+    "file": "/assets/logos/ppc/facebook.webp",
+    "w": 40,
+    "h": 40
+  },
+  "gaf": {
+    "file": "/assets/logos/ppc/gaf.svg",
+    "w": 71,
+    "h": 42
+  },
+  "james-hardie": {
+    "file": "/assets/logos/ppc/james-hardie.svg",
+    "w": 132,
+    "h": 27
+  },
+  "floor-and-decor": {
+    "file": "/assets/logos/ppc/floor-and-decor.svg",
+    "w": 110,
+    "h": 30
+  },
+  "home-depot": {
+    "file": "/assets/logos/ppc/home-depot.webp",
+    "w": 48,
+    "h": 48
+  },
+  "sherwin-williams": {
+    "file": "/assets/logos/ppc/sherwin-williams.svg",
+    "w": 136,
+    "h": 13
+  }
+}
