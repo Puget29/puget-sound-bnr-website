@@ -6,3 +6,15 @@
 
 [build.environment]
   NODE_VERSION = "20"
+
+# The contact page file lives at /contact/ for the WordPress build.
+# The public address is /contact-us/.
+[[redirects]]
+  from = "/contact"
+  to = "/contact-us/"
+  status = 301
+
+[[redirects]]
+  from = "/contact/"
+  to = "/contact-us/"
+  status = 301

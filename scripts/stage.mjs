@@ -24,6 +24,28 @@ fs.rmSync(stage, { recursive: true, force: true });
 fs.mkdirSync(stage, { recursive: true });
 fs.cpSync(path.join('site', 'v4', '_root'), stage, { recursive: true });
 fs.cpSync(path.join('site', 'assets'), path.join(stage, 'assets'), { recursive: true });
+fs.mkdirSync(path.join(stage, 'contact-us'), { recursive: true });
+fs.copyFileSync(path.join(stage, 'contact', 'index.html'), path.join(stage, 'contact-us', 'index.html'));
+// Some service pages are linked at a public address that is not the folder they are generated in.
+const serviceLinks = JSON.parse(fs.readFileSync(path.join('tools', 'v4-links.json'), 'utf8')).servicePages;
+const serviceFiles = {
+  'kitchen-remodeling': 'our-services/kitchen-remodeling/index.html',
+  'bathroom-remodeling': 'our-services/bathroom-remodeling/index.html',
+  'roofing': 'our-services/roofing/index.html',
+  'deck-building': 'our-services/deck-building/index.html',
+  'adu-garage-conversion': 'our-services/adu-garage-conversion/index.html',
+  siding: 'our-services/siding/index.html',
+  flooring: 'our-services/flooring/index.html',
+  painting: 'our-services/painting/index.html',
+};
+for (const [key, file] of Object.entries(serviceFiles)) {
+  const published = '/' + file.replace(/index\.html$/, '');
+  const target = serviceLinks[key];
+  if (!target || target === published) continue;
+  const dest = path.join(stage, target.replace(/^\/|\/$/g, ''), 'index.html');
+  fs.mkdirSync(path.dirname(dest), { recursive: true });
+  fs.copyFileSync(path.join(stage, file), dest);
+}
 for (const [from, to] of [['css/site.min.css', 'css/site.min.css'], ['js/site.min.js', 'js/site.min.js'], ['vendor/gsap.min.js', 'vendor/gsap.min.js'], ['favicon.ico', 'favicon.ico'], ['apple-touch-icon.png', 'apple-touch-icon.png']]) {
   fs.mkdirSync(path.dirname(path.join(stage, to)), { recursive: true });
   fs.copyFileSync(path.join('site', from), path.join(stage, to));

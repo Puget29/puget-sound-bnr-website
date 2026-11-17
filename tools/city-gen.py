@@ -105,7 +105,7 @@ def _city_page(city, slug, facts, template):
            "areaServed": {"@type": "City", "name": city}, "url": SITE + path},
           faq_ld([(q, [a]) for q, a in faq_pairs])]
     page = (head(meta["TITLE TAG"], meta["META DESCRIPTION"], path, _UP, preload, ld)
-            + '<body class="long-service-page-body">\n<a class="skip" href="#main">Skip to content</a>\n' + banner() + header(_UP, "services", False) + "".join(parts))
+            + '<body class="long-service-page-body">\n<a class="skip" href="#main">Skip to content</a>\n' + banner() + header(_UP, "areas", False) + "".join(parts))
     page = page.replace('href="../"', f'href="{_UP}"')
     shown = _cr.sub(r'<article class="sv-rev.*?</article>', "", page, flags=_cr.S)
     if "WhatsApp" in shown or "wa.me" in shown: raise SystemExit(f"city page {city}: must not include WhatsApp")
@@ -181,7 +181,7 @@ def _build_hub():
     parts = [hero, grid_sec, svc_sec, dont_sec, _reviews(), close_sec, form + "</main>\n" + footer(_UP) + mbar(_UP) + scripts(_UP, False) + "</body>\n</html>\n"]
     ld = [org_ld(), _crumb_ld([("Home", "/"), ("Areas We Serve", path)])]
     page = (head(title, desc, path, _UP, preload, ld)
-            + '<body class="long-service-page-body">\n<a class="skip" href="#main">Skip to content</a>\n' + banner() + header(_UP, "services", False) + "".join(parts))
+            + '<body class="long-service-page-body">\n<a class="skip" href="#main">Skip to content</a>\n' + banner() + header(_UP, "areas", False) + "".join(parts))
     page = page.replace('href="../"', f'href="{_UP}"')
     shown = _cr.sub(r'<article class="sv-rev.*?</article>', "", page, flags=_cr.S)
     if "WhatsApp" in shown or "wa.me" in shown: raise SystemExit("hub: must not include WhatsApp")

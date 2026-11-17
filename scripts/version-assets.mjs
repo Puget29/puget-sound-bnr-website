@@ -8,7 +8,7 @@ import path from 'path';
 import crypto from 'crypto';
 
 const SITE = path.resolve('site');
-const PAGES = ['v4/_root/index.html', 'v4/_root/about/index.html', 'v4/_root/contact/index.html', 'v4/_root/privacy/index.html'];
+const PAGES = ['v4/_root/index.html', 'v4/_root/about/index.html', 'v4/_root/contact/index.html', 'v4/_root/privacy/index.html', 'v4/_root/404.html'];
 const EXT = /\.(css|js|webp|avif|jpe?g|png|svg|mp4|webm|woff2?|ico|bin|json)$/i;
 const hash = f => crypto.createHash('sha1').update(fs.readFileSync(f)).digest('hex').slice(0, 8);
 

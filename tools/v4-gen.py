@@ -113,7 +113,7 @@ def banner():
 
 def header(up, current, home):
     A = shared(up)
-    L = {"about": URLS["about"], "contact": CONTACT, "services": URLS["services"], "work": URLS["projects"], "blog": URLS["blog"]}
+    L = {"about": URLS["about"], "contact": CONTACT, "services": URLS["services"], "areas": "/service-areas/", "work": URLS["projects"], "blog": URLS["blog"]}
     def a(key, label, tip):
         cur = ' aria-current="page"' if current == key else ""
         return f'<a class="dock__item" href="{L[key]}" data-tip="{tip}"{cur}><span class="dock__label">{label}</span></a>'
@@ -130,6 +130,7 @@ def header(up, current, home):
       <span class="dock__glass" aria-hidden="true"></span>
       {a("about", "About", "Who we are")}
       {a("services", "Services", "Kitchens, ADUs, baths, decks")}
+      {a("areas", "Areas", "Cities we serve")}
       {a("work", "Projects", "Recent remodeling work")}
       {a("blog", "Blog", "Blog")}
       {a("contact", "Contact", "Talk to the office")}
@@ -148,6 +149,7 @@ def header(up, current, home):
   <nav class="menu__links" aria-label="Menu">
     <a class="menu__link" href="{L['about']}">About</a>
     <a class="menu__link" href="{L['services']}">Services</a>
+    <a class="menu__link" href="{L['areas']}">Service areas</a>
     <a class="menu__link" href="{L['work']}">Projects</a>
     <a class="menu__link" href="{L['blog']}">Blog</a>
     <a class="menu__link" href="{L['contact']}">Contact</a>
@@ -185,7 +187,7 @@ def footer(up, home=False):
         <a class="foot__logo" href="{'#top' if home else '../'}" aria-label="Puget Sound Builders &amp; Renovation home"><img src="{A}assets/logo-mark.webp" width="55" height="48" alt="" loading="lazy"><span class="lock"><b>Puget Sound</b><small>Builders &amp; Renovation</small></span></a>
         <p>General contractor in Bellevue, WA.</p>
       </div>
-      <nav class="foot__group" aria-label="Explore"><h2>Explore</h2><ul><li><a href="{who}">About</a></li><li><a href="{URLS['services']}">Services</a></li><li><a href="{URLS['projects']}">Projects</a></li><li><a href="{URLS['blog']}">Blog</a></li><li><a href="{c}">Contact</a></li></ul></nav>
+      <nav class="foot__group" aria-label="Explore"><h2>Explore</h2><ul><li><a href="{who}">About</a></li><li><a href="{URLS['services']}">Services</a></li><li><a href="/service-areas/">Service areas</a></li><li><a href="{URLS['projects']}">Projects</a></li><li><a href="{URLS['blog']}">Blog</a></li><li><a href="{c}">Contact</a></li></ul></nav>
       <nav class="foot__group" aria-label="Services"><h2>Services</h2><ul><li><a href="{URLS['services']}">Kitchen remodeling</a></li><li><a href="{URLS['services']}">Bathroom remodeling</a></li><li><a href="{URLS['services']}">ADUs &amp; DADUs</a></li></ul></nav>
       <div class="foot__group foot__contact"><h2>Contact</h2><ul><li><a href="tel:{PHONE_TEL}">{PHONE_TXT}</a></li><li><a href="mailto:{EMAIL}">{EMAIL}</a></li></ul></div>
     </div>
@@ -319,7 +321,7 @@ def netlify_fields(source, origin_service=None, service=None):
     return "\n        ".join(rows)
 
 def cta_section(up, mini=True):
-    c = "contact/" if up == "" else "../contact/"
+    c = "contact-us/" if up == "" else "../contact-us/"
     bg = '<svg viewBox="0 0 1200 600" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="120" y="120" width="560" height="360" pathLength="1"/><path pathLength="1" d="M120 300 H680 M400 120 V480 M120 210 H300 M500 390 H680"/><path pathLength="1" d="M680 220 H900 V480 H680"/><path pathLength="1" d="M900 220 L790 140 L680 220"/><rect pathLength="1" x="740" y="330" width="60" height="150"/><line pathLength="1" x1="60" y1="480" x2="1140" y2="480"/><path pathLength="1" d="M120 90 H680 M120 80 V100 M680 80 V100"/></svg>'
     form = f'''{form_open("form form--card", "about-quick", "Request a consultation")}
         {netlify_fields("about-quick", "Free consultation", "")}

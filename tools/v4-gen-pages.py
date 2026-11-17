@@ -149,11 +149,32 @@ def contact():
 '''
     return (head("Contact Puget Sound Builders & Renovation | Book your free consultation in Bellevue, WA",
                  "Book your free consultation with Puget Sound Builders & Renovation in Bellevue, WA. Call (425) 696-4004 or send the form.",
-                 "/contact/", "../", photo_preload("../", "project-47"), [org_ld(), crumbs_ld("Contact", "/contact/"), faq_ld(items)])
+                 CONTACT, "../", photo_preload("../", "project-47"), [org_ld(), crumbs_ld("Contact", CONTACT), faq_ld(items)])
             + "<body>\n<!-- Contact page v4. The form is a Netlify Form named lead. js/forms.js posts it. -->\n"
             + '<a class="skip" href="#main">Skip to content</a>\n' + banner() + header("../", "contact", False)
             + body + footer("../") + mbar("../") + scripts("../", False) + "</body>\n</html>\n")
 w("contact/index.html", contact())
+
+def not_found():
+    body = f'''<main id="main">
+<section class="page-hero page-hero--short" aria-labelledby="nf-h">
+  <div class="wrap page-hero__grid"><div>
+    <p class="crumbs">404</p>
+    <h1 id="nf-h">Page not found.</h1>
+    <p class="lede">That address is not on this site. It may have moved, or it may have been typed wrong.</p>
+    <div class="row"><a class="btn btn--primary" href="/">Back to the home page{BTN_ARROW}</a><a class="btn btn--ghost" href="{CONTACT}">Contact the office</a></div>
+  </div></div>
+</section>
+</main>
+'''
+    html = (head("Page not found | Puget Sound Builders & Renovation",
+                 "This page is not on the Puget Sound Builders & Renovation website.",
+                 "/404.html", "", "")
+            + "<body>\n" + '<a class="skip" href="#main">Skip to content</a>\n' + banner() + header("", None, False)
+            + body + footer("") + mbar("") + scripts("", False) + "</body>\n</html>\n")
+    return html.replace('href="../"', 'href="/"')
+
+w("404.html", not_found())
 
 exec(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'v4-gen-privacy.py'), encoding='utf-8').read())
 exec(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'v4-gen-svcpages.py'), encoding='utf-8').read())

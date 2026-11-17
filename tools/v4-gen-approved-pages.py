@@ -24,7 +24,7 @@ def _approved_contact():
     parts.extend(_approved_section(s, 'contact', i + 2) for i, s in enumerate(sections[1:6]))
     faq, schema = _approved_faq(sections[6], 'contact', 6)
     parts.extend([faq, _approved_section(sections[7], 'contact', 8), '</main>'])
-    return (head(meta['TITLE TAG'], meta['META DESCRIPTION'], '/contact/', '../', photo_preload('../', 'project-47'), [org_ld(), crumbs_ld('Contact', '/contact/'), schema])
+    return (head(meta['TITLE TAG'], meta['META DESCRIPTION'], CONTACT, '../', photo_preload('../', 'project-47'), [org_ld(), crumbs_ld('Contact', CONTACT), schema])
             + '<body><a class="skip" href="#main">Skip to content</a>' + banner() + header('../', 'contact', False)
             + ''.join(parts) + footer('../') + mbar('../') + scripts('../', False) + '</body></html>')
 
