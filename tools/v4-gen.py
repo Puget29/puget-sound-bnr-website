@@ -12,6 +12,17 @@ OG = "/assets/og.jpg" if ROOT else "/v4/assets/og.jpg"
 SITE = "https://www.pugetsoundbnr.com"
 URLS = json.load(io.open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "v4-links.json"), encoding="utf-8"))
 CONTACT = URLS["contact"]
+_CITY_LIST = json.load(io.open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "city-list.json"), encoding="utf-8"))
+_SERVICE_ORDER = [
+    ("Kitchen remodeling", "kitchen-remodeling"),
+    ("Bathroom remodeling", "bathroom-remodeling"),
+    ("Roofing", "roofing"),
+    ("Deck building", "deck-building"),
+    ("ADU and garage conversion", "adu-garage-conversion"),
+    ("Siding", "siding"),
+    ("Flooring", "flooring"),
+    ("Painting", "painting"),
+]
 
 PHONE_TXT, PHONE_TEL = "(425) 696-4004", "+14256964004"
 WA = "https://wa.me/14252295663"
@@ -111,12 +122,39 @@ def banner():
 </div>
 '''
 
+def _service_links():
+    pages = URLS["servicePages"]
+    return [(label, pages[key]) for label, key in _SERVICE_ORDER]
+
+def _area_links():
+    return [(c["name"], f'/service-areas/{c["slug"]}/') for c in _CITY_LIST]
+
+def _menu_links(links):
+    return "".join(f'<a class="menu__sublink" href="{href}">{esc(label)}</a>' for label, href in links)
+
+def _nav_links(links):
+    return "".join(f'<a href="{href}">{esc(label)}</a>' for label, href in links)
+
 def header(up, current, home):
     A = shared(up)
     L = {"about": URLS["about"], "contact": CONTACT, "services": URLS["services"], "areas": "/service-areas/", "work": URLS["projects"], "blog": URLS["blog"]}
+    services, areas = _service_links(), _area_links()
     def a(key, label, tip):
         cur = ' aria-current="page"' if current == key else ""
         return f'<a class="dock__item" href="{L[key]}" data-tip="{tip}"{cur}><span class="dock__label">{label}</span></a>'
+    def drop(key, label, tip, panel_id, links, wide=False):
+        cur = ' aria-current="page"' if current == key else ""
+        wide_cls = " nav__panel--wide" if wide else ""
+        return f'''<div class="nav__drop">
+        <a class="dock__item" href="{L[key]}" data-tip="{tip}"{cur}><span class="dock__label">{label}</span></a>
+        <button class="nav__chev" type="button" aria-expanded="false" aria-controls="{panel_id}" aria-label="Show {esc(label.lower())}"><span aria-hidden="true"></span></button>
+        <div class="nav__panel{wide_cls}" id="{panel_id}">{_nav_links(links)}</div>
+      </div>'''
+    def group(key, label, panel_id, links):
+        return f'''<div class="menu__item">
+      <div class="menu__row"><a class="menu__link" href="{L[key]}">{label}</a><button class="menu__chev" type="button" aria-expanded="false" aria-controls="{panel_id}" aria-label="Show {esc(label.lower())}"></button></div>
+      <div class="menu__sub" id="{panel_id}">{_menu_links(links)}</div>
+    </div>'''
     brand_href = "#top" if home else "../"
     solid = "" if home else " is-solid"
     phone = f'<a class="dock__item dock__phone" data-opt href="tel:{PHONE_TEL}" data-tip="Call the office"><span class="dock__label">{PHONE_TXT}</span></a>'
@@ -129,8 +167,8 @@ def header(up, current, home):
     <nav class="nav" aria-label="Main">
       <span class="dock__glass" aria-hidden="true"></span>
       {a("about", "About", "Who we are")}
-      {a("services", "Services", "Kitchens, ADUs, baths, decks")}
-      {a("areas", "Areas", "Cities we serve")}
+      {drop("services", "Services", "Kitchens, ADUs, baths, decks", "nav-services", services)}
+      {drop("areas", "Areas", "Cities we serve", "nav-areas", areas, True)}
       {a("work", "Projects", "Recent remodeling work")}
       {a("blog", "Blog", "Blog")}
       {a("contact", "Contact", "Talk to the office")}
@@ -147,12 +185,12 @@ def header(up, current, home):
 <div class="menu-scrim" aria-hidden="true"></div>
 <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Site menu">
   <nav class="menu__links" aria-label="Menu">
-    <a class="menu__link" href="{L['about']}">About</a>
-    <a class="menu__link" href="{L['services']}">Services</a>
-    <a class="menu__link" href="{L['areas']}">Service areas</a>
-    <a class="menu__link" href="{L['work']}">Projects</a>
-    <a class="menu__link" href="{L['blog']}">Blog</a>
-    <a class="menu__link" href="{L['contact']}">Contact</a>
+    <div class="menu__item"><a class="menu__link" href="{L['about']}">About</a></div>
+    {group("services", "Services", "menu-services", services)}
+    {group("areas", "Service areas", "menu-areas", areas)}
+    <div class="menu__item"><a class="menu__link" href="{L['work']}">Projects</a></div>
+    <div class="menu__item"><a class="menu__link" href="{L['blog']}">Blog</a></div>
+    <div class="menu__item"><a class="menu__link" href="{L['contact']}">Contact</a></div>
   </nav>
   <div class="menu__foot">
     <a class="btn btn--primary" href="{L['contact']}" data-book>Free Consultation{BTN_ARROW}</a>
@@ -302,8 +340,11 @@ def reviews_section(up):
 # Every page uses the same form name so the submissions land in one form.
 def form_open(klass, source, label, id_attr=""):
     ident = f' id="{id_attr}"' if id_attr else ""
-    return (f'<form class="{klass}"{ident} name="lead" method="POST" action="/" data-netlify="true" data-netlify-honeypot="company" '
+    return (f'<form class="{klass}"{ident} name="lead" method="POST" action="/" data-netlify="true" data-netlify-honeypot="bot-field" '
             f'data-form data-source="{esc(source)}" novalidate aria-label="{esc(label)}">')
+
+def honeypot():
+    return '<div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="bot-field" tabindex="-1" autocomplete="off"></label></div>'
 
 def netlify_fields(source, origin_service=None, service=None):
     rows = [
@@ -331,7 +372,7 @@ def cta_section(up, mini=True):
           <div class="fld"><label for="m-zip">ZIP code</label><input id="m-zip" name="zip" type="text" autocomplete="postal-code" inputmode="numeric" data-req data-kind="zip" aria-describedby="m-zip-err"><p class="err" id="m-zip-err" role="alert"></p></div>
           <div class="fld"><label for="m-email">Email</label><input id="m-email" name="email" type="email" autocomplete="email" data-req data-kind="email" aria-describedby="m-email-err"><p class="err" id="m-email-err" role="alert"></p></div>
         </div>
-        <div class="hp" aria-hidden="true"><label>Company<input type="text" name="company" tabindex="-1" autocomplete="off"></label></div>
+        {honeypot()}
         <button class="btn btn--primary" type="submit">Book your free consultation{BTN_ARROW}</button>
         <p class="form__fail err" tabindex="-1" hidden role="alert">Something went wrong. Please call (425) 696-4004.</p>
         <div class="form__ok" role="status"><strong>Thank you.</strong><span class="form__ok-text"></span></div>

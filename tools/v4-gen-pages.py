@@ -124,7 +124,7 @@ def contact():
         <div class="fld"><label for="f-service">Project type</label>
           <select id="f-service" name="service" data-req aria-describedby="f-service-err"><option value="">Choose one</option><option value="kitchen">Kitchen remodeling</option><option value="bathroom">Bathroom remodeling</option><option value="adu">ADU or DADU</option><option value="deck-siding">Deck or siding</option><option value="flooring-painting">Flooring or painting</option><option value="roofing">Roofing</option><option value="other">Not sure</option></select>
           <p class="err" id="f-service-err" role="alert"></p></div>
-        <div class="hp" aria-hidden="true"><label>Company<input type="text" name="company" tabindex="-1" autocomplete="off"></label></div>
+        {honeypot()}
         <button class="btn btn--primary" type="submit">Book your free consultation{BTN_ARROW}</button>
         <p class="form__fine">We use your details only to reply about your project.</p>
         <p class="form__fail err" tabindex="-1" hidden role="alert">Something went wrong. Please call (425) 696-4004.</p>

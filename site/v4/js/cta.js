@@ -33,8 +33,8 @@
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-    var hp = $('input[name="company"]');
-    if (hp && hp.value) return;                                      /* a bot filled the hidden field: drop it quietly */
+    var hp = $('input[name="bot-field"], input[name="company"]');
+    if (hp) hp.value = "";
     var bad = fields.filter(function (el) { return !check(el); });
     if (bad.length) { bad[0].focus(); return; }
     if (performance.now() - t0 < 3000) { success(false); return; }  /* far too fast for a person: looks like success, sends nothing */

@@ -138,7 +138,8 @@
     fields.forEach(function (el) { el.addEventListener("blur", function () { if (el.value || el.getAttribute("aria-invalid")) check(el); }); el.addEventListener("input", function () { if (el.getAttribute("aria-invalid") === "true") check(el); }); el.addEventListener("change", function () { if (el.getAttribute("data-kind") === "file") check(el); }); });
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      var hp = $('input[name="company"]', form); if (hp && hp.value) return; /* honeypot: bots fill it, people never see it */
+      /* Browsers autofill a field named company, and that used to cancel the submit with no message. */
+      var hp = $('input[name="bot-field"], input[name="company"]', form); if (hp) hp.value = "";
       var bad = fields.filter(function (el) { return !check(el); });
       if (bad.length) { bad[0].focus(); return; }
       var ok = $(".form__ok", form), msg = $(".form__ok-text", form), btn = $('[type="submit"]', form);

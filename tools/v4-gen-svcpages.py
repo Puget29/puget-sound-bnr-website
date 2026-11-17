@@ -104,7 +104,7 @@ def _form(sv, source="service-page"):
           <div class="fld"><label for="sf-email">Email</label><input id="sf-email" name="email" type="email" autocomplete="email" data-req data-kind="email" aria-describedby="sf-email-err"><p class="err" id="sf-email-err" role="alert"></p></div>
         </div>
         <div class="fld"><fieldset><legend>What do you need?</legend><div class="opts">{chips}</div></fieldset></div>
-        <div class="hp" aria-hidden="true"><label>Company<input type="text" name="company" tabindex="-1" autocomplete="off"></label></div>
+        {honeypot()}
         <button class="btn btn--primary" type="submit">Book your free consultation{BTN_ARROW}</button>
         <p class="form__fine">We use your details only to reply about your project.</p>
         <p class="form__fail err" tabindex="-1" hidden role="alert">Something went wrong. Please call {PHONE_TXT}.</p>

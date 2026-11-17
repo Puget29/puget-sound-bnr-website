@@ -33,7 +33,12 @@
     toggle.addEventListener("click", function () { setMenu(toggle.getAttribute("aria-expanded") !== "true"); });
     menu.addEventListener("click", function (e) { if (e.target.closest("a")) setMenu(false); });
     if (scrim) scrim.addEventListener("click", function () { setMenu(false); });
-    document.addEventListener("keydown", function (e) { if (e.key === "Escape") setMenu(false); });
+    document.addEventListener("keydown", function (e) {
+      if (e.key !== "Escape") return;
+      var openDrop = document.querySelector(".nav__drop.is-open");
+      if (openDrop) { closeDrops(); return; }
+      setMenu(false);
+    });
     window.matchMedia("(min-width: 901px)").addEventListener("change", function (e) { if (e.matches) setMenu(false); });
   }
 
@@ -47,6 +52,34 @@
       pause.setAttribute("aria-label", paused ? "Play announcement" : "Pause announcement");
     });
   }
+
+  function closeDrops() {
+    [].forEach.call(document.querySelectorAll(".nav__drop.is-open"), function (drop) {
+      drop.classList.remove("is-open");
+      var btn = drop.querySelector(".nav__chev");
+      if (btn) btn.setAttribute("aria-expanded", "false");
+    });
+  }
+  [].forEach.call(document.querySelectorAll(".nav__chev"), function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      var drop = btn.closest(".nav__drop");
+      var open = !drop.classList.contains("is-open");
+      closeDrops();
+      drop.classList.toggle("is-open", open);
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  });
+  document.addEventListener("click", function (e) { if (!e.target.closest(".nav__drop")) closeDrops(); });
+  [].forEach.call(document.querySelectorAll(".menu__chev"), function (btn) {
+    btn.addEventListener("click", function () {
+      var item = btn.closest(".menu__item");
+      var open = !item.classList.contains("is-open");
+      item.classList.toggle("is-open", open);
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  });
 
   if (!hero) return;
   var video = hero.querySelector(".hero__video");
