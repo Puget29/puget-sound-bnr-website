@@ -23,6 +23,7 @@ const stage = path.join('build', 'stage');
 fs.rmSync(stage, { recursive: true, force: true });
 fs.mkdirSync(stage, { recursive: true });
 fs.cpSync(path.join('site', 'v4', '_root'), stage, { recursive: true });
+fs.cpSync(path.join('site', 'assets'), path.join(stage, 'assets'), { recursive: true });
 for (const [from, to] of [['css/site.min.css', 'css/site.min.css'], ['js/site.min.js', 'js/site.min.js'], ['vendor/gsap.min.js', 'vendor/gsap.min.js'], ['favicon.ico', 'favicon.ico'], ['apple-touch-icon.png', 'apple-touch-icon.png']]) {
   fs.mkdirSync(path.dirname(path.join(stage, to)), { recursive: true });
   fs.copyFileSync(path.join('site', from), path.join(stage, to));

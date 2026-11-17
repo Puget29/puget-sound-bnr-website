@@ -110,7 +110,8 @@ def contact():
     </ol></div>
 </section>
 '''
-    form = f'''<form class="form form--card rv" id="form" data-form data-source="contact-page" novalidate action="#" method="post" aria-label="Book your free consultation">
+    form = f'''{form_open("form form--card rv", "contact-page", "Book your free consultation", "form")}
+        {netlify_fields("contact-page", "Free consultation")}
         <h2 class="h3">Book your free consultation</h2><p class="form__sub">We reply within one business day.</p>
         <div class="form__two">
           <div class="fld"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" data-req aria-describedby="f-name-err"><p class="err" id="f-name-err" role="alert"></p></div>
@@ -149,7 +150,7 @@ def contact():
     return (head("Contact Puget Sound Builders & Renovation | Book your free consultation in Bellevue, WA",
                  "Book your free consultation with Puget Sound Builders & Renovation in Bellevue, WA. Call (425) 696-4004 or send the form.",
                  "/contact/", "../", photo_preload("../", "project-47"), [org_ld(), crumbs_ld("Contact", "/contact/"), faq_ld(items)])
-            + "<body>\n<!-- Contact page v4. Delivery is configured in js/forms.js (empty endpoint = demo mode). -->\n"
+            + "<body>\n<!-- Contact page v4. The form is a Netlify Form named lead. js/forms.js posts it. -->\n"
             + '<a class="skip" href="#main">Skip to content</a>\n' + banner() + header("../", "contact", False)
             + body + footer("../") + mbar("../") + scripts("../", False) + "</body>\n</html>\n")
 w("contact/index.html", contact())

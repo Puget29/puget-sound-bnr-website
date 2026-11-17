@@ -296,17 +296,39 @@ def reviews_section(up):
 </section>
 '''
 
+# Netlify Forms registers a form only when this markup is in the published HTML.
+# Every page uses the same form name so the submissions land in one form.
+def form_open(klass, source, label, id_attr=""):
+    ident = f' id="{id_attr}"' if id_attr else ""
+    return (f'<form class="{klass}"{ident} name="lead" method="POST" action="/" data-netlify="true" data-netlify-honeypot="company" '
+            f'data-form data-source="{esc(source)}" novalidate aria-label="{esc(label)}">')
+
+def netlify_fields(source, origin_service=None, service=None):
+    rows = [
+        '<input type="hidden" name="form-name" value="lead">',
+        f'<input type="hidden" name="source" value="{esc(source)}">',
+        '<input type="hidden" name="origin_city" value="General">',
+        '<input type="hidden" name="origin_page" value="">',
+    ]
+    if origin_service is not None:
+        rows.append(f'<input type="hidden" name="origin_service" value="{esc(origin_service)}">')
+    if service is not None:
+        rows.append(f'<input type="hidden" name="service" value="{esc(service)}">')
+    for key in ("utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "gclid", "gbraid", "wbraid", "msclkid", "fbclid", "landing_page", "referrer"):
+        rows.append(f'<input type="hidden" name="{key}" value="">')
+    return "\n        ".join(rows)
+
 def cta_section(up, mini=True):
     c = "contact/" if up == "" else "../contact/"
     bg = '<svg viewBox="0 0 1200 600" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="120" y="120" width="560" height="360" pathLength="1"/><path pathLength="1" d="M120 300 H680 M400 120 V480 M120 210 H300 M500 390 H680"/><path pathLength="1" d="M680 220 H900 V480 H680"/><path pathLength="1" d="M900 220 L790 140 L680 220"/><rect pathLength="1" x="740" y="330" width="60" height="150"/><line pathLength="1" x1="60" y1="480" x2="1140" y2="480"/><path pathLength="1" d="M120 90 H680 M120 80 V100 M680 80 V100"/></svg>'
-    form = f'''<form class="form form--card" data-form data-source="about-quick" novalidate action="#" method="post" aria-label="Request a consultation">
+    form = f'''{form_open("form form--card", "about-quick", "Request a consultation")}
+        {netlify_fields("about-quick", "Free consultation", "")}
         <div class="fld"><label for="m-name">Name</label><input id="m-name" name="name" type="text" autocomplete="name" data-req aria-describedby="m-name-err"><p class="err" id="m-name-err" role="alert"></p></div>
         <div class="fld"><label for="m-phone">Phone</label><input id="m-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" data-req data-kind="phone" aria-describedby="m-phone-err"><p class="err" id="m-phone-err" role="alert"></p></div>
         <div class="form__two">
           <div class="fld"><label for="m-zip">ZIP code</label><input id="m-zip" name="zip" type="text" autocomplete="postal-code" inputmode="numeric" data-req data-kind="zip" aria-describedby="m-zip-err"><p class="err" id="m-zip-err" role="alert"></p></div>
           <div class="fld"><label for="m-email">Email</label><input id="m-email" name="email" type="email" autocomplete="email" data-req data-kind="email" aria-describedby="m-email-err"><p class="err" id="m-email-err" role="alert"></p></div>
         </div>
-        <input type="hidden" name="origin_service" value="Free consultation">
         <div class="hp" aria-hidden="true"><label>Company<input type="text" name="company" tabindex="-1" autocomplete="off"></label></div>
         <button class="btn btn--primary" type="submit">Book your free consultation{BTN_ARROW}</button>
         <p class="form__fail err" tabindex="-1" hidden role="alert">Something went wrong. Please call (425) 696-4004.</p>

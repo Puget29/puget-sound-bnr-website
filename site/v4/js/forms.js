@@ -1,13 +1,13 @@
-/* Shared form module: Contact page form, service page forms and the About quick form. Every form posts to the same lead handler as the PPC pages:
-   POST /wp-json/bnr/v1/lead (plugin bnr-lead-handler), JSON, fields name, phone, zip, email, service, origin_service, origin_city, origin_page, elapsed,
-   website (honeypot, always empty from people), plus the campaign parameters that came with the visit. On success the page pushes the generate_lead event
-   to dataLayer. The route is on the same site, so it works on the hidden preview addresses too.
+/* Shared form module: Contact page form, service page forms and the About quick form.
+   Netlify detects the form from the static HTML (name="lead", data-netlify="true", a hidden form-name field).
+   Submit is sent as a URL-encoded POST to /, which is where Netlify stores the submission.
+   The hidden company field is the Netlify honeypot. On success the page pushes generate_lead to dataLayer.
    Never put a private key or secret in this file. */
 (function () {
   "use strict";
-  var FORM = { endpoint: "/wp-json/bnr/v1/lead" };
+  var FORM = { endpoint: "/" };
   var ERR = "Your request was not sent. Please try again or call (425) 696-4004.";
-  var busy = false, loadedAt = Date.now();
+  var busy = false;
   var dl = window.dataLayer = window.dataLayer || [];
   var PARAMS = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "gclid", "gbraid", "wbraid", "msclkid", "fbclid"];
 
@@ -41,25 +41,36 @@
   }
   attribution();
 
-  /* send(data, source, form): data is a FormData. Resolves { ok } or rejects. */
+  function setHidden(form, name, value) {
+    if (!form) return;
+    var el = form.querySelector('input[type="hidden"][name="' + name + '"]');
+    if (el) el.value = String(value == null ? "" : value).slice(0, 300);
+  }
+
+  /* send(data, source, form): data is a FormData. Resolves { ok } or rejects.
+     Netlify returns an HTML page, not JSON. A 2xx response means the submission was stored. */
   function send(data, source, form) {
-    var svc = serviceName(form, data), o = attribution();
-    o.name = (data.get("name") || "").toString().trim(); o.phone = (data.get("phone") || "").toString().trim();
-    o.zip = (data.get("zip") || "").toString().trim(); o.email = (data.get("email") || "").toString().trim();
-    o.service = svc || (data.get("origin_service") || "").toString();
-    o.origin_service = (data.get("origin_service") || svc || "").toString();
-    o.origin_city = "General";                                  /* the main site has no city pages, the handler shows the page address instead */
-    o.origin_page = location.href.split("#")[0];
-    o.website = "";                                             /* honeypot: the visible Company trap is checked by the page and never reaches here */
-    o.elapsed = Date.now() - loadedAt;
-    o.source = source || "";
+    var svc = serviceName(form, data), attr = attribution();
+    setHidden(form, "source", source || (form && form.getAttribute("data-source")) || "");
+    setHidden(form, "origin_page", location.href.split("#")[0]);
+    setHidden(form, "origin_city", "General");
+    if (svc && form && !form.querySelector('select[name="service"], input[name="service"]')) setHidden(form, "service", svc);
+    Object.keys(attr).forEach(function (k) { setHidden(form, k, attr[k]); });
+    var fd = form ? new FormData(form) : data;
+    var body = new URLSearchParams();
+    fd.forEach(function (value, key) { body.append(key, value); });
+    if (svc) { body.delete("service"); body.set("service", svc); }
+    if (!body.get("form-name")) body.set("form-name", "lead");
     if (busy) return Promise.reject(new Error("busy"));
     busy = true;
     var ctl = "AbortController" in window ? new AbortController() : null, timer = setTimeout(function () { if (ctl) ctl.abort(); }, 10000);
-    return fetch(FORM.endpoint, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(o), signal: ctl ? ctl.signal : undefined })
-      .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { if (!r.ok || j.ok === false || j.success === false) throw new Error("bad"); return j; }); })
-      .then(function () { clearTimeout(timer); busy = false; dl.push({ event: "generate_lead", service: o.service, city: "", source: o.source }); return { ok: true, demo: false }; },
-            function (e) { clearTimeout(timer); busy = false; throw e; });
+    return fetch(FORM.endpoint, { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: body.toString(), signal: ctl ? ctl.signal : undefined })
+      .then(function (r) {
+        clearTimeout(timer); busy = false;
+        if (!r.ok) throw new Error("bad");
+        dl.push({ event: "generate_lead", service: svc || body.get("service") || "", city: "", source: body.get("source") || "" });
+        return { ok: true, demo: false };
+      }, function (e) { clearTimeout(timer); busy = false; throw e; });
   }
 
   window.BNRForm = { config: FORM, msg: msg, send: send, error: ERR };

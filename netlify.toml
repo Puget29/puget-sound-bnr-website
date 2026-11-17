@@ -1,0 +1,8 @@
+# Netlify reads forms from the published HTML after this build. The generators
+# write those pages into build/stage, with data-netlify="true" on each lead form.
+[build]
+  command = "npm run stage"
+  publish = "build/stage"
+
+[build.environment]
+  NODE_VERSION = "20"

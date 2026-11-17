@@ -92,7 +92,8 @@ def _form(sv, source="service-page"):
     for c in _CH:
         chk = " checked" if c["value"] == want else ""
         chips += f'<label><input type="radio" name="service" value="{esc(c["value"])}"{chk}><span>{esc(c["label"])}</span></label>'
-    return f'''<form class="form form--card" id="form" data-form data-source="{source}" novalidate action="#" method="post" aria-label="{esc(sv["formHeading"])}">
+    return f'''{form_open("form form--card", source, sv["formHeading"], "form")}
+        {netlify_fields(source, sv["formService"])}
         <h3 class="h3" style="margin-bottom:4px">{esc(sv["formHeading"])}</h3>
         <div class="form__two">
           <div class="fld"><label for="sf-name">Name</label><input id="sf-name" name="name" type="text" autocomplete="name" data-req aria-describedby="sf-name-err"><p class="err" id="sf-name-err" role="alert"></p></div>
@@ -103,7 +104,6 @@ def _form(sv, source="service-page"):
           <div class="fld"><label for="sf-email">Email</label><input id="sf-email" name="email" type="email" autocomplete="email" data-req data-kind="email" aria-describedby="sf-email-err"><p class="err" id="sf-email-err" role="alert"></p></div>
         </div>
         <div class="fld"><fieldset><legend>What do you need?</legend><div class="opts">{chips}</div></fieldset></div>
-        <input type="hidden" name="origin_service" value="{esc(sv["formService"])}">
         <div class="hp" aria-hidden="true"><label>Company<input type="text" name="company" tabindex="-1" autocomplete="off"></label></div>
         <button class="btn btn--primary" type="submit">Book your free consultation{BTN_ARROW}</button>
         <p class="form__fine">We use your details only to reply about your project.</p>
