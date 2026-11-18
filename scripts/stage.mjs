@@ -94,4 +94,28 @@ urls.sort();
 const nl = '\n';
 fs.writeFileSync(path.join(stage, 'sitemap.xml'), '<?xml version="1.0" encoding="UTF-8"?>' + nl + '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + nl + urls.map(u => `  <url><loc>${u}</loc></url>`).join(nl) + nl + '</urlset>' + nl);
 fs.writeFileSync(path.join(stage, 'robots.txt'), PREVIEW ? 'User-agent: *' + nl + 'Disallow: /' + nl : ['User-agent: *', 'Allow: /', '', `Sitemap: ${SITE}/sitemap.xml`, ''].join(nl));
-console.log(`staged in build/stage (${remapped} links mapped to staged pages, ${urls.length} pages in sitemap${PREVIEW ? ', PREVIEW noindex' : ''})`);
+// Google Ads landing pages. They are built once from the original PPC project and kept as static files in ads/ (81 city pages at /<City>-WA/, 5 service pages and ppc-assets/).
+// They are noindex, stay out of the sitemap and post their form to Netlify Forms. PREVIEW=1 also removes the Google tags so a preview never counts as ad traffic.
+let adsPages = 0;
+if (fs.existsSync('ads')) {
+  for (const e of fs.readdirSync('ads', { withFileTypes: true })) {
+    if (!e.isDirectory()) continue;
+    const to = path.join(stage, e.name);
+    if (fs.existsSync(to)) { console.error(`ads/${e.name} clashes with a staged path`); process.exit(1); }
+    fs.cpSync(path.join('ads', e.name), to, { recursive: true });
+    if (e.name !== 'ppc-assets') adsPages += fs.existsSync(path.join(to, 'index.html')) ? 1 : 0;
+    if (PREVIEW) (function walk(dir) {
+      for (const f of fs.readdirSync(dir, { withFileTypes: true })) {
+        const fp = path.join(dir, f.name);
+        if (f.isDirectory()) { walk(fp); continue; }
+        if (f.name !== 'index.html') continue;
+        const h = fs.readFileSync(fp, 'utf8');
+        const out = h.replace(/<!-- Google Tag Manager -->[\s\S]*?<!-- End Google Tag Manager -->\s*/, '')
+          .replace(/<!-- Google Ads tag -->[\s\S]*?<\/script>\s*<script>[\s\S]*?<\/script>\s*/, '')
+          .replace(/<!-- Google Tag Manager \(noscript\) -->[\s\S]*?<!-- End Google Tag Manager \(noscript\) -->\s*/, '');
+        if (out !== h) fs.writeFileSync(fp, out);
+      }
+    })(to);
+  }
+}
+console.log(`staged in build/stage (${adsPages} Google Ads pages, ${remapped} links mapped to staged pages, ${urls.length} pages in sitemap${PREVIEW ? ', PREVIEW noindex' : ''})`);
