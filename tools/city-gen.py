@@ -94,7 +94,7 @@ def _city_page(city, slug, facts, template):
     area = S(6, "sec--slab", "split").replace('class="sec sec--slab kitchen-section"', 'class="sec sec--slab kitchen-section long-service-area"', 1)
     parts.append(area)
     parts.append(S(7, "sec--stone", "split"))
-    form_sv = {"chip": "", "formHeading": "Free consultation", "formService": f"{city} city page"}
+    form_sv = {"chip": "", "formHeading": "Free consultation", "formService": f"{city} city page", "city": city}
     form = lead_block("contact", "city-form-h", esc(f"Tell us about your {city} project."), "Send a few details and we will take it from there. We reply within one business day.",
                       _form(form_sv, "city-page"), pimg(_UP, closing_photo_id, "(min-width:901px) 40vw, 90vw", None, False, ""))
     form = form.replace('<section class="sec sec--slab lead"', '<section class="sec sec--slab lead kitchen-section long-service-form"')

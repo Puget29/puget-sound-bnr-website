@@ -82,7 +82,7 @@ const urls = [];
     if (e.name !== 'index.html') continue;
     const rel = path.relative(stage, dir).split(path.sep).join('/');
     const self = SITE + '/' + (rel ? rel + '/' : '');
-    urls.push(self);
+    if (rel !== 'thank-you') urls.push(self);   // the thank you page stays out of the sitemap
     let html = fs.readFileSync(f, 'utf8');
     const out = html.replace(/(<link rel="canonical" href=")[^"]*(")/, `$1${self}$2`).replace(/(<meta property="og:url" content=")[^"]*(")/, `$1${self}$2`)
       .replace(/("mainEntityOfPage":\s*\{"@type":\s*"WebPage",\s*"@id":\s*")[^"]*(")/, `$1${self}$2`);
