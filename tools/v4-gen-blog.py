@@ -111,9 +111,11 @@ def _blog_date(value):
 def _blog_image(url, depth, eager=False):
     entry = _BLOG_IMAGE_MAP[_blog_img_key(url)]
     src = "../" * depth + entry["local"]
-    srcset = ", ".join("../" * depth + entry["local"] + " " + str(w) + "w" for w in entry.get("widths", []))
+    base = entry.get("srcBase")
+    srcset = ", ".join("../" * depth + (f"{base}-{w}.webp" if base else entry["local"]) + " " + str(w) + "w" for w in entry.get("widths", []))
+    sizes = ' sizes="(min-width: 900px) 860px, 100vw"' if (srcset and depth == 2) else (' sizes="(min-width: 1100px) 380px, (min-width: 700px) 50vw, 100vw"' if srcset else "")
     loading = 'fetchpriority="high" decoding="async"' if eager else 'loading="lazy" decoding="async"'
-    return f'<img src="{esc(src)}"{f" srcset=\"{esc(srcset)}\"" if srcset else ""} width="{entry["width"]}" height="{entry["height"]}" alt="{esc(entry.get("alt", ""))}" {loading}>'
+    return f'<img src="{esc(src)}"{f" srcset=\"{esc(srcset)}\"" if srcset else ""}{sizes} width="{entry["width"]}" height="{entry["height"]}" alt="{esc(entry.get("alt", ""))}" {loading}>'
 
 _BLOG_POSTS = []
 for _item in _BLOG_RAW:
@@ -123,6 +125,8 @@ for _item in _BLOG_RAW:
     if not _path.endswith("/"): _path += "/"
     _image_source = ((_yoast.get("og_image") or [{}])[0].get("url") or "")
     _image = _image_source
+    _saved_image = _BLOG_SAVED.get(_item["slug"], {}).get("featuredImage")
+    if _saved_image: _image = _saved_image   # a real project photo chosen in data/blog/posts.json
     _excerpt = _BLOG_SAVED.get(_item["slug"], {}).get("excerpt")
     if not _excerpt: raise SystemExit("Blog post is missing its saved excerpt: " + _item["slug"])
     _body = _blog_content(_item)
@@ -139,6 +143,7 @@ for _item in _BLOG_RAW:
         "date": _item["date"], "modified": _item["modified"],
         "author": _yoast.get("author") or "", "category": ", ".join(_BLOG_CATS.get(c, "") for c in _item.get("categories", [])),
         "excerpt": _excerpt, "bodyHtml": _body, "featuredImage": _image, "featuredImageSource": _image_source,
+        "midImage": _BLOG_SAVED[_item["slug"]].get("midImage", ""),
         "seoTitle": _BLOG_SAVED[_item["slug"]]["seoTitle"],
         "metaDescription": _BLOG_SAVED[_item["slug"]].get("metaDescription"), "canonical": _yoast.get("canonical") or _url,
     }
@@ -172,12 +177,16 @@ for _p in _BLOG_POSTS:
     _up = "../../"
     _ld = {"@context": "https://schema.org", "@type": "Article", "headline": _p["title"], "datePublished": _p["date"],
            "dateModified": _p["modified"], "author": {"@type": "Person", "name": _p["author"]},
-           "articleSection": _p["category"], "image": [LIVE + _p["featuredImage"]] if _p["featuredImage"].startswith("/") else ([_p["featuredImage"]] if _p["featuredImage"] else []),
+           "articleSection": _p["category"], "image": [SITE + _p["featuredImage"]] if _p["featuredImage"].startswith("/") else ([_p["featuredImage"]] if _p["featuredImage"] else []),
            "mainEntityOfPage": {"@type": "WebPage", "@id": _p["canonical"]}, "publisher": {"@type": "Organization", "name": "Puget Sound Builders & Renovation"}}
     _desc = _p["metaDescription"] or ""
     _seo_head = f'<meta name="author" content="{esc(_p["author"])}">\n' if _p["author"] else ""
     _hero = _blog_image(_p["featuredImage"], 2, True) if _p["featuredImage"] else ""
     _body_html = _blog_clean(_p["bodyHtml"], 2, _p["path"])
+    if _p["midImage"]:
+        _ends = [m.end() for m in _blog_re.finditer(r"</p>", _body_html)]
+        _at = _ends[len(_ends) // 3] if _ends else 0
+        _body_html = _body_html[:_at] + "<figure>" + _blog_image(_p["midImage"], 2) + "</figure>" + _body_html[_at:]
     _post_html = (head(_p["seoTitle"], _desc, _p["path"], _up, extra_head=_seo_head, jsonld=[_ld])
         + "<body>\n" + '<a class="skip" href="#main">Skip to content</a>\n' + banner() + header(_up, "blog", False)
         + f'''<main id="main" class="blog-post"><article class="sec sec--dark" aria-labelledby="post-title"><div class="wrap blog-reading">
