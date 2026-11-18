@@ -146,7 +146,7 @@ for _item in _BLOG_RAW:
     if _saved_image: _image = _saved_image   # a real project photo chosen in data/blog/posts.json
     _excerpt = _BLOG_SAVED.get(_item["slug"], {}).get("excerpt")
     if not _excerpt: raise SystemExit("Blog post is missing its saved excerpt: " + _item["slug"])
-    _body = _blog_content(_item)
+    _body = _blog_content(_item).replace("in the region.Consider", "in the region. Consider")
     if _image and _blog_img_key(_image) not in _BLOG_IMAGE_MAP:
         for _img_match in _blog_re.finditer(r'<img\b[^>]*\b(?:data-src|data-lazy-src|src)=["\']([^"\']+)', _body, _blog_re.I):
             _candidate = _img_match.group(1).replace("&amp;", "&")
@@ -156,9 +156,9 @@ for _item in _BLOG_RAW:
         else:
             _image = ""
     _post = {
-        "title": html.unescape(_item["title"]["rendered"]), "slug": _item["slug"], "path": _path,
+        "title": _BLOG_SAVED.get(_item["slug"], {}).get("title") or html.unescape(_item["title"]["rendered"]), "slug": _item["slug"], "path": _path,
         "date": _item["date"], "modified": _item["modified"],
-        "author": _yoast.get("author") or "", "category": ", ".join(_BLOG_CATS.get(c, "") for c in _item.get("categories", [])),
+        "author": "Puget Sound BNR", "category": ", ".join(_BLOG_CATS.get(c, "") for c in _item.get("categories", [])),
         "excerpt": _excerpt, "bodyHtml": _body, "featuredImage": _image, "featuredImageSource": _image_source,
         "midImage": _BLOG_SAVED[_item["slug"]].get("midImage", ""),
         "seoTitle": _BLOG_SAVED[_item["slug"]]["seoTitle"],
@@ -207,7 +207,7 @@ for _p in _BLOG_POSTS:
     _post_html = (head(_p["seoTitle"], _desc, _p["path"], _up, extra_head=_seo_head, jsonld=[_ld])
         + "<body>\n" + '<a class="skip" href="#main">Skip to content</a>\n' + banner() + header(_up, "blog", False)
         + f'''<main id="main" class="blog-post"><article class="sec sec--dark" aria-labelledby="post-title"><div class="wrap blog-reading">
-  <nav class="crumbs blog-crumbs" aria-label="Breadcrumb"><a href="/blog/">Blog</a><span aria-hidden="true">/</span><span aria-current="page">{esc(_p['category'])}</span></nav>
+  <nav class="crumbs blog-crumbs" aria-label="Breadcrumb"><a href="/blog/">Blog</a><span aria-hidden="true">/</span><span aria-current="page">{esc(_p['title'])}</span></nav>
   <header class="blog-post__head"><p class="blog-post__meta"><time datetime="{esc(_p['date'])}">{esc(_blog_date(_p['date']))}</time><span aria-hidden="true"> · </span><span>{esc(_p['author'])}</span></p><h1 class="h1" id="post-title">{esc(_p['title'])}</h1>{_hero}</header>
   <div class="blog-article__body">{_body_html}</div><p class="blog-back"><a href="/blog/">← Back to Blog</a></p>
 </div></article></main>\n'''

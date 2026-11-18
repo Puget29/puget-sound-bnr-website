@@ -1259,6 +1259,7 @@ html.sx-calm [data-rv="words"] .wi { transform: none !important; }
 .kitchen-steps .sv-step { border-color: rgba(242, 242, 240, 0.2); }
 .kitchen-steps .sv-step p { color: var(--text-2); }
 .kitchen-steps .sv-step__n { color: var(--gold-l); }
+.sec--stone .kitchen-steps .sv-step__n { color: var(--gold-d); }
 .kitchen-table { width: 100%; max-width: 100%; overflow: hidden; border-radius: 12px; }
 .kitchen-table table { width: 100%; table-layout: fixed; border-collapse: collapse; background: var(--stone-card); color: var(--ink-text); font-size: 0.96em; line-height: 1.45; }
 .kitchen-table th, .kitchen-table td { padding: 14px 16px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--stone-2); overflow-wrap: anywhere; }
