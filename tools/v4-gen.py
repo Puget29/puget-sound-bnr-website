@@ -79,6 +79,12 @@ BTN_ARROW = '<svg class="btn__arrow" xmlns="http://www.w3.org/2000/svg" fill="no
 DEV_SCRIPT = r'''<script>/* js class gates the reveal states. ?dark turns the stone sections dark. */(function(){var d=document.documentElement;d.classList.add("js");try{if(/[?&]dark(&|$)/.test(location.search))d.classList.add("v4-dark")}catch(e){}})();(function(){var w=window;try{history.scrollRestoration="manual"}catch(e){}function top(){if(!location.hash){try{w.scrollTo({top:0,left:0,behavior:"instant"})}catch(e){w.scrollTo(0,0)}}}w.addEventListener("DOMContentLoaded",top);w.addEventListener("pageshow",function(e){if(e.persisted)top()});w.addEventListener("load",function(){if(!location.hash)return;var el=null;try{el=document.getElementById(decodeURIComponent(location.hash.slice(1)))}catch(e){}if(el&&document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){try{el.scrollIntoView({block:"start",behavior:"instant"})}catch(e){el.scrollIntoView()}})})})();</script>'''
 
 # ---------------------------------------------------------------- partials ----
+# Indexable by default. PREVIEW=1 (set when staging a preview) writes noindex instead.
+PREVIEW = os.environ.get("PREVIEW") == "1"
+ROBOTS_TAG = ('<!-- DEMO: remove this noindex line at launch. Canonical points at the planned live address. -->' + chr(10) + '<meta name="robots" content="noindex">' if PREVIEW
+              else '<meta name="robots" content="index, follow">')
+
+
 def head(title, desc, path, up, extra_head="", jsonld=None, depth_assets=None):
     A = shared(up)      # shared v3 css, assets
     ld = "".join(f'<script type="application/ld+json">{json.dumps(j, ensure_ascii=False)}</script>\n' for j in (jsonld or []))
@@ -89,8 +95,7 @@ def head(title, desc, path, up, extra_head="", jsonld=None, depth_assets=None):
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
-<!-- DEMO: remove this noindex line at launch. Canonical points at the planned live address. -->
-<meta name="robots" content="noindex">
+{ROBOTS_TAG}
 <link rel="canonical" href="{SITE}{path}">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Puget Sound Builders &amp; Renovation">

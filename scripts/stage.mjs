@@ -70,4 +70,28 @@ let remapped = 0;
     if (out !== html) fs.writeFileSync(f, out);
   }
 })(stage);
-console.log(`staged in build/stage (${remapped} links mapped to staged pages)`);
+
+// Canonical and og:url of every staged page point at the page's own address on the production host (the blog posts still carried their old WordPress address).
+const SITE = /^SITE = "([^"]+)"/m.exec(fs.readFileSync('tools/v4-gen.py', 'utf8'))[1];
+const PREVIEW = process.env.PREVIEW === '1';
+const urls = [];
+(function walk(dir) {
+  for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+    const f = path.join(dir, e.name);
+    if (e.isDirectory()) { walk(f); continue; }
+    if (e.name !== 'index.html') continue;
+    const rel = path.relative(stage, dir).split(path.sep).join('/');
+    const self = SITE + '/' + (rel ? rel + '/' : '');
+    urls.push(self);
+    let html = fs.readFileSync(f, 'utf8');
+    const out = html.replace(/(<link rel="canonical" href=")[^"]*(")/, `$1${self}$2`).replace(/(<meta property="og:url" content=")[^"]*(")/, `$1${self}$2`)
+      .replace(/("mainEntityOfPage":\s*\{"@type":\s*"WebPage",\s*"@id":\s*")[^"]*(")/, `$1${self}$2`);
+    if (out !== html) fs.writeFileSync(f, out);
+  }
+})(stage);
+// robots.txt and sitemap.xml. PREVIEW=1 blocks crawlers, the default build allows everything.
+urls.sort();
+const nl = '\n';
+fs.writeFileSync(path.join(stage, 'sitemap.xml'), '<?xml version="1.0" encoding="UTF-8"?>' + nl + '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + nl + urls.map(u => `  <url><loc>${u}</loc></url>`).join(nl) + nl + '</urlset>' + nl);
+fs.writeFileSync(path.join(stage, 'robots.txt'), PREVIEW ? 'User-agent: *' + nl + 'Disallow: /' + nl : ['User-agent: *', 'Allow: /', '', `Sitemap: ${SITE}/sitemap.xml`, ''].join(nl));
+console.log(`staged in build/stage (${remapped} links mapped to staged pages, ${urls.length} pages in sitemap${PREVIEW ? ', PREVIEW noindex' : ''})`);

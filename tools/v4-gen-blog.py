@@ -14,7 +14,22 @@ _BLOG_OVERRIDES = _blog_json.loads((_BLOG_DATA / "body-overrides.json").read_tex
 _BLOG_IMAGES = _blog_json.loads((_BLOG_DATA / "images.json").read_text(encoding="utf-8"))
 _BLOG_IMAGE_MAP = {x["url"]: x for x in _BLOG_IMAGES}
 _BLOG_SITE_HOSTS = {"pugetsoundbnr.com", "www.pugetsoundbnr.com"}
-_BLOG_INTERNAL_PATHS = {v for v in URLS.values() if isinstance(v, str)} | set(URLS.get("servicePages", {}).values()) | {"/", "/blog/"}
+_BLOG_INTERNAL_PATHS = {v for v in URLS.values() if isinstance(v, str)} | set(URLS.get("servicePages", {}).values()) | {"/", "/blog/"} | {"/service-areas/" + c + "/" for c in ("renton", "kirkland", "bellevue")}
+# Old WordPress pages that no longer exist, pointed at the closest page that does (live addresses, the staged build maps them again).
+_BLOG_OLD_PAGES = {
+    "/deck-repair-seattle/": "/our-services/deck-building/",
+    "/seattle-home-addition/": "/our-services/adu-garage-conversion/",
+    "/seattle-basement-remodel/": "/our-services/",
+    "/vinyl-siding-seattle/": URLS["siding"],
+    "/seattle-prodigy-siding/": URLS["siding"],
+    "/testimonials/": URLS["projects"],
+    "/jacuzzi-bath-remodel/": URLS["servicePages"]["bathroom-remodeling"],
+    "/bathroom-remodel-seattle/walk-in-bathtub-with-shower/": URLS["servicePages"]["bathroom-remodeling"],
+    "/bathroom-remodel-seattle/soaking-tub-with-shower/": URLS["servicePages"]["bathroom-remodeling"],
+    "/general-contractor-in-renton/": "/service-areas/renton/",
+    "/general-contractor-in-kirkland/": "/service-areas/kirkland/",
+    "/general-contractor-in-bellevue/": "/service-areas/bellevue/",
+}
 _BLOG_INTERNAL_PATHS.update(_blog_urlparse(p.get("link", "")).path for p in _BLOG_RAW if _blog_urlparse(p.get("link", "")).path)
 
 def _blog_img_key(url):
@@ -59,7 +74,9 @@ class _BlogClean(_BlogParser):
             u = _blog_urlparse(_blog_urljoin(SITE + self.base_path, href))
             if u.netloc.lower() in _BLOG_SITE_HOSTS:
                 suffix = ("?" + u.query if u.query else "") + ("#" + u.fragment if u.fragment else "")
-                href = (u.path or "/") + suffix if (u.path or "/") in _BLOG_INTERNAL_PATHS else SITE + (u.path or "/") + suffix
+                _path_in = u.path or "/"
+                _path_in = _BLOG_OLD_PAGES.get(_path_in, _path_in)
+                href = _path_in + suffix if _path_in in _BLOG_INTERNAL_PATHS else SITE + _path_in + suffix
             keep += ' href="' + esc(href) + '"'
             if d.get("target") == "_blank": keep += ' target="_blank" rel="noopener noreferrer"'
         elif tag == "img":
@@ -163,7 +180,7 @@ for _p in _BLOG_POSTS:
 </article>''')
 
 _BLOG_INDEX_PATH = "/blog/"
-_BLOG_INDEX = (head("Blog | Puget Sound BNR", "", _BLOG_INDEX_PATH, _BLOG_UP)
+_BLOG_INDEX = (head("Blog | Puget Sound BNR", "Home remodeling articles from Puget Sound BNR on kitchens, bathrooms, decks, siding, insulation and choosing a general contractor.", _BLOG_INDEX_PATH, _BLOG_UP)
     + "<body>\n" + '<a class="skip" href="#main">Skip to content</a>\n' + banner() + header(_BLOG_UP, "blog", False)
     + f'''<main id="main"><section class="sec sec--dark blog-index" aria-labelledby="blog-title"><div class="wrap">
   <div class="blog-intro"><p class="eyebrow">From the blog</p><h1 class="h1" id="blog-title">Blog</h1></div>
