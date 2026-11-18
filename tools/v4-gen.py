@@ -84,16 +84,6 @@ PREVIEW = os.environ.get("PREVIEW") == "1"
 ROBOTS_TAG = ('<!-- DEMO: remove this noindex line at launch. Canonical points at the planned live address. -->' + chr(10) + '<meta name="robots" content="noindex">' if PREVIEW
               else '<meta name="robots" content="index, follow">')
 
-
-# ---- Netlify Forms: every lead form uses the same name and field set, written into the static HTML ----
-NETLIFY_FORM = 'name="lead" method="post" action="/thank-you/" data-netlify="true" data-netlify-honeypot="bot-field"'
-_TRACK = ("utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "gclid")
-def netlify_hidden(source, service="", city=""):
-    hid = lambda n, v="": f'<input type="hidden" name="{n}" value="{esc(v)}">'
-    return (hid("form-name", "lead") + hid("source", source) + hid("origin_service", service) + hid("origin_city", city) + hid("page_url")
-            + "".join(hid(t) for t in _TRACK)
-            + '<p class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="bot-field" tabindex="-1" autocomplete="off"></label></p>')
-
 def head(title, desc, path, up, extra_head="", jsonld=None, depth_assets=None, robots=None):
     A = shared(up)      # shared v3 css, assets
     ld = "".join(f'<script type="application/ld+json">{json.dumps(j, ensure_ascii=False)}</script>\n' for j in (jsonld or []))
