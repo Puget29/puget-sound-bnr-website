@@ -104,7 +104,7 @@ def head(title, desc, path, up, extra_head="", jsonld=None, depth_assets=None, r
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
-{ROBOTS_TAG}
+{robots or ROBOTS_TAG}
 <link rel="canonical" href="{SITE}{path}">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Puget Sound Builders &amp; Renovation">
