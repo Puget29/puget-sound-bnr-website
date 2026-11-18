@@ -149,16 +149,16 @@ _BLOG_CARDS = []
 for _p in _BLOG_POSTS:
     _img_url = _p["featuredImage"]
     _card_img = _blog_image(_img_url, 1) if _img_url else ""
-    _card_image = f'<a class="blog-card__image" href="/{esc(_p["slug"])}/" data-blog-slug="{esc(_p["slug"])}" aria-label="Read {esc(_p["title"])}">{_card_img}</a>' if _card_img else ""
+    _card_image = f'<a class="blog-card__image" href="/blog/{esc(_p["slug"])}/" data-blog-slug="{esc(_p["slug"])}" aria-label="Read {esc(_p["title"])}">{_card_img}</a>' if _card_img else ""
     _BLOG_CARDS.append(f'''<article class="blog-card">
   {_card_image}
   <div class="blog-card__copy"><p class="blog-card__date"><time datetime="{esc(_p['date'])}">{esc(_blog_date(_p['date']))}</time></p>
-    <h2><a href="/{esc(_p['slug'])}/" data-blog-slug="{esc(_p['slug'])}">{esc(_p['title'])}</a></h2><p>{esc(_p['excerpt'])}</p>
-    <a class="blog-card__more" href="/{esc(_p['slug'])}/" data-blog-slug="{esc(_p['slug'])}">Read article<span aria-hidden="true"> ↗</span></a></div>
+    <h2><a href="/blog/{esc(_p['slug'])}/" data-blog-slug="{esc(_p['slug'])}">{esc(_p['title'])}</a></h2><p>{esc(_p['excerpt'])}</p>
+    <a class="blog-card__more" href="/blog/{esc(_p['slug'])}/" data-blog-slug="{esc(_p['slug'])}">Read article<span aria-hidden="true"> ↗</span></a></div>
 </article>''')
 
 _BLOG_INDEX_PATH = "/blog/"
-_BLOG_INDEX = (head("Blog Archives - Pugetsoundbnr", "", _BLOG_INDEX_PATH, _BLOG_UP)
+_BLOG_INDEX = (head("Blog | Puget Sound BNR", "", _BLOG_INDEX_PATH, _BLOG_UP)
     + "<body>\n" + '<a class="skip" href="#main">Skip to content</a>\n' + banner() + header(_BLOG_UP, "blog", False)
     + f'''<main id="main"><section class="sec sec--dark blog-index" aria-labelledby="blog-title"><div class="wrap">
   <div class="blog-intro"><p class="eyebrow">From the blog</p><h1 class="h1" id="blog-title">Blog</h1></div>

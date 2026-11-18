@@ -50,4 +50,24 @@ for (const [from, to] of [['css/site.min.css', 'css/site.min.css'], ['js/site.mi
   fs.mkdirSync(path.dirname(path.join(stage, to)), { recursive: true });
   fs.copyFileSync(path.join('site', from), path.join(stage, to));
 }
-console.log('staged in build/stage');
+
+// The generators write the live WordPress addresses (/contact-us/, /kitchen-remodel-seattle/, /cedar-decking/ ...). The staged site has its own layout,
+// so every internal link is mapped to the page the build really creates. Built pages in site/v4/_root stay untouched (tools/home-live.py needs the live addresses).
+fs.cpSync(path.join('site', 'assets'), path.join(stage, 'assets'), { recursive: true });
+const links = JSON.parse(fs.readFileSync('tools/v4-links.json', 'utf8'));
+const routes = new Map([[links.contact, '/contact/'], [links.privacy, '/privacy/']]);
+for (const [key, live] of Object.entries(links.servicePages || {})) if (key !== 'overview') routes.set(live, `/our-services/${key}/`);
+const blogSlugs = fs.existsSync('data/blog/posts.json') ? JSON.parse(fs.readFileSync('data/blog/posts.json', 'utf8')).map(p => p.slug) : [];
+for (const slug of blogSlugs) if (!routes.has(`/${slug}/`)) routes.set(`/${slug}/`, `/blog/${slug}/`);   // a slug that is also a service address (siding-replacement) stays the service page
+let remapped = 0;
+(function walk(dir) {
+  for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+    const f = path.join(dir, e.name);
+    if (e.isDirectory()) { walk(f); continue; }
+    if (!e.name.endsWith('.html')) continue;
+    const html = fs.readFileSync(f, 'utf8');
+    const out = html.replace(/(\shref=")(\/[^"#?]*)([^"]*")/g, (all, a, p, rest) => { const to = routes.get(p); if (!to) return all; remapped++; return a + to + rest; });
+    if (out !== html) fs.writeFileSync(f, out);
+  }
+})(stage);
+console.log(`staged in build/stage (${remapped} links mapped to staged pages)`);
