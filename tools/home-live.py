@@ -145,7 +145,9 @@ def finish_head(html, slug, live_path, preview):
 
 def main():
     if "--no-stage" not in sys.argv:
-        subprocess.run(["node", "scripts/stage.mjs"], cwd=ROOT, check=True)
+        # --no-tracking: this pipeline injects GTM/Ads itself (finish_head), so the staged pages
+        # must stay tracking-free to avoid a duplicate container.
+        subprocess.run(["node", "scripts/stage.mjs", "--no-tracking"], cwd=ROOT, check=True)
 
     css = (STAGE / "css" / "site.min.css").read_text(encoding="utf-8")
     js_src = (STAGE / "js" / "site.min.js").read_text(encoding="utf-8")

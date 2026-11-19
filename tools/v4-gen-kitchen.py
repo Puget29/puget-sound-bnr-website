@@ -34,13 +34,13 @@ def _k_inline(value):
         else:
             label = match.group(2).strip().lower()
             routes = {
-                "kitchen remodeling": _SPU["kitchen-remodeling"],
-                "bathroom remodeling": _SPU["bathroom-remodeling"],
-                "roofing": _SPU["roofing"],
+                "kitchen remodeling": _SPU["kitchen-main"],
+                "bathroom remodeling": _SPU["bathroom-main"],
+                "roofing": _SPU["roofing-main"],
                 "siding": _SPU["siding"],
                 "deck building": _SPU["deck-building"],
                 "adu and garage conversion": _SPU["adu-garage-conversion"],
-                "flooring": _SPU["flooring"],
+                "flooring": _SPU["floor-main"],
                 "painting": _SPU["painting"],
                 "blog": URLS["blog"],
                 "services": URLS["services"],
@@ -290,7 +290,7 @@ def _kitchen_page(sv):
     page = page.replace('href="../"', f'href="{_UP}"')
     visible_copy = _kr.sub(r'<article class="sv-rev.*?</article>', "", page, flags=_kr.S)
     if "WhatsApp" in visible_copy or "wa.me" in visible_copy: raise SystemExit("Kitchen page must not include WhatsApp")
-    w("our-services/kitchen-remodeling/index.html", page)
+    w(_rel_of(_SPU["kitchen-remodeling"]), page)
 
 _kitchen_page(next(page for page in _ALL_SP if page["slug"] == "kitchen-remodeling"))
 
@@ -359,7 +359,7 @@ def _long_service_page(sv, copy_file, page_key, photo_break_ids):
     visible_copy = _kr.sub(r'<article class="sv-rev.*?</article>', "", page, flags=_kr.S)
     if "WhatsApp" in visible_copy or "wa.me" in visible_copy:
         raise SystemExit(service_name + " page must not include WhatsApp")
-    w(f"our-services/{sv['slug']}/index.html", page)
+    w(_rel_of(_SPU[sv['slug']]), page)
 
 _long_only = _os.environ.get("V4_LONG_SERVICE", "").strip().lower()
 if _long_only not in ("", "bathroom", "roofing", "deck", "adu", "siding", "flooring", "painting"):

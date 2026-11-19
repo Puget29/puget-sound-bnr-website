@@ -168,6 +168,406 @@
       "photoService": "painting",
       "heroPhoto": "asset:painting-card",
       "heroFocal": "50% 42%"
+    },
+    {
+      "slug": "basement-remodeling",
+      "h1": "Basement Remodeling",
+      "h1Service": "Basement Remodeling",
+      "service": "Basement",
+      "title": "Basement Remodeling | Puget Sound Builders & Renovation",
+      "description": "Basement remodeling and finishing for homes in the Puget Sound area. Add usable living space and book a free consultation with Puget Sound Builders & Renovation.",
+      "chip": "Something else",
+      "photos": [],
+      "handle": ["Basement finishing", "Basement remodeling", "Layout and egress planning"],
+      "workName": "basement",
+      "gallery": ["kitchen-01", "kitchen-02", "kitchen-03", "kitchen-04", "kitchen-05", "kitchen-06"],
+      "galleryHeading": "Recent remodeling work.",
+      "galleryIntro": "Placeholder photos for now. These will be replaced with basement project photos. Tap a photo to see it larger.",
+      "formService": "Basement remodeling",
+      "formHeading": "Free basement consultation",
+      "okLine": "We will contact you soon about your basement project.",
+      "closingHeading": "Ready to talk about your basement?",
+      "faqReplace": true,
+      "heroParagraph": "Basement remodeling and finishing for homes in the Puget Sound area, planned with you from a free consultation to the final walkthrough.",
+      "aboutPhoto": 0,
+      "aboutHeading": "Basement remodeling in the Puget Sound area",
+      "about": {
+        "intro": "A finished basement can add comfortable, usable space to your home. We talk through how you want to use the room, the layout and the finishes before agreeing on a project scope.",
+        "offer": [
+          "Basement finishing",
+          "Basement remodeling",
+          "Added living areas and rooms",
+          "Layout and egress planning",
+          "Guidance on local permits and codes"
+        ],
+        "options": "Compare layouts, flooring, lighting and finishes for the space. We can discuss how to make the basement work for your household and how you plan to use it day to day.",
+        "expect": "We review access, moisture and the existing conditions as part of planning. The scope, materials and layout are agreed with you before any work begins."
+      },
+      "process": [
+        {"title": "Free consultation", "text": "Tell us about the basement and how you want to use the finished space. We discuss your goals and the areas involved."},
+        {"title": "Review the space", "text": "We look at the basement with you and talk through access, moisture and the current layout."},
+        {"title": "Plan the layout", "text": "We agree on the rooms, finishes and work included so the space fits how you plan to use it."},
+        {"title": "Build and finish", "text": "Our team carries out the agreed basement work and keeps you informed as it progresses."},
+        {"title": "Final walkthrough", "text": "We walk through the finished basement with you and review the completed work."}
+      ],
+      "why": [
+        {"title": "Licensed and insured", "text": "Licensed in Washington, insured and bonded, with a clear scope before work begins."},
+        {"title": "Layout guidance", "text": "Talk through how to lay out the basement so the space works for your household."},
+        {"title": "Clear communication", "text": "We keep you informed as the basement project moves from plan to finish."},
+        {"title": "Care with the details", "text": "Access, moisture and finish choices are part of the project review."}
+      ],
+      "faq": [
+        ["What basement work do you take on?", "We handle basement finishing and remodeling. Tell us what you have in mind during a free consultation or call {{PHONE}}."],
+        ["Can you add rooms in the basement?", "We can discuss added living areas and rooms as part of planning the layout and project scope."],
+        ["Do you look at moisture and access?", "Yes. We review moisture, access and the existing conditions as part of planning the work."],
+        ["How do I get a basement estimate?", "Start with a free consultation so we can learn about the space and the work you are considering. Call {{PHONE}} or use the form on this page."],
+        ["Which areas do you serve?", "We work in the Puget Sound area. Tell us your location when you contact us and we can discuss your project."]
+      ],
+      "photoService": "kitchen",
+      "heroPhoto": "project-01",
+      "heroFocal": "50% 50%"
+    },
+    {
+      "slug": "attic-remodeling",
+      "h1": "Attic Remodeling",
+      "h1Service": "Attic Remodeling",
+      "service": "Attic",
+      "title": "Attic Remodeling | Puget Sound Builders & Renovation",
+      "description": "Attic remodeling and finishing for homes in the Puget Sound area. Turn unused attic space into a room and book a free consultation.",
+      "chip": "Something else",
+      "photos": [],
+      "handle": ["Attic finishing", "Attic remodeling", "Headroom and layout planning"],
+      "workName": "attic",
+      "gallery": ["kitchen-01", "kitchen-02", "kitchen-03", "kitchen-04", "kitchen-05", "kitchen-06"],
+      "galleryHeading": "Recent remodeling work.",
+      "galleryIntro": "Placeholder photos for now. These will be replaced with attic project photos. Tap a photo to see it larger.",
+      "formService": "Attic remodeling",
+      "formHeading": "Free attic consultation",
+      "okLine": "We will contact you soon about your attic project.",
+      "closingHeading": "Ready to talk about your attic?",
+      "faqReplace": true,
+      "heroParagraph": "Attic remodeling and finishing for homes in the Puget Sound area, planned with you from a free consultation to the final walkthrough.",
+      "aboutPhoto": 0,
+      "aboutHeading": "Attic remodeling in the Puget Sound area",
+      "about": {
+        "intro": "A finished attic can turn unused space under the roof into a room you use every day. We talk through headroom, access and how you want to use the space before agreeing on a project scope.",
+        "offer": [
+          "Attic finishing",
+          "Attic remodeling",
+          "Added bedrooms and bonus rooms",
+          "Headroom and layout planning",
+          "Guidance on local permits and codes"
+        ],
+        "options": "Compare layouts, flooring, lighting and finishes for the space, with headroom and access in mind. We can discuss how the attic should work for your household.",
+        "expect": "We review headroom, access, insulation and the existing conditions as part of planning. The scope, materials and layout are agreed with you before any work begins."
+      },
+      "process": [
+        {"title": "Free consultation", "text": "Tell us about the attic and how you want to use the finished space. We discuss your goals and the areas involved."},
+        {"title": "Review the space", "text": "We look at the attic with you and talk through headroom, access and the current layout."},
+        {"title": "Plan the layout", "text": "We agree on the rooms, finishes and work included so the space fits how you plan to use it."},
+        {"title": "Build and finish", "text": "Our team carries out the agreed attic work and keeps you informed as it progresses."},
+        {"title": "Final walkthrough", "text": "We walk through the finished attic with you and review the completed work."}
+      ],
+      "why": [
+        {"title": "Licensed and insured", "text": "Licensed in Washington, insured and bonded, with a clear scope before work begins."},
+        {"title": "Layout guidance", "text": "Talk through how to lay out the attic so the space works with the headroom available."},
+        {"title": "Clear communication", "text": "We keep you informed as the attic project moves from plan to finish."},
+        {"title": "Care with the details", "text": "Headroom, access and finish choices are part of the project review."}
+      ],
+      "faq": [
+        ["What attic work do you take on?", "We handle attic finishing and remodeling. Tell us what you have in mind during a free consultation or call {{PHONE}}."],
+        ["Can an attic become a bedroom or bonus room?", "We can discuss added bedrooms and bonus rooms as part of planning the layout and project scope."],
+        ["Does headroom affect the plan?", "Yes. We review headroom and access as part of planning how the attic space can be used."],
+        ["How do I get an attic estimate?", "Start with a free consultation so we can learn about the space and the work you are considering. Call {{PHONE}} or use the form on this page."],
+        ["Which areas do you serve?", "We work in the Puget Sound area. Tell us your location when you contact us and we can discuss your project."]
+      ],
+      "photoService": "kitchen",
+      "heroPhoto": "kitchen-07",
+      "heroFocal": "50% 50%"
+    },
+    {
+      "slug": "home-addition",
+      "h1": "Home Addition",
+      "h1Service": "Home Addition",
+      "service": "Home addition",
+      "title": "Home Addition | Puget Sound Builders & Renovation",
+      "description": "Home additions and room additions for homes in the Puget Sound area. Add square footage and book a free consultation with Puget Sound Builders & Renovation.",
+      "chip": "Something else",
+      "photos": [],
+      "handle": ["Room additions", "Bump out additions", "Second story additions"],
+      "workName": "home addition",
+      "gallery": ["project-06", "project-09", "project-13", "project-58", "project-59", "project-60"],
+      "galleryHeading": "Recent construction work.",
+      "galleryIntro": "Placeholder photos for now. These will be replaced with home addition project photos. Tap a photo to see it larger.",
+      "formService": "Home addition",
+      "formHeading": "Free home addition consultation",
+      "okLine": "We will contact you soon about your home addition project.",
+      "closingHeading": "Ready to talk about your home addition?",
+      "faqReplace": true,
+      "heroParagraph": "Home additions and room additions for homes in the Puget Sound area, planned with you from a free consultation to the final walkthrough.",
+      "aboutPhoto": 0,
+      "aboutHeading": "Home additions in the Puget Sound area",
+      "about": {
+        "intro": "A home addition adds new square footage to your house, from a bump out to a full room or a second story. We talk through your goals, the site and how the addition connects to the existing home before agreeing on a project scope.",
+        "offer": [
+          "Room additions",
+          "Bump out additions",
+          "Second story additions",
+          "Layout and site planning",
+          "Guidance on local permits and codes"
+        ],
+        "options": "Compare how the addition connects to the existing home, the layout and the finishes. We can discuss how the new space should work with the rest of the house.",
+        "expect": "We review the site, the existing structure and access as part of planning. The scope, layout and materials are agreed with you before any work begins."
+      },
+      "process": [
+        {"title": "Free consultation", "text": "Tell us about the home and the addition you have in mind. We discuss your goals and how you want to use the new space."},
+        {"title": "Review the home and site", "text": "We look at the existing home and site with you and talk through how the addition can connect."},
+        {"title": "Plan the addition", "text": "We agree on the layout, finishes and work included so the addition fits the existing home."},
+        {"title": "Build the addition", "text": "Our team carries out the agreed construction work and keeps you informed as it progresses."},
+        {"title": "Final walkthrough", "text": "We walk through the finished addition with you and review the completed work."}
+      ],
+      "why": [
+        {"title": "Licensed and insured", "text": "Licensed in Washington, insured and bonded, with a clear scope before work begins."},
+        {"title": "Layout guidance", "text": "Talk through how the addition should connect to and work with the existing home."},
+        {"title": "Clear communication", "text": "We keep you informed as the addition moves from plan to finished space."},
+        {"title": "Care with the details", "text": "The site, the existing structure and finish choices are part of the project review."}
+      ],
+      "faq": [
+        ["What kind of additions do you build?", "We can discuss room additions, bump out additions and second story additions. Tell us what you have in mind during a free consultation or call {{PHONE}}."],
+        ["How does an addition connect to my home?", "We review the existing home and site and plan how the new space connects, as part of agreeing on the project scope."],
+        ["Do additions need permits?", "Home additions in Washington often need a permit, and the rules differ by city. We can discuss what your project needs during planning."],
+        ["How do I get a home addition estimate?", "Start with a free consultation so we can learn about the home and the work you are considering. Call {{PHONE}} or use the form on this page."],
+        ["Which areas do you serve?", "We work in the Puget Sound area. Tell us your location when you contact us and we can discuss your project."]
+      ],
+      "photoService": "adu",
+      "heroPhoto": "project-03",
+      "heroFocal": "50% 50%"
+    },
+    {
+      "slug": "kitchen-main",
+      "h1": "Kitchen Remodeling in Bellevue, WA",
+      "h1Service": "Kitchen Remodeling",
+      "service": "Kitchen",
+      "title": "Kitchen Remodeling in Bellevue, WA | Puget Sound Builders & Renovation",
+      "description": "Kitchen remodeling for homes in Bellevue and the Eastside. Cabinets, countertops, layout changes and finishes. Book a free consultation.",
+      "chip": "Kitchen",
+      "photos": [],
+      "handle": ["Full kitchen remodeling", "Cabinets and countertops", "Layout changes"],
+      "workName": "kitchen",
+      "gallery": ["kitchen-02", "kitchen-03", "kitchen-04", "kitchen-05", "kitchen-06", "kitchen-07"],
+      "formService": "Kitchen remodeling",
+      "formHeading": "Free kitchen consultation",
+      "okLine": "We will contact you soon about your kitchen project.",
+      "closingHeading": "Ready to talk about your kitchen?",
+      "faqReplace": true,
+      "heroParagraph": "Kitchen remodeling for homes in Bellevue and across the Eastside, planned with you from a free consultation to the final walkthrough.",
+      "aboutPhoto": 0,
+      "aboutHeading": "Kitchen remodeling in Bellevue, WA",
+      "about": {
+        "intro": "Your kitchen is where a Bellevue home comes together. We talk through the layout, the cabinets and the finishes, and how you use the kitchen every day, before agreeing on a project scope.",
+        "offer": [
+          "Full kitchen remodeling",
+          "Cabinets and countertops",
+          "Islands and layout changes",
+          "Lighting and finishes",
+          "New appliances and fixtures"
+        ],
+        "options": "Compare cabinet styles, countertops, backsplash and flooring for your kitchen. We can discuss the layout and how the space should work for your household.",
+        "expect": "We review the current kitchen, the layout and the finishes with you. The scope, materials and schedule are agreed before any work begins in your Bellevue home."
+      },
+      "process": [
+        {"title": "Free consultation", "text": "Tell us about your kitchen and how you want to use it. We discuss your goals and the layout."},
+        {"title": "Review the kitchen", "text": "We look at the current kitchen with you and talk through the layout, cabinets and finishes."},
+        {"title": "Plan the design", "text": "We agree on the layout, materials and finishes so the kitchen fits how you cook and gather."},
+        {"title": "Build the kitchen", "text": "Our team carries out the agreed kitchen work and keeps you informed as it progresses."},
+        {"title": "Final walkthrough", "text": "We walk through the finished kitchen with you and review the completed work."}
+      ],
+      "why": [
+        {"title": "Licensed and insured", "text": "A general contractor in Bellevue, WA, licensed in Washington, insured and bonded, with a clear scope before work begins."},
+        {"title": "Design guidance", "text": "Talk through cabinets, countertops, layout and finishes with your household in mind."},
+        {"title": "Clear communication", "text": "We keep you informed as the kitchen project moves from plan to finish."},
+        {"title": "Care with the details", "text": "Layout, materials and finish choices are part of the project review."}
+      ],
+      "faq": [
+        ["What kitchen work do you take on?", "We handle full kitchen remodeling, cabinets, countertops and layout changes. Tell us what you have in mind during a free consultation or call {{PHONE}}."],
+        ["How long does a kitchen remodel take?", "It depends on the size of the kitchen, the permits it needs and how long cabinets and materials take to arrive. We discuss a realistic schedule at the consultation."],
+        ["How much does a kitchen remodel cost?", "The price depends on the layout, materials and work included. We can discuss the scope during a free consultation."],
+        ["Do you serve Bellevue and the Eastside?", "Yes. We are based in Bellevue and work across the Eastside and the wider Puget Sound area. Tell us your location when you contact us."],
+        ["How do I get started?", "Start with a free consultation so we can learn about your kitchen and the work you are considering. Call {{PHONE}} or use the form on this page."]
+      ],
+      "photoService": "kitchen",
+      "heroPhoto": "kitchen-01",
+      "heroFocal": "50% 50%"
+    },
+    {
+      "slug": "bathroom-main",
+      "h1": "Bathroom Remodeling in Bellevue, WA",
+      "h1Service": "Bathroom Remodeling",
+      "service": "Bathroom",
+      "title": "Bathroom Remodeling in Bellevue, WA | Puget Sound Builders & Renovation",
+      "description": "Bathroom remodeling for homes in Bellevue and the Eastside. Showers, tubs, vanities, tile and fixtures. Book a free consultation.",
+      "chip": "Bathroom",
+      "photos": [],
+      "handle": ["Full bathroom remodeling", "Shower and tub updates", "Tile and fixtures"],
+      "workName": "bathroom",
+      "gallery": ["project-16", "project-17", "project-18", "project-25", "project-26", "project-27"],
+      "formService": "Bathroom remodeling",
+      "formHeading": "Free bathroom consultation",
+      "okLine": "We will contact you soon about your bathroom project.",
+      "closingHeading": "Ready to talk about your bathroom?",
+      "faqReplace": true,
+      "heroParagraph": "Bathroom remodeling for homes in Bellevue and across the Eastside, planned with you from a free consultation to the final walkthrough.",
+      "aboutPhoto": 0,
+      "aboutHeading": "Bathroom remodeling in Bellevue, WA",
+      "about": {
+        "intro": "A bathroom remodel can make a Bellevue home more comfortable and easier to use. We talk through the layout, the shower or tub, the vanity and the finishes before agreeing on a project scope.",
+        "offer": [
+          "Full bathroom remodeling",
+          "Shower and tub updates",
+          "Vanities and storage",
+          "Tile and fixtures",
+          "Lighting and finishes"
+        ],
+        "options": "Compare tile, vanities, fixtures and finishes for your bathroom. We can discuss the layout and whether a shower or tub suits how you use the space.",
+        "expect": "We review the current bathroom, the layout and the finishes with you. The scope, materials and schedule are agreed before any work begins in your Bellevue home."
+      },
+      "process": [
+        {"title": "Free consultation", "text": "Tell us about your bathroom and what you want to change. We discuss your goals and the layout."},
+        {"title": "Review the bathroom", "text": "We look at the current bathroom with you and talk through the layout, fixtures and finishes."},
+        {"title": "Plan the design", "text": "We agree on the layout, materials and finishes so the bathroom works for your household."},
+        {"title": "Build the bathroom", "text": "Our team carries out the agreed bathroom work and keeps you informed as it progresses."},
+        {"title": "Final walkthrough", "text": "We walk through the finished bathroom with you and review the completed work."}
+      ],
+      "why": [
+        {"title": "Licensed and insured", "text": "A general contractor in Bellevue, WA, licensed in Washington, insured and bonded, with a clear scope before work begins."},
+        {"title": "Design guidance", "text": "Talk through showers, tubs, tile, vanities and finishes with your household in mind."},
+        {"title": "Clear communication", "text": "We keep you informed as the bathroom project moves from plan to finish."},
+        {"title": "Care with the details", "text": "Layout, waterproofing and finish choices are part of the project review."}
+      ],
+      "faq": [
+        ["What bathroom work do you take on?", "We handle full bathroom remodeling, shower and tub updates, tile and fixtures. Tell us what you have in mind during a free consultation or call {{PHONE}}."],
+        ["Can you convert a tub to a shower?", "We can discuss shower and tub updates, including conversions, as part of planning the layout and project scope."],
+        ["How much does a bathroom remodel cost?", "The price depends on the layout, materials and work included. We can discuss the scope during a free consultation."],
+        ["Do you serve Bellevue and the Eastside?", "Yes. We are based in Bellevue and work across the Eastside and the wider Puget Sound area. Tell us your location when you contact us."],
+        ["How do I get started?", "Start with a free consultation so we can learn about your bathroom and the work you are considering. Call {{PHONE}} or use the form on this page."]
+      ],
+      "photoService": "bathroom",
+      "heroPhoto": "project-15",
+      "heroFocal": "50% 50%"
+    },
+    {
+      "slug": "roofing-main",
+      "h1": "Roofing in Bellevue, WA",
+      "h1Service": "Roofing",
+      "service": "Roofing",
+      "title": "Roofing in Bellevue, WA | Puget Sound Builders & Renovation",
+      "description": "Roofing for homes in Bellevue and the Eastside. Roof replacement, repair and material choices. Book a free consultation.",
+      "chip": "Roofing",
+      "photos": [],
+      "handle": ["Roof replacement", "Roof repair", "Material choices"],
+      "workName": "roofing",
+      "gallery": ["project-28", "project-29", "project-30", "project-31", "project-32", "project-34"],
+      "formService": "Roofing",
+      "formHeading": "Free roofing consultation",
+      "okLine": "We will contact you soon about your roofing project.",
+      "closingHeading": "Ready to talk about your roof?",
+      "faqReplace": true,
+      "heroParagraph": "Roofing for homes in Bellevue and across the Eastside, planned with you from a free consultation to the final walkthrough.",
+      "aboutPhoto": 0,
+      "aboutHeading": "Roofing in Bellevue, WA",
+      "about": {
+        "intro": "A sound roof protects a Bellevue home through the wet Northwest seasons. We talk through the condition of the roof, your goals and the material options before agreeing on a project scope.",
+        "offer": [
+          "Roof replacement",
+          "Roof repair",
+          "Material and color choices",
+          "Flashing and detail work",
+          "Guidance on local permits and codes"
+        ],
+        "options": "Compare roofing materials and colors for your home. We can discuss the condition of the current roof and what suits the Northwest climate.",
+        "expect": "We review the roof, the scope and the material selections with you. The scope and schedule are agreed before any work begins in your Bellevue home."
+      },
+      "process": [
+        {"title": "Free consultation", "text": "Tell us about the roof and what you are seeing. We discuss your goals and the areas involved."},
+        {"title": "Review the roof", "text": "We look at the roof with you and talk through its condition and the options for the project."},
+        {"title": "Plan the scope", "text": "We agree on the roofing materials, finish choices and work included in the project."},
+        {"title": "Complete the roofing", "text": "Our team carries out the agreed roofing work and keeps you informed as it progresses."},
+        {"title": "Final walkthrough", "text": "We review the finished roof with you and walk through the completed work."}
+      ],
+      "why": [
+        {"title": "Licensed and insured", "text": "A general contractor in Bellevue, WA, licensed in Washington, insured and bonded, with a clear scope before work begins."},
+        {"title": "Material guidance", "text": "Talk through roofing materials and colors with the Northwest climate in mind."},
+        {"title": "Clear communication", "text": "We keep you informed as the roofing project moves from plan to finish."},
+        {"title": "Care with the details", "text": "Flashing, edges and finish choices are part of the project review."}
+      ],
+      "faq": [
+        ["What roofing work do you take on?", "We handle roof replacement and repair. Tell us what you have in mind during a free consultation or call {{PHONE}}."],
+        ["What roofing materials can we discuss?", "We can talk through the available roofing materials and colors and what suits your home and the Northwest climate."],
+        ["Can you help with permits?", "We can discuss local permit and code questions as part of planning your roofing project."],
+        ["Do you serve Bellevue and the Eastside?", "Yes. We are based in Bellevue and work across the Eastside and the wider Puget Sound area. Tell us your location when you contact us."],
+        ["How do I get started?", "Start with a free consultation so we can learn about the roof and the work you are considering. Call {{PHONE}} or use the form on this page."]
+      ],
+      "photoService": "roofing",
+      "heroPhoto": "project-33",
+      "heroFocal": "50% 50%"
+    },
+    {
+      "slug": "floor-main",
+      "h1": "Floor Replacement in Bellevue, WA",
+      "h1Service": "Floor Replacement",
+      "service": "Flooring",
+      "title": "Floor Replacement in Bellevue, WA | Puget Sound Builders & Renovation",
+      "description": "Floor replacement for homes in Bellevue and the Eastside. Hardwood, laminate, vinyl plank, tile and carpet. Book a free consultation.",
+      "chip": "Something else",
+      "photos": [],
+      "handle": ["Floor replacement", "Hardwood, laminate and vinyl plank", "Tile and carpet"],
+      "workName": "flooring",
+      "gallery": ["kitchen-01", "kitchen-02", "kitchen-03", "kitchen-04", "kitchen-05", "kitchen-06"],
+      "galleryHeading": "Recent remodeling work.",
+      "galleryIntro": "Placeholder photos for now. These will be replaced with floor replacement project photos. Tap a photo to see it larger.",
+      "formService": "Floor replacement",
+      "formHeading": "Free flooring consultation",
+      "okLine": "We will contact you soon about your flooring project.",
+      "closingHeading": "Ready to talk about your floors?",
+      "faqReplace": true,
+      "heroParagraph": "Floor replacement for homes in Bellevue and across the Eastside, with material options and installation scope planned around the space.",
+      "aboutPhoto": 0,
+      "aboutHeading": "Floor replacement in Bellevue, WA",
+      "about": {
+        "intro": "New floors can refresh a Bellevue home from room to room. We talk through the material options, the rooms in scope and how you use the space before agreeing on a project scope.",
+        "offer": [
+          "Hardwood flooring",
+          "Laminate and vinyl plank",
+          "Tile flooring",
+          "Carpet",
+          "Floor replacement"
+        ],
+        "options": "Compare hardwood, laminate, vinyl plank, tile and carpet for the rooms in your project. We can discuss the look, care and practical needs of each option.",
+        "expect": "Subfloor condition and moisture are considered as part of installation planning. We review the work included, material selection and layout before any work begins in your Bellevue home."
+      },
+      "process": [
+        {"title": "Free consultation", "text": "Tell us which rooms and floors you are considering. We discuss the space, your preferences and the project scope."},
+        {"title": "Review the existing floor", "text": "We look at the areas with you and discuss the condition of the current flooring and subfloor."},
+        {"title": "Choose materials and layout", "text": "Compare flooring materials and decide how the new floor should work across the rooms in scope."},
+        {"title": "Prepare and install", "text": "We carry out the agreed flooring work and keep you updated as installation progresses."},
+        {"title": "Final walkthrough", "text": "We review the finished floors with you and walk through the completed work."}
+      ],
+      "why": [
+        {"title": "Licensed and insured", "text": "A general contractor in Bellevue, WA, licensed in Washington, insured and bonded, with a clear scope before work begins."},
+        {"title": "Material guidance", "text": "Compare wood, laminate, vinyl plank, tile and carpet with the needs of each room in mind."},
+        {"title": "Clear communication", "text": "We keep you informed as the flooring work moves from planning to installation."},
+        {"title": "Attention to detail", "text": "Subfloor condition, layout and transitions are part of the installation discussion."}
+      ],
+      "faq": [
+        ["What flooring materials can I choose from?", "We can discuss hardwood, laminate, vinyl plank, tile and carpet for your project."],
+        ["Is subfloor preparation part of the work?", "We review the existing floor and subfloor as part of planning the installation and agreeing on the project scope."],
+        ["How much does floor replacement cost?", "The price depends on the rooms, materials and work included. We can discuss the scope during a free consultation."],
+        ["Do you serve Bellevue and the Eastside?", "Yes. We are based in Bellevue and work across the Eastside and the wider Puget Sound area. Tell us your location when you contact us."],
+        ["How do I get started?", "Start with a free consultation so we can learn about the space and the work you are considering. Call {{PHONE}} or use the form on this page."]
+      ],
+      "photoService": "kitchen",
+      "heroPhoto": "kitchen-08",
+      "heroFocal": "50% 50%"
     }
   ]
 }

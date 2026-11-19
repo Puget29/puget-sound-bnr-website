@@ -49,9 +49,9 @@ def services_section():
     n = len(SERVICES)
     items = ""
     for i, (name, slug, kick, desc, bullets, icon, form) in enumerate(SERVICES):
-        href = {"adu": URLS["servicePages"]["adu-garage-conversion"], "kitchen": URLS["servicePages"]["kitchen-remodeling"], "bathroom": URLS["servicePages"]["bathroom-remodeling"],
-                "roofing": URLS["servicePages"]["roofing"], "deck": URLS["servicePages"]["deck-building"], "siding": URLS["servicePages"]["siding"],
-                "flooring": URLS["servicePages"]["flooring"], "painting": URLS["servicePages"]["painting"]}.get(slug, URLS["services"])
+        href = {"adu": URLS["servicePages"]["adu-garage-conversion"], "kitchen": URLS["servicePages"]["kitchen-main"], "bathroom": URLS["servicePages"]["bathroom-main"],
+                "roofing": URLS["servicePages"]["roofing-main"], "deck": URLS["servicePages"]["deck-building"], "siding": URLS["servicePages"]["siding"],
+                "flooring": URLS["servicePages"]["floor-main"], "painting": URLS["servicePages"]["painting"]}.get(slug, URLS["services"])
         bl = "".join(f"<li>{esc(b)}</li>" for b in bullets)
         items += f'''<div class="car__item" role="group" aria-roledescription="slide" aria-label="{esc(name)}, {i + 1} of {n}" data-svc="{slug}" data-page="/services/{slug}/" style="--tone:{i}">
         <a class="car__card" href="{href}">

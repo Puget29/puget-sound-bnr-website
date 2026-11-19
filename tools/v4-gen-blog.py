@@ -16,6 +16,12 @@ _BLOG_IMAGE_MAP = {x["url"]: x for x in _BLOG_IMAGES}
 _BLOG_SITE_HOSTS = {"pugetsoundbnr.com", "www.pugetsoundbnr.com"}
 _BLOG_INTERNAL_PATHS = {v for v in URLS.values() if isinstance(v, str)} | set(URLS.get("servicePages", {}).values()) | {"/", "/blog/"}
 _BLOG_INTERNAL_PATHS.update(_blog_urlparse(p.get("link", "")).path for p in _BLOG_RAW if _blog_urlparse(p.get("link", "")).path)
+# Imported post bodies still cross-link to the old root-level blog URLs (/<slug>/), which 404 now that
+# posts are published at /blog/<slug>/. Remap those paths to the real location. A slug whose root URL is a
+# real published page (e.g. /siding-replacement/, the Siding service page) is left pointing at that page.
+_BLOG_RESERVED_PATHS = {v for v in URLS.values() if isinstance(v, str)} | set(URLS.get("servicePages", {}).values())
+_BLOG_POST_REMAP = {f"/{_slug}/": f"/blog/{_slug}/" for _slug in _BLOG_SAVED if f"/{_slug}/" not in _BLOG_RESERVED_PATHS}
+_BLOG_INTERNAL_PATHS |= set(_BLOG_POST_REMAP.values())
 
 def _blog_img_key(url):
     u = _blog_urlparse(url)
@@ -59,7 +65,8 @@ class _BlogClean(_BlogParser):
             u = _blog_urlparse(_blog_urljoin(SITE + self.base_path, href))
             if u.netloc.lower() in _BLOG_SITE_HOSTS:
                 suffix = ("?" + u.query if u.query else "") + ("#" + u.fragment if u.fragment else "")
-                href = (u.path or "/") + suffix if (u.path or "/") in _BLOG_INTERNAL_PATHS else SITE + (u.path or "/") + suffix
+                _p = _BLOG_POST_REMAP.get(u.path or "/", u.path or "/")   # old root blog URL -> /blog/<slug>/
+                href = _p + suffix if _p in _BLOG_INTERNAL_PATHS else SITE + _p + suffix
             keep += ' href="' + esc(href) + '"'
             if d.get("target") == "_blank": keep += ' target="_blank" rel="noopener noreferrer"'
         elif tag == "img":
@@ -149,12 +156,12 @@ _BLOG_CARDS = []
 for _p in _BLOG_POSTS:
     _img_url = _p["featuredImage"]
     _card_img = _blog_image(_img_url, 1) if _img_url else ""
-    _card_image = f'<a class="blog-card__image" href="/{esc(_p["slug"])}/" data-blog-slug="{esc(_p["slug"])}" aria-label="Read {esc(_p["title"])}">{_card_img}</a>' if _card_img else ""
+    _card_image = f'<a class="blog-card__image" href="/blog/{esc(_p["slug"])}/" data-blog-slug="{esc(_p["slug"])}" aria-label="Read {esc(_p["title"])}">{_card_img}</a>' if _card_img else ""
     _BLOG_CARDS.append(f'''<article class="blog-card">
   {_card_image}
   <div class="blog-card__copy"><p class="blog-card__date"><time datetime="{esc(_p['date'])}">{esc(_blog_date(_p['date']))}</time></p>
-    <h2><a href="/{esc(_p['slug'])}/" data-blog-slug="{esc(_p['slug'])}">{esc(_p['title'])}</a></h2><p>{esc(_p['excerpt'])}</p>
-    <a class="blog-card__more" href="/{esc(_p['slug'])}/" data-blog-slug="{esc(_p['slug'])}">Read article<span aria-hidden="true"> ↗</span></a></div>
+    <h2><a href="/blog/{esc(_p['slug'])}/" data-blog-slug="{esc(_p['slug'])}">{esc(_p['title'])}</a></h2><p>{esc(_p['excerpt'])}</p>
+    <a class="blog-card__more" href="/blog/{esc(_p['slug'])}/" data-blog-slug="{esc(_p['slug'])}">Read article<span aria-hidden="true"> ↗</span></a></div>
 </article>''')
 
 _BLOG_INDEX_PATH = "/blog/"
@@ -170,15 +177,17 @@ w("blog/index.html", _BLOG_INDEX)
 _BLOG_FORM = _form({"chip": "", "formHeading": "Free consultation", "formService": "Blog"}, "blog")
 for _p in _BLOG_POSTS:
     _up = "../../"
+    # Posts are published at /blog/<slug>/ (where the files are written below), so that is the canonical URL.
+    _canon_path = "/blog/" + _p["slug"] + "/"
     _ld = {"@context": "https://schema.org", "@type": "Article", "headline": _p["title"], "datePublished": _p["date"],
            "dateModified": _p["modified"], "author": {"@type": "Person", "name": _p["author"]},
            "articleSection": _p["category"], "image": [LIVE + _p["featuredImage"]] if _p["featuredImage"].startswith("/") else ([_p["featuredImage"]] if _p["featuredImage"] else []),
-           "mainEntityOfPage": {"@type": "WebPage", "@id": _p["canonical"]}, "publisher": {"@type": "Organization", "name": "Puget Sound Builders & Renovation"}}
+           "mainEntityOfPage": {"@type": "WebPage", "@id": SITE + _canon_path}, "publisher": {"@type": "Organization", "name": "Puget Sound Builders & Renovation"}}
     _desc = _p["metaDescription"] or ""
     _seo_head = f'<meta name="author" content="{esc(_p["author"])}">\n' if _p["author"] else ""
     _hero = _blog_image(_p["featuredImage"], 2, True) if _p["featuredImage"] else ""
     _body_html = _blog_clean(_p["bodyHtml"], 2, _p["path"])
-    _post_html = (head(_p["seoTitle"], _desc, _p["path"], _up, extra_head=_seo_head, jsonld=[_ld])
+    _post_html = (head(_p["seoTitle"], _desc, _canon_path, _up, extra_head=_seo_head, jsonld=[_ld])
         + "<body>\n" + '<a class="skip" href="#main">Skip to content</a>\n' + banner() + header(_up, "blog", False)
         + f'''<main id="main" class="blog-post"><article class="sec sec--dark" aria-labelledby="post-title"><div class="wrap blog-reading">
   <nav class="crumbs blog-crumbs" aria-label="Breadcrumb"><a href="/blog/">Blog</a><span aria-hidden="true">/</span><span aria-current="page">{esc(_p['category'])}</span></nav>

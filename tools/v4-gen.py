@@ -9,19 +9,22 @@ ROOT = os.environ.get("V4_ROOT") == "1"
 if ROOT: OUT = os.path.join(OUT, "_root")
 def shared(up): return up if ROOT else up + "../"      # where the shared css, js, vendor and assets live, seen from a page that is `up` deep
 OG = "/assets/og.jpg" if ROOT else "/v4/assets/og.jpg"
-SITE = "https://www.pugetsoundbnr.com"
+SITE = "https://pugetsoundbnr.com"
 URLS = json.load(io.open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "v4-links.json"), encoding="utf-8"))
 CONTACT = URLS["contact"]
 _CITY_LIST = json.load(io.open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "city-list.json"), encoding="utf-8"))
 _SERVICE_ORDER = [
-    ("Kitchen remodeling", "kitchen-remodeling"),
-    ("Bathroom remodeling", "bathroom-remodeling"),
-    ("Roofing", "roofing"),
+    ("Kitchen remodeling", "kitchen-main"),
+    ("Bathroom remodeling", "bathroom-main"),
+    ("Roofing", "roofing-main"),
     ("Deck building", "deck-building"),
     ("ADU and garage conversion", "adu-garage-conversion"),
     ("Siding", "siding"),
-    ("Flooring", "flooring"),
+    ("Floor replacement", "floor-main"),
     ("Painting", "painting"),
+    ("Basement remodeling", "basement-remodeling"),
+    ("Attic remodeling", "attic-remodeling"),
+    ("Home addition", "home-addition"),
 ]
 
 PHONE_TXT, PHONE_TEL = "(425) 696-4004", "+14256964004"
@@ -81,6 +84,10 @@ DEV_SCRIPT = r'''<script>/* js class gates the reveal states. ?dark turns the st
 # ---------------------------------------------------------------- partials ----
 def head(title, desc, path, up, extra_head="", jsonld=None, depth_assets=None):
     A = shared(up)      # shared v3 css, assets
+    # Indexation: individual city/location landing pages (/service-areas/<city>/) stay out of the
+    # index, as does the 404 error page; the /service-areas/ hub and every other page are indexable.
+    is_location = path.startswith("/service-areas/") and path != "/service-areas/"
+    robots = "noindex" if (is_location or path == "/404.html") else "index, follow"
     ld = "".join(f'<script type="application/ld+json">{json.dumps(j, ensure_ascii=False)}</script>\n' for j in (jsonld or []))
     return f'''<!doctype html>
 <html lang="en">
@@ -89,8 +96,7 @@ def head(title, desc, path, up, extra_head="", jsonld=None, depth_assets=None):
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
-<!-- DEMO: remove this noindex line at launch. Canonical points at the planned live address. -->
-<meta name="robots" content="noindex">
+<meta name="robots" content="{robots}">
 <link rel="canonical" href="{SITE}{path}">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Puget Sound Builders &amp; Renovation">

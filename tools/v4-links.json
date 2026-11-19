@@ -15,7 +15,14 @@
     "adu-garage-conversion": "/our-services/adu-garage-conversion/",
     "siding": "/siding-replacement/",
     "flooring": "/flooring-replacement-in-seattle/",
-    "painting": "/our-services/painting/"
+    "painting": "/our-services/painting/",
+    "kitchen-main": "/our-services/kitchen-remodeling/",
+    "bathroom-main": "/our-services/bathroom-remodeling/",
+    "roofing-main": "/our-services/roofing/",
+    "floor-main": "/our-services/floor-replacement/",
+    "basement-remodeling": "/our-services/basement-remodeling/",
+    "attic-remodeling": "/our-services/attic-remodeling/",
+    "home-addition": "/our-services/home-addition/"
   },
   "siding": "/siding-replacement/",
   "flooring": "/flooring-replacement-in-seattle/"

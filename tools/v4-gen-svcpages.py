@@ -16,6 +16,12 @@ _CH = _rj("services.json")["chips"]
 _CARDS = {c["slug"]: c for c in _rj("service-photos.json")["cards"]}
 _SPU = URLS["servicePages"]
 _UP = "../../"
+
+def _rel_of(url):
+    # The folder a page is written to is its real public URL, not its slug. This lets the Seattle
+    # service records keep their Seattle URLs while separate records own the /our-services/ pages.
+    u = url.strip("/")
+    return (u + "/index.html") if u else "index.html"
 _GOOGLE = _TJ["google"]["url"] if "_TJ" in globals() else ""
 _ASSET_PHOTOS = {
     "painting-card": {"widths": [640, 960], "w": 960, "h": 1200, "alt": "Painter rolling a fresh coat of paint on an interior wall", "objectPosition": "50% 42%"}
@@ -194,7 +200,9 @@ def _page(sv):
 # ------------------------------------------------------------------ overview ----
 def _overview():
     rows = ""
-    for i, sv in enumerate(_ALL_SP):
+    _by = {sv["slug"]: sv for sv in _ALL_SP}
+    _ordered = [_by[key] for _lbl, key in _SERVICE_ORDER if key in _by]
+    for i, sv in enumerate(_ordered):
         pid = sv["heroPhoto"]; _check_real(pid, sv["photoService"])
         offer = sv["about"].get("offer", [])[:3]
         li = "".join(_sv_bullet_item(_t(x)) for x in offer)
@@ -234,13 +242,13 @@ def _overview():
             + "<body>\n<!-- Services overview. Links go to the service pages (tools/v4-links.json servicePages). -->\n" + '<a class="skip" href="#main">Skip to content</a>\n'
             + banner() + header(_UP, "services", False) + body + footer(_UP) + mbar(_UP) + scripts(_UP, False) + "</body>\n</html>\n").replace('href="../"', f'href="{_UP}"').replace('href="../contact/', f'href="{CONTACT}')
 
-w("our-services/index.html", _overview())
+w(_rel_of(_SPU["overview"]), _overview())
 for _sv in _ALL_SP:
     if _sv["slug"] == "kitchen-remodeling":
         continue
     _out = _page(_sv)
     if _re.search(r"whatsapp|wa\.me", _out, _re.I): raise SystemExit("service pages: WhatsApp found")
-    w(f"our-services/{_sv['slug']}/index.html", _out)
+    w(_rel_of(_SPU[_sv["slug"]]), _out)
 
 # Kitchen has its own long form page, still generated from the shared page system.
 exec(open(os.path.join(os.path.dirname(__file__), "v4-gen-kitchen.py"), encoding="utf-8").read(), globals())
