@@ -23,3 +23,19 @@ def privacy():
             + body + footer("../") + mbar("../") + scripts("../", False) + "</body>\n</html>\n")
 
 w("privacy/index.html", privacy())
+
+
+# Thank you page: where the forms land without JavaScript. Always noindex, also in the production build.
+def thank_you():
+    body = (
+        '<main id="main">\n<section class="page-hero page-hero--short" aria-labelledby="ty-h">\n  <div class="wrap page-hero__grid"><div>\n'
+        '    <h1 id="ty-h">Thank you.</h1>\n    <p class="lede">We have your details. Someone from the office will get back to you within one business day.</p>\n'
+        f'    <p class="lede">Need us sooner? Call <a href="tel:{PHONE_TEL}">{PHONE_TXT}</a>.</p>\n'
+        '    <p><a class="btn btn--primary" href="../">Back to the home page</a></p>\n  </div></div>\n</section></main>\n'
+    )
+    return (head("Thank you | Puget Sound Builders & Renovation", "Thank you for contacting Puget Sound Builders & Renovation. We will be in touch shortly.",
+                 "/thank-you/", "../", "", [], None, '<meta name="robots" content="noindex, follow">')
+            + "<body>\n" + '<a class="skip" href="#main">Skip to content</a>\n' + banner() + header("../", "thank-you", False)
+            + body + footer("../") + mbar("../") + scripts("../", False) + "</body>\n</html>\n")
+
+w("thank-you/index.html", thank_you())
