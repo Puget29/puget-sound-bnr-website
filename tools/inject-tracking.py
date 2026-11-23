@@ -22,7 +22,7 @@ from tracking import tracking_blocks
 
 def main():
     stage = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("build") / "stage"
-    head, noscript = tracking_blocks()
+    head, noscript = tracking_blocks(defer=True)
     if not head:
         print("inject-tracking: no tracking enabled in data/tracking.json, nothing to inject")
         return
