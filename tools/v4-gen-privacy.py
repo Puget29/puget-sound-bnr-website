@@ -1,24 +1,28 @@
 # Privacy page. Exec'd by v4-gen-pages.py (shares its helpers). The text is SAMPLE wording: have it checked before launch.
 
 def privacy():
+    updated = "Last updated: November 23, 2026"
     items = [
-        ("What we collect", "When you use a form on this site we collect what you type: your name, phone number, email address, ZIP code, a description of your project and, if you add them, photos of your space."),
-        ("How we use it", "We use these details to reply to your request and to plan your project with you. We do not sell your details."),
-        ("Who sees it", "The BNR office team sees your message. We share details only with the people who need them to do the work you asked for, or when the law requires it."),
-        ("How long we keep it", "We keep your details for as long as we need them to answer you and to work on your project, then we delete them."),
-        ("Cookies and tracking", "This site does not set tracking cookies."),
-        ("Your choices", f"You can ask us to show, correct or delete the details you sent. Call {PHONE_TXT} or write to {EMAIL}."),
+        ("Who we are", "This website, pugetsoundbnr.com, is operated by Puget Sound Builders & Renovation - Kitchen & Bathroom, a general contractor based at 11170 NE 10th St, Bellevue, WA 98004. This policy explains what information we collect through this website and how we use it."),
+        ("What we collect and why", "When you submit a form on this site, we collect the details you enter: your name, phone number, email address, ZIP code and a description of your project. We also receive basic information about how you reached us, such as the page you arrived from and the search or ad that referred you. We use these details only to respond to your inquiry and to plan your project with you. We do not use them for marketing without your consent."),
+        ("Contact forms", "Form submissions on this site are processed through Netlify, our website host and forms provider, which delivers your message to our office. A hidden anti-spam field helps us filter out automated submissions."),
+        ("Cookies and tracking", "This site uses Google Tag Manager and Google Ads, which may set cookies and collect information such as your device type, approximate location and the pages you view, so we can measure website visits and the performance of our advertising. You can control cookies through your browser settings."),
+        ("Embedded content", "Some pages include an embedded Google Map. Google may collect data and set cookies through that embed, the same as if you visited Google directly."),
+        ("Who we share data with", "We share information only with the providers that help us run this site and respond to you: Netlify (website hosting and form delivery) and Google (Tag Manager, Google Ads and Maps). We do not sell or rent your personal information."),
+        ("How long we keep it", "We keep the details you send us for as long as we need them to answer your inquiry and keep reasonable business records, and then we delete them."),
+        ("Your rights and choices", f"You can ask us to show, correct or delete the information you sent us, subject to any records we must keep for legal or security reasons. Call {PHONE_TXT} or email {EMAIL}."),
+        ("Contact", f"For any privacy question, contact Puget Sound Builders & Renovation at {EMAIL} or {PHONE_TXT}, 11170 NE 10th St, Bellevue, WA 98004."),
     ]
-    prose = "".join(f"<h2>{esc(h)}</h2><p>{esc(t)}</p>" for h, t in items)
+    prose = f"<p><em>{esc(updated)}</em></p>" + "".join(f"<h2>{esc(h)}</h2><p>{esc(t)}</p>" for h, t in items)
     body = (
         '<main id="main">\n<section class="page-hero page-hero--short" aria-labelledby="pv-h">\n  <div class="wrap page-hero__grid"><div>\n'
         '    <nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><span aria-current="page">Privacy policy</span></nav>\n'
         '    <h1 id="pv-h">Privacy policy.</h1>\n    <p class="lede">How we handle the details you send us.</p>\n  </div></div>\n</section>\n'
         '<section class="sec sec--slab"><div class="wrap"><div class="prose prose--doc rv">' + prose + '</div></div></section></main>\n'
     )
-    return (head("Privacy policy | Puget Sound Builders & Renovation",
-                 "How Puget Sound Builders & Renovation handles the details you send through this website.",
-                 "/privacy/", "../", "", [crumbs_ld("Privacy policy", "/privacy/")])
+    return (head("Privacy Policy | Puget Sound Builders & Renovation",
+                 "Read the privacy policy for Puget Sound Builders & Renovation: what details we collect when you contact us, how we use them and how we keep them safe.",
+                 "/privacy/", "../", "", [])  # Other page: no schema
             + "<body>\n" + '<a class="skip" href="#main">Skip to content</a>\n' + banner() + header("../", "privacy", False)
             + body + footer("../") + mbar("../") + scripts("../", False) + "</body>\n</html>\n")
 

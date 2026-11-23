@@ -165,7 +165,7 @@ for _p in _BLOG_POSTS:
 </article>''')
 
 _BLOG_INDEX_PATH = "/blog/"
-_BLOG_INDEX = (head("Blog Archives - Pugetsoundbnr", "", _BLOG_INDEX_PATH, _BLOG_UP)
+_BLOG_INDEX = (head("Remodeling Blog | Puget Sound Builders & Renovation", "Tips and guides on kitchen, bathroom, siding, decking and whole-home remodeling from the team at Puget Sound Builders & Renovation. Read the latest posts.", _BLOG_INDEX_PATH, _BLOG_UP)
     + "<body>\n" + '<a class="skip" href="#main">Skip to content</a>\n' + banner() + header(_BLOG_UP, "blog", False)
     + f'''<main id="main"><section class="sec sec--dark blog-index" aria-labelledby="blog-title"><div class="wrap">
   <div class="blog-intro"><p class="eyebrow">From the blog</p><h1 class="h1" id="blog-title">Blog</h1></div>
@@ -182,12 +182,12 @@ for _p in _BLOG_POSTS:
     _ld = {"@context": "https://schema.org", "@type": "Article", "headline": _p["title"], "datePublished": _p["date"],
            "dateModified": _p["modified"], "author": {"@type": "Person", "name": _p["author"]},
            "articleSection": _p["category"], "image": [LIVE + _p["featuredImage"]] if _p["featuredImage"].startswith("/") else ([_p["featuredImage"]] if _p["featuredImage"] else []),
-           "mainEntityOfPage": {"@type": "WebPage", "@id": SITE + _canon_path}, "publisher": {"@type": "Organization", "name": "Puget Sound Builders & Renovation"}}
+           "mainEntityOfPage": {"@type": "WebPage", "@id": SITE + _canon_path}, "publisher": {"@type": "Organization", "name": "Puget Sound Builders & Renovation - Kitchen & Bathroom"}}
     _desc = _p["metaDescription"] or ""
     _seo_head = f'<meta name="author" content="{esc(_p["author"])}">\n' if _p["author"] else ""
     _hero = _blog_image(_p["featuredImage"], 2, True) if _p["featuredImage"] else ""
     _body_html = _blog_clean(_p["bodyHtml"], 2, _p["path"])
-    _post_html = (head(_p["seoTitle"], _desc, _canon_path, _up, extra_head=_seo_head, jsonld=[_ld])
+    _post_html = (head(_p["seoTitle"], _desc, _canon_path, _up, extra_head=_seo_head, jsonld=[])  # Blog post: no schema
         + "<body>\n" + '<a class="skip" href="#main">Skip to content</a>\n' + banner() + header(_up, "blog", False)
         + f'''<main id="main" class="blog-post"><article class="sec sec--dark" aria-labelledby="post-title"><div class="wrap blog-reading">
   <nav class="crumbs blog-crumbs" aria-label="Breadcrumb"><a href="/blog/">Blog</a><span aria-hidden="true">/</span><span aria-current="page">{esc(_p['category'])}</span></nav>

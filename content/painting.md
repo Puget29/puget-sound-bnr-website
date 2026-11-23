@@ -1,7 +1,7 @@
 # PAINTING PAGE CONTENT
 
 TITLE TAG: Painting Services in Seattle, WA | Puget Sound BNR
-META DESCRIPTION: Interior and exterior painting in Seattle and Bellevue. Careful prep, clean lines and lasting finishes, with a free consultation. Call (425) 696-4004.
+META DESCRIPTION: Interior and exterior painting in Seattle and Bellevue. Careful prep, clean lines and lasting finishes, with a free consultation. Call (425) 696-7586.
 H1: Interior and Exterior Painting in Seattle, WA
 
 ---
@@ -14,7 +14,7 @@ Puget Sound BNR paints interiors and exteriors for homeowners in Seattle, Bellev
 
 Whether you want one room refreshed, the whole inside of the house updated or an exterior that holds up to our rain, we start by looking at the surfaces. Then we plan the preparation, the products and the finish around your home and your budget.
 
-[Book your free consultation]   [Call (425) 696-4004]
+[Book your free consultation]   [Call (425) 696-7586]
 
 ---
 
@@ -153,7 +153,7 @@ A well planned painting project feels organized even when every room has drop cl
 - **Work that fits your home.** We plan the work around your house, your surfaces and your budget, not a template.
 - **Respect for your home.** We protect your space, clean up daily and treat your house the way we would treat our own.
 
-Ready to talk about your painting project? [Get your free estimate] or call (425) 696-4004.
+Ready to talk about your painting project? [Get your free estimate] or call (425) 696-7586.
 
 ---
 
@@ -201,7 +201,7 @@ Tell us where you are and we will let you know if we can take on your project.
 
 ### Let's Build Something Exceptional
 
-If you are thinking about painting, the first step is simple. [Book your free consultation] or call (425) 696-4004, and we will come to you, look at your surfaces and tell you honestly what they need.
+If you are thinking about painting, the first step is simple. [Book your free consultation] or call (425) 696-7586, and we will come to you, look at your surfaces and tell you honestly what they need.
 
 ### Related services
 

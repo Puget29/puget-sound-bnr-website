@@ -1,7 +1,7 @@
 # ROOFING PAGE CONTENT
 
-TITLE TAG: Roof Repair and Replacement in Seattle, WA | Puget Sound BNR
-META DESCRIPTION: Roof repair and replacement in Seattle and Bellevue. Inspections, leak repair and full re-roofing, with a free consultation. Call (425) 696-4004.
+TITLE TAG: Roof Repair Company in Seattle, WA | Puget Sound BNR
+META DESCRIPTION: Roof repair in Seattle from Puget Sound Builders & Renovation: leaks, flashing and worn roofs fixed by one team. Book your free consultation today now.
 H1: Roof Repair and Replacement in Seattle, WA
 
 ---
@@ -14,7 +14,7 @@ Puget Sound BNR repairs and replaces roofs for homeowners in Seattle, Bellevue a
 
 Whether you have a single leak, worn shingles or a roof that is at the end of its life, we start by looking at the roof honestly. Then we tell you what needs to be done now, what can wait, and what it will take.
 
-[Book your free consultation]   [Call (425) 696-4004]
+[Book your free consultation]   [Call (425) 696-7586]
 
 ---
 
@@ -144,7 +144,7 @@ A well planned roofing project feels organized even on the loudest day, and that
 - **Work that fits your home.** We choose the approach around your house, your roof and your budget, not a template.
 - **Respect for your home.** We protect your property, clean up daily and treat your house the way we would treat our own.
 
-Ready to talk about your roof? [Get your free estimate] or call (425) 696-4004.
+Ready to talk about your roof? [Get your free estimate] or call (425) 696-7586.
 
 ---
 
@@ -192,7 +192,7 @@ Tell us where you are and we will let you know if we can take on your project.
 
 ### Let's Build Something Exceptional
 
-If you are thinking about a roof repair or replacement, the first step is simple. [Book your free consultation] or call (425) 696-4004, and we will come to you, look at your roof and tell you honestly what it needs.
+If you are thinking about a roof repair or replacement, the first step is simple. [Book your free consultation] or call (425) 696-7586, and we will come to you, look at your roof and tell you honestly what it needs.
 
 ### Related services
 

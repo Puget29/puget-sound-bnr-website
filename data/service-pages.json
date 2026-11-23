@@ -6,7 +6,7 @@
       "h1": "Kitchen Remodeling Company",
       "service": "Kitchen",
       "title": "Kitchen Remodeling Company | Puget Sound BNR",
-      "description": "Free consultation for kitchen remodeling with Puget Sound Builders & Renovation. Call (425) 696-4004.",
+      "description": "Free consultation for kitchen remodeling with Puget Sound Builders & Renovation. Call (425) 696-7586.",
       "chip": "Kitchen",
       "photos": [
         "project-01",
@@ -134,7 +134,7 @@
       "h1": "Bathroom Remodeling Company",
       "service": "Bathroom",
       "title": "Bathroom Remodeling Company | Puget Sound BNR",
-      "description": "Free consultation for bathroom remodeling with Puget Sound Builders & Renovation. Call (425) 696-4004.",
+      "description": "Free consultation for bathroom remodeling with Puget Sound Builders & Renovation. Call (425) 696-7586.",
       "chip": "Bathroom",
       "photos": [
         "project-15"
@@ -252,10 +252,10 @@
     },
     {
       "slug": "deck-building",
-      "h1": "Deck Building Company",
+      "h1": "Deck Building in Bellevue, WA",
       "service": "Deck",
-      "title": "Deck Building Company | Puget Sound BNR",
-      "description": "Free consultation for deck building with Puget Sound Builders & Renovation. Call (425) 696-4004.",
+      "title": "Deck Building in Bellevue, WA | Puget Sound Builders & Renovation",
+      "description": "Deck building for homes in Bellevue and the Eastside. New decks, rebuilds, railings, stairs and multi level decks. Book a free consultation.",
       "chip": "Decks and outdoor",
       "photos": [
         "project-10"
@@ -273,7 +273,7 @@
       "okLine": "We will contact you soon about your deck.",
       "closingHeading": "Ready to talk about your deck?",
       "faqReplace": true,
-      "heroParagraph": "Deck building for homes in the Puget Sound area: new decks, rebuilds, railings, stairs and multi level decks, from the first free consultation to the final walkthrough.",
+      "heroParagraph": "Deck building for homes in Bellevue and across the Eastside: new decks, rebuilds, railings, stairs and multi level decks, from the first free consultation to the final walkthrough.",
       "heroAlt": "Covered patio with wide composite steps beside a house",
       "whoParagraph": "Puget Sound Builders & Renovation builds decks across the Puget Sound area, from new decks and rebuilds to railings, stairs and multi level designs. A deck is where your family spends time outside, so we plan each project around how you use your yard and your home, and we stay with it from the first free consultation to the final walkthrough. We are licensed in Washington, fully insured and bonded, and our customers rate us five stars on Google.",
       "reviewIds": [
@@ -281,9 +281,9 @@
         "g1"
       ],
       "aboutPhotoId": "project-10",
-      "aboutHeading": "Deck building in the Puget Sound area",
+      "aboutHeading": "Deck building in Bellevue, WA",
       "about": {
-        "intro": "A deck project can be a new deck, a rebuild of an old one or a multi level design for a sloped yard. We talk through your space and your goals in the free consultation and recommend the scope that fits.",
+        "intro": "A deck turns a Bellevue backyard into an extra room for the summer. A project can be a new deck, a rebuild of an old one or a multi level design for a sloped lot. We talk through your space and your goals in the free consultation and recommend the scope that fits.",
         "offer": [
           "New decks",
           "Deck rebuilds and replacements",
@@ -292,7 +292,7 @@
           "Multi level decks"
         ],
         "options": "Wood and composite decking, railing styles, stair layouts and the size and shape of the deck are all part of the conversation. We help you compare the options for your style, your budget and the way you use the space.",
-        "expect": "You can expect a free consultation, a plan you understand before work begins, clear communication from the first call to the final walkthrough, and a finished deck we are proud to hand over."
+        "expect": "You can expect a free consultation at your Bellevue home, a plan you understand before work begins, clear communication from the first call to the final walkthrough, and a finished deck we are proud to hand over."
       },
       "process": [
         {
@@ -356,8 +356,8 @@
           "Photos of your yard and any existing deck, any ideas or examples you like, and a rough idea of your budget and timing. If you do not have all of that yet, that is fine. Nothing else is required."
         ],
         [
-          "Which areas do you serve?",
-          "We are licensed in Washington, fully insured and bonded, and we work in Bellevue, Kirkland, Redmond, Seattle, Issaquah, Sammamish, Renton, Kent, Bothell, Tacoma, Federal Way and Des Moines."
+          "Do you serve Bellevue and the Eastside?",
+          "Yes. We are based in Bellevue and build decks across the Eastside and the wider Puget Sound area. We are licensed in Washington, fully insured and bonded. Tell us your location when you contact us."
         ]
       ],
       "photoService": "deck",
@@ -376,10 +376,10 @@
     },
     {
       "slug": "adu-garage-conversion",
-      "h1": "ADU and Garage Conversion Company",
+      "h1": "ADU and Garage Conversion in Bellevue, WA",
       "service": "ADU and garage conversion",
-      "title": "ADU and Garage Conversion Company | Puget Sound BNR",
-      "description": "Free consultation for ADU, garage conversion and DADU projects with Puget Sound Builders & Renovation. Call (425) 696-4004.",
+      "title": "ADU and Garage Conversion in Bellevue, WA | Puget Sound Builders & Renovation",
+      "description": "ADU, DADU and garage conversion projects for homes in Bellevue and the Eastside. Add living space and book a free consultation.",
       "chip": "ADU or DADU",
       "photos": [
         "project-13",
@@ -400,7 +400,7 @@
       "okLine": "We will contact you soon about your project.",
       "closingHeading": "Ready to talk about your ADU or garage conversion?",
       "faqReplace": true,
-      "heroParagraph": "ADU, garage conversion and DADU projects for homes in the Puget Sound area: backyard units, converted garages, planning, finishes and systems, from the first free consultation to the final walkthrough.",
+      "heroParagraph": "ADU, garage conversion and DADU projects for homes in Bellevue and across the Eastside: backyard units, converted garages, planning, finishes and systems, from the first free consultation to the final walkthrough.",
       "heroAlt": "ADU under construction in a backyard with framing lumber beside the new slab",
       "whoParagraph": "Puget Sound Builders & Renovation builds ADUs, DADUs and garage conversions across the Puget Sound area, from planning the space and layout to finishes and systems. An ADU or a converted garage adds living space to your property, so we plan each project around how the space will be used, and we stay with it from the first free consultation to the final walkthrough. We are licensed in Washington, fully insured and bonded, and our customers rate us five stars on Google.",
       "reviewIds": [],
@@ -414,9 +414,9 @@
         "project-13"
       ],
       "aboutPhoto": 3,
-      "aboutHeading": "ADU and garage conversion in the Puget Sound area",
+      "aboutHeading": "ADU and garage conversion in Bellevue, WA",
       "about": {
-        "intro": "An ADU is an accessory dwelling unit. It can be a detached unit in the backyard, called a DADU, or a garage converted into living space. We talk through your property and your goals in the free consultation and recommend the approach that fits.",
+        "intro": "An ADU adds living space to a Bellevue property for family, guests or rental. It can be a detached unit in the backyard, called a DADU, or a garage converted into living space. We talk through your property and your goals in the free consultation and recommend the approach that fits.",
         "offer": [
           "Backyard ADUs and DADUs",
           "Garage conversions",
@@ -425,7 +425,7 @@
           "Guidance from the first consultation to the final walkthrough"
         ],
         "options": "The size and layout of the space, the finishes and the systems it needs are all part of the conversation. We help you compare the options for your property, your budget and the way you plan to use the space.",
-        "expect": "You can expect a free consultation, a plan you understand before work begins, clear communication from the first call to the final walkthrough, and a finished ADU or garage conversion we are proud to hand over."
+        "expect": "You can expect a free consultation at your Bellevue property, a plan you understand before work begins, clear communication from the first call to the final walkthrough, and a finished ADU or garage conversion we are proud to hand over."
       },
       "process": [
         {
@@ -489,8 +489,8 @@
           "It depends on the scope of the work. We plan it with you in the free consultation."
         ],
         [
-          "Which areas do you serve?",
-          "We are licensed in Washington, fully insured and bonded, and we work in Bellevue, Kirkland, Redmond, Seattle, Issaquah, Sammamish, Renton, Kent, Bothell, Tacoma, Federal Way and Des Moines."
+          "Do you serve Bellevue and the Eastside?",
+          "Yes. We are based in Bellevue and build ADUs and garage conversions across the Eastside and the wider Puget Sound area. We are licensed in Washington, fully insured and bonded. Tell us your location when you contact us."
         ]
       ],
       "photoService": "adu",
@@ -502,7 +502,7 @@
       "h1": "Roofing Company",
       "service": "Roofing",
       "title": "Roofing Company | Puget Sound BNR",
-      "description": "Free consultation for roofing with Puget Sound Builders & Renovation. Call (425) 696-4004.",
+      "description": "Free consultation for roofing with Puget Sound Builders & Renovation. Call (425) 696-7586.",
       "chip": "Roofing",
       "photos": [
         "project-05"

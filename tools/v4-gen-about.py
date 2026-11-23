@@ -15,7 +15,7 @@ def _about():
         blocks = intro[1:] if i == 0 else _k_blocks(section["lines"])
         parts.append(_k_section(section["title"], f"about-section-{i + 1}",
                                 "sec--slab" if i % 2 == 0 else "sec--stone", blocks, "split"))
-    parts.append(wrf_reviews_section(False, "What clients say.", "Real Google reviews, in their own words.", find_us(_AB_UP)))
+    # Testimonials section removed from the About page by request.
     faq, pairs = _k_faq(_k_blocks(sections[6]["lines"]), "about", sections[6]["title"], 6)
     parts.append(faq)
     # Keep the sentence around the final CTA intact while linking its action.
@@ -32,7 +32,7 @@ def _about():
     parts.append(f'<section class="sec sec--slab kitchen-section" id="about-contact" aria-labelledby="about-contact-h"><div class="wrap kitchen-layout kitchen-layout--split"><div><h2 class="h2" id="about-contact-h">{esc(sections[7]["title"])}</h2></div><div class="kitchen-copy">{"".join(final_html)}</div></div></section>')
     parts.append("</main>\n")
     plain = lambda text: _kr.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', text).replace('**', '')
-    ld = [org_ld(), crumbs_ld("About", "/about/"), faq_ld([(q, [plain(a)]) for q, a in pairs])]
+    ld = []  # Other page: no schema
     return (head(meta["TITLE TAG"], meta["META DESCRIPTION"], "/about/", _AB_UP, photo_preload(_AB_UP, _AB_HERO[0]), ld)
             + '<body class="long-service-page-body">\n<!-- About page generated from approved copy. -->\n'
             + '<a class="skip" href="#main">Skip to content</a>\n' + banner() + header(_AB_UP, "about", False)

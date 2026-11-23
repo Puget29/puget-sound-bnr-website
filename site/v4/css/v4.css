@@ -189,6 +189,7 @@ html.js .is-in .art :is(path, rect, line, circle, ellipse, polyline), html.js .a
 .foot__contact { grid-column: 1 / -1; }
 @media (min-width: 701px) { .foot__brand, .foot__contact { grid-column: auto; } }
 .foot__logo img { width: 55px; height: auto; }
+@media (max-width: 700px) { .foot nav.foot__group { display: none; } .foot__logo img { width: 84px; } .foot__logo .lock b { font-size: 1.5rem; } }
 .foot__logo .lock { display: flex; flex-direction: column; gap: 4px; white-space: nowrap; }
 .foot__logo .lock b { font-family: var(--display); font-weight: 400; font-size: 1.3rem; line-height: 1.05; }
 .foot__logo .lock small { font-size: 0.8125rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-2); font-weight: 500; }

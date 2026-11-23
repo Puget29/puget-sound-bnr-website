@@ -58,7 +58,7 @@ def _projects_page():
 '''
     sv = {"chip": "", "formHeading": "Free consultation", "formService": "Projects page"}
     cta = lead_block("contact", "pj-c-h", "Have a project like these in mind?", "Send a few details and we will take it from there. We reply within one business day.", _form(sv, "projects-page"), pimg(_PJ_UP, "project-45", "(min-width:901px) 40vw, 90vw", "50% 60%", False, ""))
-    ld = [org_ld(), _crumb_ld([("Home", "/"), ("Projects", path)])]
+    ld = []  # Other page: no schema
     html_ = (head("Remodeling projects | Puget Sound Builders & Renovation", "Photos of real kitchen, bathroom, ADU, roofing and deck jobs by Puget Sound Builders & Renovation in Bellevue, WA.", path, _PJ_UP, photo_preload(_PJ_UP, "kitchen-06"), ld)
              + "<body>\n<!-- Projects page. -->\n" + '<a class="skip" href="#main">Skip to content</a>\n'
              + banner() + header(_PJ_UP, "work", False) + hero + grid + wrf_reviews_section(False, "What clients say.", "Real Google reviews, in their own words.", find_us(_PJ_UP)) + cta + "</main>\n"

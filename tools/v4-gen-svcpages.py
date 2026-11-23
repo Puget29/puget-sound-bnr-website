@@ -30,6 +30,31 @@ _ASSET_PHOTOS = {
 def _dash_free(s): return s.replace(chr(0x2014), ",").replace(chr(0x2013), ",")
 def _t(s): return esc(_dash_free(s)).replace("{{PHONE}}", PHONE_TXT)
 
+# Shared Google Business Profile map embed (same place as the location-page areas section). Defined here
+# so the services hub (_overview, below), the service-areas hub (city-gen _build_hub) and the contact page
+# (v4-gen-approved-pages) can all reuse it. Self-contained inline styles so it renders on non-.km pages.
+GBP_MAP_SRC = ("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10757.322140992934!2d-122.19868572399378"
+               "!3d47.619705800000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54905d4b2eab6f75"
+               "%3A0x2ad4580dc612257!2sPuget%20Sound%20Builders%20%26%20Renovation%20-%20Kitchen%20%26%20"
+               "Bathroom!5e0!3m2!1sen!2s!4v1795337633395!5m2!1sen!2s")
+
+def map_embed(sec_id, surface, heading, lede, extra=""):
+    return ('<section class="sec ' + surface + '" id="' + sec_id + '" aria-labelledby="' + sec_id + '-h">\n'
+            '  <div class="wrap">\n'
+            '    <div class="sec__head rv" style="display:block;text-align:center"><h2 class="h2" id="' + sec_id + '-h" style="max-width:none;margin-left:auto;margin-right:auto">' + esc(heading) + '</h2><p class="lede" style="margin-left:auto;margin-right:auto">' + esc(lede) + '</p></div>\n'
+            '    <div style="border-radius:16px;overflow:hidden;max-width:960px;margin:22px auto 0;border:1px solid rgba(0,0,0,.12)">'
+            '<iframe src="' + GBP_MAP_SRC + '" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen '
+            'title="Puget Sound Builders and Renovation on Google Maps, Bellevue" style="width:100%;height:420px;border:0;display:block"></iframe></div>\n'
+            + extra +
+            '  </div>\n</section>\n')
+
+def _abs_photo(pid):
+    """Absolute URL to a representative width of a photo id, for a schema Service image."""
+    q = _photo(pid); ws = [w for w in (q.get("widths") or (640, 960, 1440)) if w <= 1440]
+    w = 960 if 960 in ws else max(ws)
+    stem = pid.split(":", 1)[1] if pid.startswith("asset:") else pid
+    return SITE + "/assets/projects/" + stem + "-" + str(w) + ".webp"
+
 def _src(pid, w): return f"{_UP}assets/projects/{pid}-{w}.webp"
 
 def _photo(pid):
@@ -187,9 +212,12 @@ def _page(sv):
     closing_photo = (_img(last_photo, "(min-width:901px) 40vw, 90vw") if last_photo.startswith("asset:")
                      else pimg(_UP, last_photo, "(min-width:901px) 40vw, 90vw", None, False, ""))
     cta = lead_block("contact", "sv-c-h", esc(sv["closingHeading"]), "Send a few details and we will take it from there. We reply within one business day.", _form(sv), closing_photo)
-    ld = [org_ld(), _crumb_ld([("Home", "/"), ("Services", _SPU["overview"]), (name, path)]),
-          {"@context": "https://schema.org", "@type": "Service", "name": name, "provider": {"@type": "HomeAndConstructionBusiness", "name": "Puget Sound Builders & Renovation", "telephone": PHONE_TEL},
-           "areaServed": "Puget Sound area, WA", "url": SITE + path},
+    # Service-page schema policy: Service + FAQPage + BreadcrumbList (no business entity; Service.provider
+    # references the homepage LocalBusiness by @id rather than duplicating the entity).
+    ld = [_crumb_ld([("Home", "/"), ("Services", _SPU["overview"]), (name, path)]),
+          {"@context": "https://schema.org", "@type": "Service", "@id": SITE + path + "#service", "name": name,
+           "serviceType": name, "description": sv["description"], "url": SITE + path, "image": _abs_photo(sv["heroPhoto"]),
+           "provider": {"@id": SITE + "/#localbusiness"}, "areaServed": ["Bellevue, WA", "The Eastside", "Greater Seattle area"]},
           faq_ld([(q, [_dash_free(an).replace("{{PHONE}}", PHONE_TXT)]) for q, an in sv["faq"]])]
     html_ = (head(sv["title"].replace(" | ", " | "), sv["description"], path, _UP, "", ld)
              + f"<body>\n<!-- Service page: {slug}. -->\n" + '<a class="skip" href="#main">Skip to content</a>\n'
@@ -225,6 +253,9 @@ def _overview():
         ("landscaping-and-hardscaping", "Landscaping"), ("mold-remediation", "Mold remediation")))
     ov_hero = photo_hero(_UP, "project-43", "50% 55%", "sv-o-h", f'<nav class="crumbs" aria-label="Breadcrumb"><a href="{_UP}">Home</a><span aria-hidden="true">/</span><span aria-current="page">Services</span></nav>', "What we build and renovate.", "One general contractor for kitchens, bathrooms, ADUs, decks, roofs and more. Choose a service to see how we work and what we have built.", f'<a class="btn btn--primary" href="{CONTACT}" data-book>Book your free consultation{BTN_ARROW}</a>', "short")
     _ov_lead = lead_block("contact", "sv-o-c", "Tell us what you want to change.", "Send a few details and we will take it from there. We reply within one business day.", _form({"chip": "", "formHeading": "Free consultation", "formService": "Services page"}, "services-page"), pimg(_UP, "project-45", "(min-width:901px) 40vw, 90vw", "50% 60%", False, ""))
+    _areas_btn = '<div style="text-align:center;margin-top:24px"><a class="btn btn--primary" href="/service-areas/">See all service areas' + BTN_ARROW + '</a></div>\n'
+    areas_sec = map_embed("sv-o-areas", "sec--slab", "Areas We Serve",
+                          "Based in Bellevue, we serve Seattle, Bellevue and homeowners across the Puget Sound region. Find your city to see how we work in your area.", _areas_btn)
     body = f'''<main id="main">
 {ov_hero}{brand_strip(_UP, True)}
 <section class="sec sec--slab sv-rows" aria-label="Our services"><div class="wrap">{rows}</div></section>
@@ -234,17 +265,22 @@ def _overview():
     <ul class="sv-pills rv">{pills}</ul>
   </div>
 </section>
-{_ov_lead}</main>
+{areas_sec}{_ov_lead}</main>
 '''
-    ld = [org_ld(), _crumb_ld([("Home", "/"), ("Services", _SPU["overview"])])]
-    return (head("Our services | Remodeling and home improvements in Bellevue, WA", "Kitchen, bathroom, siding, flooring, painting, ADU, deck and roofing services from Puget Sound Builders & Renovation.",
+    ld = []  # Services overview (hub) is an "other" page: no schema
+    return (head("Our Home Remodeling Services | Puget Sound Builders", "Explore kitchen, bathroom, roofing, flooring, siding, painting, ADU and deck services from Puget Sound Builders & Renovation in Bellevue. Book a consult.",
              _SPU["overview"], _UP, photo_preload(_UP, "project-43"), ld)
             + "<body>\n<!-- Services overview. Links go to the service pages (tools/v4-links.json servicePages). -->\n" + '<a class="skip" href="#main">Skip to content</a>\n'
             + banner() + header(_UP, "services", False) + body + footer(_UP) + mbar(_UP) + scripts(_UP, False) + "</body>\n</html>\n").replace('href="../"', f'href="{_UP}"').replace('href="../contact/', f'href="{CONTACT}')
 
 w(_rel_of(_SPU["overview"]), _overview())
 for _sv in _ALL_SP:
-    if _sv["slug"] == "kitchen-remodeling":
+    # Pages rendered by the long-form generators in v4-gen-kitchen.py are skipped by the short template:
+    # kitchen-remodeling (the Seattle long page) plus every main /our-services/ page (the full reusable
+    # long-form design rolled out sitewide).
+    if _sv["slug"] in ("kitchen-remodeling", "kitchen-main", "bathroom-main", "roofing-main", "floor-main",
+                       "deck-building", "adu-garage-conversion", "painting", "basement-remodeling",
+                       "attic-remodeling", "home-addition"):
         continue
     _out = _page(_sv)
     if _re.search(r"whatsapp|wa\.me", _out, _re.I): raise SystemExit("service pages: WhatsApp found")

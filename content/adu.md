@@ -1,7 +1,7 @@
 # ADU AND GARAGE CONVERSION PAGE CONTENT
 
 TITLE TAG: ADU and Garage Conversion in Seattle, WA | Puget Sound BNR
-META DESCRIPTION: ADU and garage conversions in Seattle and Bellevue. Planning, permit help, construction and a free consultation. Call (425) 696-4004.
+META DESCRIPTION: ADU and garage conversions in Seattle and Bellevue. Planning, permit help, construction and a free consultation. Call (425) 696-7586.
 H1: ADU and Garage Conversion in Seattle, WA
 
 ---
@@ -14,7 +14,7 @@ Puget Sound BNR plans and builds accessory dwelling units and garage conversions
 
 Whether you want to convert a garage, finish an interior space into a separate living area, or explore what your property allows, we start by looking at your home and your goals. Then we tell you honestly what is possible, what it involves and what it will take.
 
-[Book your free consultation]   [Call (425) 696-4004]
+[Book your free consultation]   [Call (425) 696-7586]
 
 ---
 
@@ -150,7 +150,7 @@ A well planned project feels organized even when the garage is torn apart, and t
 - **Work that fits your home.** We design around your house, your lot and your goals, not a template.
 - **Respect for your home.** We protect your space, clean up daily and treat your house the way we would treat our own.
 
-Ready to talk about your project? [Get your free estimate] or call (425) 696-4004.
+Ready to talk about your project? [Get your free estimate] or call (425) 696-7586.
 
 ---
 
@@ -198,7 +198,7 @@ Tell us where you are and we will let you know if we can take on your project.
 
 ### Let's Build Something Exceptional
 
-If you are thinking about an ADU or a garage conversion, the first step is simple. [Book your free consultation] or call (425) 696-4004, and we will come to you, look at your space and tell you honestly what it can become.
+If you are thinking about an ADU or a garage conversion, the first step is simple. [Book your free consultation] or call (425) 696-7586, and we will come to you, look at your space and tell you honestly what it can become.
 
 ### Related services
 

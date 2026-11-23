@@ -7,14 +7,33 @@
 [build.environment]
   NODE_VERSION = "20"
 
-# The contact page file lives at /contact/ for the WordPress build.
-# The public address is /contact-us/.
+# The contact page file lives at /contact/ for the WordPress build. The public address is
+# /contact-us/. Because build/stage still contains a physical /contact/index.html, these 301s
+# need force = true: without it Netlify serves the existing file and the redirect never fires.
+# force = true shadows that file so /contact and /contact/ always 301 to /contact-us/.
 [[redirects]]
   from = "/contact"
   to = "/contact-us/"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/contact/"
   to = "/contact-us/"
   status = 301
+  force = true
+
+# Bellevue is our primary target market and is handled on the homepage, so there is no
+# /service-areas/bellevue/ location page. These 301s send the old location-page address to the
+# homepage. force = true is kept so the redirect fires even if a stale file is ever present.
+[[redirects]]
+  from = "/service-areas/bellevue"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/bellevue/"
+  to = "/"
+  status = 301
+  force = true

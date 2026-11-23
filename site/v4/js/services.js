@@ -14,7 +14,7 @@
     painting: { src: "/assets/projects/painting-card-960.webp", srcset: "/assets/projects/painting-card-640.webp 640w, /assets/projects/painting-card-960.webp 960w", avif: "", width: 960, height: 1200, alt: "Painter rolling a fresh coat of paint on an interior wall", focus: "50% 50%" },
     siding: { src: "/assets/projects/project-14-960.webp", srcset: "/assets/projects/project-14-612.webp 612w, /assets/projects/project-14-960.webp 960w", avif: "", width: 612, height: 459, alt: "Blue house siding with a white corner post", focus: "80% 50%" }
   };
-  var SERVICE_LINKS = { roofing: "/roof-repair-company-in-seattle/", kitchen: "/kitchen-remodel-seattle/", bathroom: "/bathroom-remodel-seattle/", adu: "/our-services/adu-garage-conversion/", deck: "/our-services/deck-building/", siding: "/siding-replacement/", flooring: "/flooring-replacement-in-seattle/", painting: "/our-services/painting/" };
+  var SERVICE_LINKS = { roofing: "/our-services/roofing/", kitchen: "/our-services/kitchen-remodeling/", bathroom: "/our-services/bathroom-remodeling/", adu: "/our-services/adu-garage-conversion/", deck: "/our-services/deck-building/", siding: "/siding-replacement/", flooring: "/our-services/floor-replacement/", painting: "/our-services/painting/" };
   var sec = document.getElementById("services");
   if (!sec) return;
   var car = sec.querySelector(".car"), track = sec.querySelector(".car__track");

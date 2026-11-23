@@ -42,6 +42,10 @@ if (!process.argv.includes('--no-tracking')) {
   run(PY, ['tools/inject-tracking.py', stage]);
 }
 
+// "Leave Us A Review" widget: added to the testimonials section of every page except the
+// /service-areas/ location pages. Post-build (like tracking) so it rides on one widget source.
+run(PY, ['tools/inject-review-widget.py', stage]);
+
 // robots.txt: allow crawling, point crawlers at the non-www sitemap.
 const SITE = 'https://pugetsoundbnr.com';
 fs.writeFileSync(path.join(stage, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);

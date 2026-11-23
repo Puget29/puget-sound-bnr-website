@@ -9,9 +9,9 @@
   "use strict";
   var hero = document.querySelector(".hero");
   var box = hero && hero.querySelector(".hero__flip");
-  var h1 = hero && hero.querySelector("h1");
+  var head = hero && hero.querySelector(".hero__head");
   var video = hero && hero.querySelector(".hero__video");
-  if (!box || !h1) return;
+  if (!box || !head) return;
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) { hero.classList.add("is-final"); return; } /* v3: finished frame, so show the proof line too */
 
   var DURATION = 0.9;
@@ -23,7 +23,7 @@
     { at: originalDesktop ? 0.20 : 0.137, text: "Planned around how you live." }, /* wireframe house */
     { at: originalDesktop ? 0.45 : 0.407, text: "Built with care." }, /* wireframe turns into real materials */
     { at: originalDesktop ? 0.66 : 0.633, text: "Finished, down to the details." }, /* nearly finished house */
-    { at: originalDesktop ? 0.90 : 0.892, text: h1.textContent.replace(/\s+/g, " ").trim() } /* the final line, same text as the h1 */
+    { at: originalDesktop ? 0.90 : 0.892, text: head.textContent.replace(/\s+/g, " ").trim() } /* the final line, same text as the hero headline */
   ];
 
   var current = null, idx = -1, started = false, raf = 0;

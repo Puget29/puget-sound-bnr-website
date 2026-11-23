@@ -1,7 +1,7 @@
 # SIDING PAGE CONTENT
 
 TITLE TAG: Siding Replacement in Seattle, WA | Puget Sound BNR
-META DESCRIPTION: Siding replacement and repair in Seattle and Bellevue. Materials, moisture protection and clean installation, with a free consultation. Call (425) 696-4004.
+META DESCRIPTION: Siding replacement in Seattle from Puget Sound Builders & Renovation: durable materials installed with the details done right. Book a consultation now.
 H1: Siding Replacement in Seattle, WA
 
 ---
@@ -14,7 +14,7 @@ Puget Sound BNR repairs and replaces siding for homeowners in Seattle, Bellevue 
 
 Whether you have a few damaged boards, a wall with water damage or a house that needs new siding all around, we start by looking at what is behind the surface. Then we tell you honestly what needs to be done now, what can wait and what it will cost to do it right.
 
-[Book your free consultation]   [Call (425) 696-4004]
+[Book your free consultation]   [Call (425) 696-7586]
 
 ---
 
@@ -163,7 +163,7 @@ A well planned siding project feels organized even on the loudest day, and that 
 - **Work that fits your home.** We choose the approach around your house, your siding and your budget, not a template.
 - **Respect for your home.** We protect your property, clean up daily and treat your house the way we would treat our own.
 
-Ready to talk about your siding? [Get your free estimate] or call (425) 696-4004.
+Ready to talk about your siding? [Get your free estimate] or call (425) 696-7586.
 
 ---
 
@@ -211,7 +211,7 @@ Tell us where you are and we will let you know if we can take on your project.
 
 ### Let's Build Something Exceptional
 
-If you are thinking about new siding, the first step is simple. [Book your free consultation] or call (425) 696-4004, and we will come to you, look at your siding and tell you honestly what it needs.
+If you are thinking about new siding, the first step is simple. [Book your free consultation] or call (425) 696-7586, and we will come to you, look at your siding and tell you honestly what it needs.
 
 ### Related services
 

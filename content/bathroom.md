@@ -1,7 +1,7 @@
 # BATHROOM PAGE CONTENT
 
 TITLE TAG: Bathroom Remodeling in Seattle, WA | Puget Sound BNR
-META DESCRIPTION: Bathroom remodeling in Seattle and Bellevue, from first sketch to final walkthrough. Showers, tile, vanities and a free consultation. Call (425) 696-4004.
+META DESCRIPTION: Bathroom remodeling in Seattle and Bellevue, from first sketch to final walkthrough. Showers, tile, vanities and a free consultation. Call (425) 696-7586.
 H1: Bathroom Remodeling in Seattle, WA
 
 ---
@@ -14,7 +14,7 @@ Puget Sound BNR designs and builds bathroom remodels for homeowners in Seattle, 
 
 Whether you want a new shower, a better layout, updated tile and fixtures, or a full gut renovation, we start by listening to how you use the space. Then we design something that fits your home, your budget and your life.
 
-[Book your free consultation]   [Call (425) 696-4004]
+[Book your free consultation]   [Call (425) 696-7586]
 
 ---
 
@@ -152,7 +152,7 @@ A well planned remodel feels calm even when the bathroom is torn apart, and that
 - **Work that fits your home.** We design around your house, your habits and your budget, not a template.
 - **Respect for your home.** We protect your space, clean up daily and treat your house the way we would treat our own.
 
-Ready to talk about your bathroom? [Get your free estimate] or call (425) 696-4004.
+Ready to talk about your bathroom? [Get your free estimate] or call (425) 696-7586.
 
 ---
 
@@ -200,7 +200,7 @@ Tell us where you are and we will let you know if we can take on your project.
 
 ### Let's Build Something Exceptional
 
-If you are thinking about a bathroom remodel, the first step is simple. [Book your free consultation] or call (425) 696-4004, and we will come to you, look at your bathroom and tell you honestly what it needs.
+If you are thinking about a bathroom remodel, the first step is simple. [Book your free consultation] or call (425) 696-7586, and we will come to you, look at your bathroom and tell you honestly what it needs.
 
 ### Related services
 

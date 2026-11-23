@@ -1,7 +1,7 @@
 # FLOORING PAGE CONTENT
 
 TITLE TAG: Flooring Replacement in Seattle, WA | Puget Sound BNR
-META DESCRIPTION: Flooring replacement and installation in Seattle and Bellevue. Hardwood, vinyl plank, tile and more, with a free consultation. Call (425) 696-4004.
+META DESCRIPTION: Flooring replacement in Seattle from Puget Sound Builders & Renovation: hardwood, laminate, tile and vinyl installed right. Book a free consultation now.
 H1: Flooring Replacement in Seattle, WA
 
 ---
@@ -14,7 +14,7 @@ Puget Sound BNR replaces and installs flooring for homeowners in Seattle, Bellev
 
 Whether you want one room refreshed, a whole level updated or new flooring throughout the house, we start by looking at how you live. Then we help you choose a floor that fits your home, your budget and your life.
 
-[Book your free consultation]   [Call (425) 696-4004]
+[Book your free consultation]   [Call (425) 696-7586]
 
 ---
 
@@ -160,7 +160,7 @@ A well planned flooring project feels organized even when every room is empty, a
 - **Work that fits your home.** We choose the floor around your house, your habits and your budget, not a template.
 - **Respect for your home.** We protect your space, clean up daily and treat your house the way we would treat our own.
 
-Ready to talk about your floors? [Get your free estimate] or call (425) 696-4004.
+Ready to talk about your floors? [Get your free estimate] or call (425) 696-7586.
 
 ---
 
@@ -208,7 +208,7 @@ Tell us where you are and we will let you know if we can take on your project.
 
 ### Let's Build Something Exceptional
 
-If you are thinking about new floors, the first step is simple. [Book your free consultation] or call (425) 696-4004, and we will come to you, look at your floors and tell you honestly what they need.
+If you are thinking about new floors, the first step is simple. [Book your free consultation] or call (425) 696-7586, and we will come to you, look at your floors and tell you honestly what they need.
 
 ### Related services
 

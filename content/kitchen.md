@@ -1,7 +1,7 @@
 # KITCHEN PAGE CONTENT
 
-TITLE TAG: Kitchen Remodeling in Seattle, WA | Puget Sound BNR
-META DESCRIPTION: Kitchen remodeling in Seattle and Bellevue, from the first sketch to the final walkthrough. Layouts, cabinets, countertops and a free consultation. Call (425) 696-4004.
+TITLE TAG: Kitchen Remodel in Seattle, WA | Puget Sound Builders
+META DESCRIPTION: Kitchen remodel in Seattle from Puget Sound Builders & Renovation: new layouts, cabinets, countertops and lighting. Book your free consultation today.
 H1: Kitchen Remodeling in Seattle, WA
 
 ---
@@ -14,7 +14,7 @@ Puget Sound BNR designs and builds kitchen remodels for homeowners in Seattle, B
 
 Whether you want a better layout, new cabinets and countertops, or a full renovation that opens the kitchen to the rest of your home, we start by listening to how you use the space. Then we design something that fits your home, your budget and your life.
 
-[Book your free consultation]   [Call (425) 696-4004]
+[Book your free consultation]   [Call (425) 696-7586]
 
 ---
 
@@ -152,7 +152,7 @@ A well planned remodel feels calm even when the kitchen is torn apart, and that 
 - **Work that fits your home.** We design around your house, your habits and your budget, not a template.
 - **Respect for your home.** We protect your space, clean up daily and treat your house the way we would treat our own.
 
-Ready to talk about your kitchen? [Get your free estimate] or call (425) 696-4004
+Ready to talk about your kitchen? [Get your free estimate] or call (425) 696-7586
 
 ---
 
@@ -200,7 +200,7 @@ Tell us where you are and we will let you know if we can take on your project.
 
 ### Let's Build Something Exceptional
 
-If you are thinking about a kitchen remodel, the first step is simple, and we will come to you, look at your kitchen and tell you honestly what it needs. [Book your free consultation] or call (425) 696-4004
+If you are thinking about a kitchen remodel, the first step is simple, and we will come to you, look at your kitchen and tell you honestly what it needs. [Book your free consultation] or call (425) 696-7586
 
 ### Related services
 

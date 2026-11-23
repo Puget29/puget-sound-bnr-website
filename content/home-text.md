@@ -1,18 +1,18 @@
 # HOME PAGE TEXT CONTENT
 
-TITLE TAG: Home Remodeling in Seattle and Bellevue, WA | Puget Sound BNR
-META DESCRIPTION: Puget Sound BNR is a Bellevue general contractor for kitchen and bathroom remodeling, roofing, decks, ADUs, siding, flooring and painting. Call (425) 696-4004.
+TITLE TAG: Home Remodeling in Bellevue - Puget Sound Builders
+META DESCRIPTION: Need Home Remodeling in Bellevue? Puget Sound Builders & Renovation delivers Kitchen and Bathroom remodeling & full-home renovations. Book Now!
 
 ---
 
 ## BLOCK 1: Introduction
-### Seattle and Bellevue General Contractor
+### Your Bellevue Home Remodeling Team
 
-Puget Sound BNR is a general contractor based in Bellevue, Washington. We repair, remodel and build for homeowners in Seattle, Bellevue and the surrounding Puget Sound communities, from a single leaking roof to a full kitchen renovation.
+Puget Sound BNR is a Bellevue general contractor focused on home remodeling. We handle kitchen and bathroom remodeling, roofing, flooring, decks, ADU and garage conversions, and full-home renovations across Bellevue and the surrounding Puget Sound communities.
 
 With more than 5 years of experience, we plan every project with you from a free consultation to the final walkthrough, so you always know what is being built, why, and what comes next. One team handles the design, the planning, the construction and the cleanup.
 
-[Book your free consultation]   [Call (425) 696-4004]
+[Book your free consultation]   [Call (425) 696-7586]
 
 ---
 
@@ -47,7 +47,7 @@ A project goes well when the steps are clear and nothing is a surprise.
 ## BLOCK 4: Why homeowners choose us
 ### Why Homeowners Choose Puget Sound BNR
 
-- **More than 5 years of experience** building and renovating homes around Seattle and Bellevue.
+- **More than 5 years of experience** building and renovating homes around Bellevue and the Eastside.
 - **One team from start to finish.** Design, planning, construction and the final walkthrough are handled together, so nothing falls between trades.
 - **A free, honest consultation.** We tell you what your home needs, what can wait and where you can save, even when that means a smaller project.
 - **Clear communication.** A written scope, a schedule you can plan around and one person you can call.
@@ -59,9 +59,9 @@ Read more [about us](/about/) or see photos of our [projects](/remodeling-projec
 ---
 
 ## BLOCK 5: Service area
-### Serving Seattle, Bellevue and Surrounding Areas
+### Serving Bellevue and Surrounding Areas
 
-We work in Seattle, Bellevue and surrounding Puget Sound communities. Each city has its own permit rules, and homes range from older Seattle houses to newer Eastside builds, so we plan every project around the home in front of us.
+We work in Bellevue and the surrounding Puget Sound communities. Each city has its own permit rules, and homes range from older houses to newer Eastside builds, so we plan every project around the home in front of us.
 
 Tell us where you are and we will let you know if we can take on your project.
 
@@ -88,15 +88,15 @@ It depends on the scope. Planning, design and permits come first, and then const
 
 #### Do you help with permits?
 
-Yes. We check what permits your project needs during the planning stage and help you with the permit requirements. Rules differ between Seattle, Bellevue and other cities, so we look at the rules for your property.
+Yes. We check what permits your project needs during the planning stage and help you with the permit requirements. Rules differ between Bellevue and other cities, so we look at the rules for your property.
 
 #### Which areas do you serve?
 
-We serve Seattle, Bellevue and the surrounding Puget Sound communities. Tell us where you are and we will confirm we can take on your project.
+We serve Bellevue and the surrounding Puget Sound communities. Tell us where you are and we will confirm we can take on your project.
 
 ---
 
 ## BLOCK 7: Closing call to action
 ### Let's Build Something Exceptional
 
-If you are thinking about a project, the first step is simple. [Book your free consultation] or call (425) 696-4004, and we will come to you, look at your home and tell you honestly what it needs.
+If you are thinking about a project, the first step is simple. [Book your free consultation] or call (425) 696-7586, and we will come to you, look at your home and tell you honestly what it needs.

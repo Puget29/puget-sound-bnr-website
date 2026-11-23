@@ -27,10 +27,11 @@ _SERVICE_ORDER = [
     ("Home addition", "home-addition"),
 ]
 
-PHONE_TXT, PHONE_TEL = "(425) 696-4004", "+14256964004"
+PHONE_TXT, PHONE_TEL = "(425) 696-7586", "+14256967586"
 WA = "https://wa.me/14252295663"
 EMAIL = "Office@pugetsoundbnr.com"
 ADDR = "11170 NE 10th St, Bellevue, WA 98004"
+GBP_URL = "https://maps.app.goo.gl/bSXEtU6AziMMsTux8"   # Google Business Profile
 OFFER = "10% Off for New Clients"
 LINKS = {
     "Instagram": "https://www.instagram.com/pugetsoundbnr/",
@@ -84,10 +85,10 @@ DEV_SCRIPT = r'''<script>/* js class gates the reveal states. ?dark turns the st
 # ---------------------------------------------------------------- partials ----
 def head(title, desc, path, up, extra_head="", jsonld=None, depth_assets=None):
     A = shared(up)      # shared v3 css, assets
-    # Indexation: individual city/location landing pages (/service-areas/<city>/) stay out of the
-    # index, as does the 404 error page; the /service-areas/ hub and every other page are indexable.
-    is_location = path.startswith("/service-areas/") and path != "/service-areas/"
-    robots = "noindex" if (is_location or path == "/404.html") else "index, follow"
+    # Indexation: every real page is indexable, including the individual city/location pages
+    # (/service-areas/<city>/), which the client now wants optimized, indexed and in the sitemap.
+    # Only the 404 error page stays out of the index.
+    robots = "noindex" if path == "/404.html" else "index, follow"
     ld = "".join(f'<script type="application/ld+json">{json.dumps(j, ensure_ascii=False)}</script>\n' for j in (jsonld or []))
     return f'''<!doctype html>
 <html lang="en">
@@ -99,7 +100,7 @@ def head(title, desc, path, up, extra_head="", jsonld=None, depth_assets=None):
 <meta name="robots" content="{robots}">
 <link rel="canonical" href="{SITE}{path}">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Puget Sound Builders &amp; Renovation">
+<meta property="og:site_name" content="Puget Sound Builders &amp; Renovation - Kitchen &amp; Bathroom">
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(desc)}">
 <meta property="og:url" content="{SITE}{path}">
@@ -229,15 +230,15 @@ def footer(up, home=False):
     <div class="foot__top">
       <div class="foot__brand">
         <a class="foot__logo" href="{'#top' if home else '../'}" aria-label="Puget Sound Builders &amp; Renovation home"><img src="{A}assets/logo-mark.webp" width="55" height="48" alt="" loading="lazy"><span class="lock"><b>Puget Sound</b><small>Builders &amp; Renovation</small></span></a>
-        <p>General contractor in Bellevue, WA.</p>
+        <p>A Bellevue general contractor handling kitchen, bathroom and whole-home remodeling for homeowners across the Eastside and the Puget Sound region.</p>
       </div>
       <nav class="foot__group" aria-label="Explore"><h2>Explore</h2><ul><li><a href="{who}">About</a></li><li><a href="{URLS['services']}">Services</a></li><li><a href="/service-areas/">Service areas</a></li><li><a href="{URLS['projects']}">Projects</a></li><li><a href="{URLS['blog']}">Blog</a></li><li><a href="{c}">Contact</a></li></ul></nav>
-      <nav class="foot__group" aria-label="Services"><h2>Services</h2><ul><li><a href="{URLS['services']}">Kitchen remodeling</a></li><li><a href="{URLS['services']}">Bathroom remodeling</a></li><li><a href="{URLS['services']}">ADUs &amp; DADUs</a></li></ul></nav>
-      <div class="foot__group foot__contact"><h2>Contact</h2><ul><li><a href="tel:{PHONE_TEL}">{PHONE_TXT}</a></li><li><a href="mailto:{EMAIL}">{EMAIL}</a></li></ul></div>
+      <nav class="foot__group" aria-label="Services"><h2>Services</h2><ul><li><a href="/our-services/kitchen-remodeling/">Kitchen remodeling</a></li><li><a href="/our-services/bathroom-remodeling/">Bathroom remodeling</a></li><li><a href="/our-services/roofing/">Roofing</a></li><li><a href="/our-services/floor-replacement/">Flooring</a></li><li><a href="/our-services/deck-building/">Deck building</a></li><li><a href="/our-services/adu-garage-conversion/">ADU &amp; garage conversion</a></li></ul></nav>
+      <div class="foot__group foot__contact"><h2>Contact</h2><ul><li><a href="tel:{PHONE_TEL}">{PHONE_TXT}</a></li><li><a href="mailto:{EMAIL}">{EMAIL}</a></li><li><a href="{GBP_URL}" target="_blank" rel="noopener noreferrer">11170 NE 10th St, Bellevue, WA 98004</a></li><li>Open 24/7, all week</li></ul></div>
     </div>
     <div class="foot__base">
-      <p>&copy; 2026 Puget Sound Builders &amp; Renovation</p>
-      <p><a href="{privacy}">Privacy policy</a></p>
+      <p>&copy; 2026 Puget Sound Builders &amp; Renovation. All rights reserved.</p>
+      <p><a href="/privacy/">Privacy policy</a> <span aria-hidden="true">&middot;</span> <a href="/terms-and-conditions/">Terms &amp; Conditions</a></p>
     </div>
   </div>
 </footer>
@@ -267,9 +268,16 @@ def faq_ld(items):
 
 def org_ld():
     # only confirmed fields: no city list, no social profiles, no rating, no licence number
-    return {"@context": "https://schema.org", "@type": "HomeAndConstructionBusiness", "name": "Puget Sound Builders & Renovation",
-            "url": SITE + "/", "telephone": PHONE_TEL, "email": EMAIL, "image": SITE + OG,
-            "areaServed": ["Bellevue, WA", "The Eastside", "Greater Seattle area"]}
+    return {"@context": "https://schema.org", "@type": "HomeAndConstructionBusiness", "@id": SITE + "/#localbusiness",
+            "name": "Puget Sound Builders & Renovation - Kitchen & Bathroom",
+            "url": SITE + "/", "telephone": PHONE_TEL, "email": EMAIL, "image": SITE + OG, "hasMap": GBP_URL,
+            "address": {"@type": "PostalAddress", "streetAddress": "11170 NE 10th St", "addressLocality": "Bellevue",
+                        "addressRegion": "WA", "postalCode": "98004", "addressCountry": "US"},
+            "openingHoursSpecification": {"@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                "opens": "00:00", "closes": "23:59"},
+            "sameAs": [GBP_URL],
+            "areaServed": ["Bellevue, WA", "The Eastside", "Puget Sound region"]}
 
 def crumbs_ld(name, path):
     return {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
@@ -380,7 +388,7 @@ def cta_section(up, mini=True):
         </div>
         {honeypot()}
         <button class="btn btn--primary" type="submit">Book your free consultation{BTN_ARROW}</button>
-        <p class="form__fail err" tabindex="-1" hidden role="alert">Something went wrong. Please call (425) 696-4004.</p>
+        <p class="form__fail err" tabindex="-1" hidden role="alert">Something went wrong. Please call (425) 696-7586.</p>
         <div class="form__ok" role="status"><strong>Thank you.</strong><span class="form__ok-text"></span></div>
       </form>''' if mini else ""
     return f'''<section class="sec fin" id="contact" aria-labelledby="cta-h">

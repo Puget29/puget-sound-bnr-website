@@ -1,7 +1,7 @@
 # PROJECTS PAGE CONTENT
 
-TITLE TAG: Remodeling Projects in Seattle and Bellevue | Puget Sound BNR
-META DESCRIPTION: See photos of Puget Sound BNR remodeling projects around Seattle and Bellevue, from kitchens and bathrooms to roofs, decks and more. Call (425) 696-4004.
+TITLE TAG: Our Remodeling Projects | Puget Sound Builders & Reno
+META DESCRIPTION: Browse completed kitchen, bathroom and whole-home remodeling projects by Puget Sound Builders & Renovation across Bellevue and Seattle. Take a look now.
 H1: Our Remodeling Projects
 
 ---
@@ -14,7 +14,7 @@ Every home is different, so every project is different. What stays the same is t
 
 Browse the gallery below, then tell us about your own project. We would be glad to look at your home.
 
-[Book your free consultation]   [Call (425) 696-4004]
+[Book your free consultation]   [Call (425) 696-7586]
 
 ---
 
@@ -83,7 +83,7 @@ Tell us what you have in mind. We help you work out the right scope, whether tha
 
 ### How do I start a project with you?
 
-Call us at (425) 696-4004 or send your details through the form on our contact page. We follow up to set up a free consultation at your home.
+Call us at (425) 696-7586 or send your details through the form on our contact page. We follow up to set up a free consultation at your home.
 
 ### What does a free consultation include?
 
@@ -93,7 +93,7 @@ We visit your home, look at the space and talk through your goals, your ideas an
 
 ## Let's Talk About Your Project
 
-If you like what you see, the next step is simple. [Book your free consultation] or call (425) 696-4004, and we will come to you, look at your home and tell you honestly what it needs.
+If you like what you see, the next step is simple. [Book your free consultation] or call (425) 696-7586, and we will come to you, look at your home and tell you honestly what it needs.
 
 ### Related pages
 

@@ -1,20 +1,20 @@
 # ABOUT PAGE CONTENT
 
 TITLE TAG: About Puget Sound BNR | Seattle Remodeling Contractor
-META DESCRIPTION: Meet Puget Sound BNR, a Bellevue general contractor serving Seattle and the Eastside. More than 5 years of remodeling experience. Call (425) 696-4004.
-H1: About Puget Sound BNR
+META DESCRIPTION: Meet Puget Sound BNR, a Bellevue general contractor serving Seattle and the Eastside. More than 5 years of remodeling experience. Call (425) 696-7586.
+H1: About Puget Sound Builders & Renovation - Kitchen & Bathroom
 
 ---
 
-## About Puget Sound BNR
+## Who We Are
 
-Puget Sound Builders and Renovation, known as Puget Sound BNR, is a general contractor based in Bellevue, Washington. We design, repair and build for homeowners in Seattle, Bellevue and the surrounding Puget Sound communities, from a single leaking roof to a full kitchen renovation.
+Puget Sound Builders & Renovation - Kitchen & Bathroom, known as Puget Sound BNR, is a general contractor based in Bellevue, Washington. We design, repair and build for homeowners in Seattle, Bellevue and the surrounding Puget Sound communities, from a single leaking roof to a full kitchen renovation.
 
 We have more than 5 years of experience building and renovating homes in this area, and we have learned what this climate and these houses ask of a contractor. Wet winters, older homes with surprises behind the walls, and city permit rules that change from one town to the next all call for the same thing: a clear plan, honest advice and careful work.
 
 Our approach is simple. We listen first, we tell you plainly what your home needs, and we put the plan in writing before any work starts. Then one team builds it, keeps you informed and walks the finished work with you.
 
-[Book your free consultation]   [Call (425) 696-4004]
+[Book your free consultation]   [Call (425) 696-7586]
 
 ---
 
@@ -120,7 +120,7 @@ Yes. We visit your home, look at the project and talk through your options at no
 
 ## Let's Talk About Your Home
 
-If you have a project in mind, even a rough one, the first step is a conversation. [Book your free consultation] or call (425) 696-4004, and we will come to you, look at your home and tell you honestly what it needs.
+If you have a project in mind, even a rough one, the first step is a conversation. [Book your free consultation] or call (425) 696-7586, and we will come to you, look at your home and tell you honestly what it needs.
 
 ### Related pages
 

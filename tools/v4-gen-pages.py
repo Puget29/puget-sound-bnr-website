@@ -61,9 +61,9 @@ def hero():
       <script>/* one rendition per device, decided before any video byte is asked for: wide screens on a good connection get the desktop file and poster, everything else the small ones */(function(){{var v=document.querySelector(".hero__video"),c=navigator.connection||{{}},d=innerWidth>900&&!c.saveData&&!/(^|-)(2g|3g)$/.test(c.effectiveType||"");window.__hero={{d:d}};if(d)v.poster=v.getAttribute("data-poster-d")}})();</script>
       <div class="hero__scrim"></div>
       <div class="hero__copy">
-        <h1>From first sketch to finished home.</h1>
+        <p class="hero__head">From first sketch to finished home.</p>
         <div class="hero__flip" aria-hidden="true"></div>
-        <p class="hero__proof">Bellevue, WA</p>
+        <h1 class="hero__proof">Home Remodeling in Bellevue, WA</h1>
         <div class="hero__cta">
           <a class="btn btn--primary" href="{CONTACT}" data-book>Book your free consultation{BTN_ARROW}</a>
           <a class="btn btn--explore" href="#who">Explore our craft</a>
@@ -89,7 +89,7 @@ exec(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'v4-gen-work.
 exec(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'v4-gen-cta.py'), encoding='utf-8').read())
 landing = (head("Kitchen, bathroom and ADU remodeling in Bellevue, WA | Puget Sound Builders & Renovation",
                 "General contractor in Bellevue, WA. Kitchen and bathroom remodeling, ADU and DADU construction, decks, siding, flooring and painting for Eastside homes.",
-                "/", "", loader_head, [org_ld(), wrf_ld()])
+                "/", "", loader_head, [org_ld()])  # Homepage: LocalBusiness only
            + "<body>\n<!-- Landing page. -->\n"
            + '<a class="skip" href="#main">Skip to content</a>\n' + banner() + header("", None, True)
            + hero() + brand_strip("") + who_section() + services_section() + adu_section() + why_section() + work_section() + wrf_reviews_section() + faq3_section() + landing_cta_section() + "</main>\n" + footer("", True) + mbar("")
@@ -127,14 +127,14 @@ def contact():
         {honeypot()}
         <button class="btn btn--primary" type="submit">Book your free consultation{BTN_ARROW}</button>
         <p class="form__fine">We use your details only to reply about your project.</p>
-        <p class="form__fail err" tabindex="-1" hidden role="alert">Something went wrong. Please call (425) 696-4004.</p>
+        <p class="form__fail err" tabindex="-1" hidden role="alert">Something went wrong. Please call (425) 696-7586.</p>
         <div class="form__ok" role="status"><strong>Thank you.</strong><span class="form__ok-text"></span></div>
       </form>'''
     side = f'''<aside class="side rv" style="--d:.08s" aria-label="Contact details">
         <div><h2>Call the office</h2><a class="bigtel" href="tel:{PHONE_TEL}">{PHONE_TXT}</a></div>
         <div><h2>Email</h2><p><a href="mailto:{EMAIL}">{EMAIL}</a></p></div>
-        <div><h2>Office</h2><p>{ADDR}</p></div>
-        <div><h2>Hours</h2><p>Mon to Fri, 8 am to 6 pm</p></div>
+        <div><h2>Office</h2><p><a href="{GBP_URL}" target="_blank" rel="noopener noreferrer">{ADDR}</a></p></div>
+        <div><h2>Hours</h2><p>Open 24/7, all week</p></div>
         <div><h2>License</h2><p>Licensed, bonded and insured in Washington</p></div>
         <div><h2>Find us online</h2><div class="platforms">{plats}</div></div>
       </aside>'''
@@ -148,8 +148,8 @@ def contact():
 {steps}{area_section("Where we work.")}{sec}</main>
 '''
     return (head("Contact Puget Sound Builders & Renovation | Book your free consultation in Bellevue, WA",
-                 "Book your free consultation with Puget Sound Builders & Renovation in Bellevue, WA. Call (425) 696-4004 or send the form.",
-                 CONTACT, "../", photo_preload("../", "project-47"), [org_ld(), crumbs_ld("Contact", CONTACT), faq_ld(items)])
+                 "Book your free consultation with Puget Sound Builders & Renovation in Bellevue, WA. Call (425) 696-7586 or send the form.",
+                 CONTACT, "../", photo_preload("../", "project-47"), [])  # Other page: no schema
             + "<body>\n<!-- Contact page v4. The form is a Netlify Form named lead. js/forms.js posts it. -->\n"
             + '<a class="skip" href="#main">Skip to content</a>\n' + banner() + header("../", "contact", False)
             + body + footer("../") + mbar("../") + scripts("../", False) + "</body>\n</html>\n")
@@ -177,6 +177,7 @@ def not_found():
 w("404.html", not_found())
 
 exec(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'v4-gen-privacy.py'), encoding='utf-8').read())
+exec(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'v4-gen-terms.py'), encoding='utf-8').read())
 exec(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'v4-gen-svcpages.py'), encoding='utf-8').read())
 exec(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'v4-gen-projects.py'), encoding='utf-8').read())
 exec(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'v4-gen-about.py'), encoding='utf-8').read())

@@ -1,8 +1,8 @@
 # CONTACT PAGE CONTENT
 
-TITLE TAG: Contact Puget Sound BNR | Free Remodeling Consultation
-META DESCRIPTION: Contact Puget Sound BNR for a free remodeling consultation in Seattle and Bellevue. Call (425) 696-4004 or send your details and we will follow up.
-H1: Contact Puget Sound BNR
+TITLE TAG: Contact Us | Puget Sound Builders & Renovation, WA
+META DESCRIPTION: Contact Puget Sound Builders & Renovation for a free remodeling consultation in Bellevue and Seattle. Call (425) 696-7586 or send us your details today.
+H1: Contact Puget Sound Builders & Renovation - Kitchen & Bathroom
 
 ---
 
@@ -12,13 +12,13 @@ Every good project starts with a conversation. Tell us what you have in mind, wh
 
 We are a general contractor based in Bellevue, Washington, serving Seattle, Bellevue and the surrounding Puget Sound communities.
 
-[Call (425) 696-4004]   [Book your free consultation]
+[Call (425) 696-7586]   [Book your free consultation]
 
 ---
 
 ## Ways to Reach Us
 
-- **Call us at (425) 696-4004.** The quickest way to talk to a real person about your project.
+- **Call us at (425) 696-7586.** The quickest way to talk to a real person about your project.
 - **Send your details through the form on this page.** Tell us a little about your project and how to reach you, and we will follow up to set up a time.
 
 You do not need a finished plan or a design. A few sentences about what you want is enough to get started.
@@ -69,7 +69,7 @@ We work in Seattle, Bellevue and the surrounding Puget Sound communities. Each c
 
 ### How quickly will you respond?
 
-We follow up to schedule a time to talk and visit. Calling (425) 696-4004 is the fastest way to reach us.
+We follow up to schedule a time to talk and visit. Calling (425) 696-7586 is the fastest way to reach us.
 
 ### Is the consultation free?
 
@@ -95,7 +95,7 @@ Yes. We check what permits your project needs during the planning stage and help
 
 ## Ready When You Are
 
-If you are thinking about a project, the first step is simple. [Book your free consultation] or call (425) 696-4004, and we will come to you, look at your home and tell you honestly what it needs.
+If you are thinking about a project, the first step is simple. [Book your free consultation] or call (425) 696-7586, and we will come to you, look at your home and tell you honestly what it needs.
 
 ### Related pages
 

@@ -81,8 +81,11 @@
 .nav__chev { display: flex; align-items: center; justify-content: center; width: 22px; height: 100%; margin-right: 6px; padding: 0; border: 0; background: transparent; color: var(--text-2); cursor: pointer; }
 .nav__chev span { width: 7px; height: 7px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: translateY(-2px) rotate(45deg); }
 .nav__drop.is-open .nav__chev span { transform: translateY(2px) rotate(225deg); }
-.nav__panel { position: absolute; top: calc(100% + 10px); left: 0; z-index: 40; min-width: 260px; max-height: min(70dvh, calc(100dvh - var(--nav-h) - var(--banner-h) - 28px)); overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; touch-action: pan-y; display: grid; gap: 2px; padding: 8px; border-radius: 16px; background: #151515; box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4); visibility: hidden; opacity: 0; pointer-events: none; transform: translateY(6px); transition: opacity 0.18s ease, transform 0.18s ease, visibility 0s linear 0.18s; scrollbar-width: thin; scrollbar-color: rgba(217, 177, 92, 0.75) transparent; }
-.nav__panel::before { content: ""; position: absolute; left: 0; right: 0; top: -14px; height: 14px; }
+/* top:100% + a transparent 10px top border keeps the panel's hover area touching the trigger so the
+   cursor never crosses a dead gap on the way down. The border (unlike a ::before, which overflow:auto
+   would clip) is never clipped and spans the full panel width; background-clip:padding-box keeps the
+   visible dark panel starting below the border, so it looks the same as a 10px gap. */
+.nav__panel { position: absolute; top: 100%; left: 0; z-index: 40; min-width: 260px; max-height: min(70dvh, calc(100dvh - var(--nav-h) - var(--banner-h) - 28px)); overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; touch-action: pan-y; display: grid; gap: 2px; padding: 8px; border-top: 10px solid transparent; border-radius: 16px; background: #151515; background-clip: padding-box; box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4); visibility: hidden; opacity: 0; pointer-events: none; transform: translateY(6px); transition: opacity 0.18s ease, transform 0.18s ease, visibility 0s linear 0.18s; scrollbar-width: thin; scrollbar-color: rgba(217, 177, 92, 0.75) transparent; }
 .nav__panel--wide { width: min(640px, 80vw); left: auto; right: 0; transform: none; grid-template-columns: 1fr 1fr; }
 .nav__drop:hover .nav__panel, .nav__drop:focus-within .nav__panel, .nav__drop.is-open .nav__panel { visibility: visible; opacity: 1; pointer-events: auto; transform: none; transition: opacity 0.18s ease, transform 0.18s ease, visibility 0s; }
 .nav__drop:hover .nav__panel--wide, .nav__drop:focus-within .nav__panel--wide, .nav__drop.is-open .nav__panel--wide { transform: none; }
@@ -138,7 +141,7 @@
   left: 0; right: auto; bottom: 0; width: min(100%, 52rem); text-align: left; align-items: flex-start;
   padding-bottom: clamp(28px, 5vh, 52px);
 }
-.hero h1, .hero__flip {
+.hero .hero__head, .hero__flip {
   font-family: var(--display); font-weight: 400; font-size: clamp(2.2rem, 4.2vw, 4rem); line-height: 1.08;
   letter-spacing: -0.02em; max-width: 13em; text-wrap: balance; color: var(--text);
 }
@@ -178,7 +181,7 @@
 .hero__cue:focus-visible { outline: 2px solid var(--gold-l); outline-offset: 4px; border-radius: 4px; }
 
 /* ---------- Scroll-driven headline (FlipText effect, js/hero-v3-flip.js) ---------- */
-.js-flip .hero h1, .hero.has-flip h1 { /* js-flip is set in the head, so the plain h1 never flashes before the flip text */ position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.js-flip .hero .hero__head, .hero.has-flip .hero__head { /* js-flip is set in the head, so the plain h1 never flashes before the flip text */ position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 .hero__flip { display: none; }
 .hero.has-flip .hero__flip { display: block; position: relative; margin: 0; perspective: 900px; min-height: 2.2em; width: 100%; }
 .hero__flip .fl { position: absolute; left: 0; bottom: 0; width: 100%; } /* bottom-anchored: a one-line stage sits next to the buttons, the empty line falls above it, over the video */
@@ -232,7 +235,7 @@
   .hero__stick { background: var(--ink); }
   .hero__video { top: calc(var(--nav-h) + var(--banner-h) + 1svh); height: 50svh; } /* was 38svh: bigger frame, smaller dead band */
   .hero__scrim { background: linear-gradient(to top, rgba(12, 12, 12, 0.92) 0%, rgba(12, 12, 12, 0) 40%); }
-  .hero h1, .hero__flip { font-size: clamp(1.9rem, 8.4vw, 2.5rem); }
+  .hero .hero__head, .hero__flip { font-size: clamp(1.9rem, 8.4vw, 2.5rem); }
   .hero__proof { font-size: 0.88rem; margin-top: 10px; }
   .hero__cta { gap: 10px; }
   .hero__cta .btn--primary { flex: 1 1 100%; height: 56px; }
@@ -245,7 +248,7 @@
   .banner__track { animation: none !important; }
 }
 #services, #process { background: #121212; } /* tone step between placeholder sections instead of a rule */
-.brand, .hero h1, .hero__flip { text-shadow: none; }
+.brand, .hero .hero__head, .hero__flip { text-shadow: none; }
 
 /* ---------- Mobile menu: a side panel that slides in from the right (reference: modeinspect.com) ---------- */
 .menu-scrim {

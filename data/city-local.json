@@ -1,0 +1,2462 @@
+{
+ "anacortes": {
+  "pois": [
+   [
+    "Washington Park",
+    "Washington Park is a city owned waterfront park on Fidalgo Island with a paved loop drive, beaches, and a boat launch."
+   ],
+   [
+    "Causland Memorial Park",
+    "Causland Memorial Park sits in downtown Anacortes and is known for its decorative rock masonry and landscaped gardens honoring veterans."
+   ],
+   [
+    "Anacortes Community Forest Lands",
+    "The Anacortes Community Forest Lands surround Mount Erie and offer miles of trails and freshwater lakes including Heart Lake and Whistle Lake."
+   ],
+   [
+    "Anacortes History Museum",
+    "The Anacortes History Museum is housed in the historic former city hall and documents the town's maritime and industrial past."
+   ],
+   [
+    "Deception Pass State Park",
+    "Deception Pass State Park lies at the south end of Fidalgo Island and is one of the most visited parks in the Washington State Parks system."
+   ]
+  ],
+  "nearby": [
+   "mount-vernon",
+   "oak-harbor",
+   "stanwood",
+   "marysville",
+   "arlington",
+   "everett"
+  ]
+ },
+ "arlington": {
+  "pois": [
+   [
+    "Arlington City Hall",
+    "Arlington City Hall stands near Third Street and Olympic Avenue in the heart of downtown Arlington."
+   ],
+   [
+    "Haller Park",
+    "Haller Park sits along the Stillaguamish River and is one of the most facility rich parks in the city."
+   ],
+   [
+    "Legion Memorial Park",
+    "Legion Memorial Park is a gathering spot in downtown Arlington and connects to the regional trail system."
+   ],
+   [
+    "Centennial Trail",
+    "The Centennial Trail is a paved rail trail that runs through downtown Arlington and links communities across Snohomish County."
+   ],
+   [
+    "Whitehorse Trail",
+    "The Whitehorse Trail is a Snohomish County rail trail planned to connect Arlington toward Darrington."
+   ]
+  ],
+  "nearby": [
+   "marysville",
+   "stanwood",
+   "lake-stevens",
+   "granite-falls",
+   "snohomish",
+   "everett",
+   "monroe"
+  ]
+ },
+ "auburn": {
+  "pois": [
+   [
+    "Veterans Memorial Park",
+    "Veterans Memorial Park is a community park near downtown Auburn adjacent to the high school stadium."
+   ],
+   [
+    "Isaac Evans Park",
+    "Isaac Evans Park is a riverfront park along the Green River offering trails and passive recreation."
+   ],
+   [
+    "Game Farm Park",
+    "Game Farm Park is a large Auburn park with sports fields, picnic areas, and playgrounds."
+   ],
+   [
+    "Les Gove Park",
+    "Les Gove Park is a central community park that hosts gatherings and nearby city facilities."
+   ],
+   [
+    "Auburn Pioneer Cemetery",
+    "Auburn Pioneer Cemetery dates to the 1860s and is recognized as a city and county landmark."
+   ]
+  ],
+  "nearby": [
+   "kent",
+   "federal-way",
+   "algona",
+   "pacific",
+   "sumner",
+   "covington",
+   "black-diamond"
+  ]
+ },
+ "bainbridge-island": {
+  "pois": [
+   [
+    "Fay Bainbridge Park",
+    "Fay Bainbridge Park is a beachfront park on the north end of the island with views of Puget Sound and the Seattle skyline."
+   ],
+   [
+    "Battle Point Park",
+    "Battle Point Park is a large community park with walking paths, playfields, and ponds near the center of the island."
+   ],
+   [
+    "Bloedel Reserve",
+    "Bloedel Reserve is a public garden and forest preserve with themed gardens and woodland walking trails."
+   ],
+   [
+    "Bainbridge Island Japanese American Exclusion Memorial",
+    "This memorial honors the Japanese American residents forcibly removed from the island during World War II."
+   ],
+   [
+    "Winslow Way",
+    "Winslow Way is the walkable downtown district lined with shops, restaurants, and the Bainbridge Island Museum of Art."
+   ]
+  ],
+  "nearby": [
+   "bremerton",
+   "poulsbo",
+   "port-orchard",
+   "gig-harbor",
+   "seattle"
+  ]
+ },
+ "bellevue": {
+  "pois": [
+   [
+    "Bellevue Downtown Park",
+    "Bellevue Downtown Park is a central city park featuring a wide circular waterfall, open green, and playground framed by the skyline."
+   ],
+   [
+    "Bellevue Botanical Garden",
+    "The Bellevue Botanical Garden spans dozens of acres of cultivated gardens, woodlands, and wetlands open to the public."
+   ],
+   [
+    "Bellevue City Hall",
+    "Bellevue City Hall is the civic center for city government in downtown Bellevue."
+   ],
+   [
+    "Bellevue Arts Museum",
+    "The Bellevue Arts Museum is a downtown cultural venue focused on art, craft, and design."
+   ],
+   [
+    "Mercer Slough Nature Park",
+    "Mercer Slough area wetlands offer boardwalk trails and an environmental education center near downtown Bellevue."
+   ]
+  ],
+  "nearby": [
+   "redmond",
+   "kirkland",
+   "medina",
+   "clyde-hill",
+   "newcastle",
+   "mercer-island",
+   "issaquah"
+  ]
+ },
+ "black-diamond": {
+  "pois": [
+   [
+    "Black Diamond Historical Museum",
+    "The Black Diamond Historical Museum occupies the town's former railroad depot and preserves its coal mining heritage."
+   ],
+   [
+    "Lake Sawyer Regional Park",
+    "Lake Sawyer Regional Park spans more than one hundred acres along one of the largest natural lakes in King County."
+   ],
+   [
+    "Black Diamond Open Space",
+    "The Black Diamond Open Space adds over a thousand acres of forested land and trails near the city."
+   ],
+   [
+    "Black Diamond Cemetery",
+    "The Black Diamond Cemetery is a recognized historical landmark tied to the town's early mining families."
+   ],
+   [
+    "KJ Gardner Skatepark",
+    "The KJ Gardner Skatepark is a large concrete skate facility built by the city for residents."
+   ]
+  ],
+  "nearby": [
+   "maple-valley",
+   "covington",
+   "enumclaw",
+   "auburn",
+   "kent",
+   "buckley"
+  ]
+ },
+ "bonney-lake": {
+  "pois": [
+   [
+    "Allan Yorke Park",
+    "Allan Yorke Park is the city's largest park on Lake Tapps with a public beach, swim area, boat launch, and sports fields."
+   ],
+   [
+    "Lake Ken Simmons Park",
+    "Lake Ken Simmons Park offers a playground, a non motorized boat launch, and a swim area."
+   ],
+   [
+    "Fennel Creek Trail",
+    "The Fennel Creek Trail is a city trail that follows the creek corridor through Bonney Lake."
+   ],
+   [
+    "Lake Tapps",
+    "Lake Tapps is a reservoir popular for boating, swimming, and fishing with views of Mount Rainier."
+   ],
+   [
+    "Bonney Lake Historical Society Museum",
+    "The Bonney Lake Historical Society operates a small museum in a former city hall building near Allan Yorke Park."
+   ]
+  ],
+  "nearby": [
+   "sumner",
+   "buckley",
+   "orting",
+   "puyallup",
+   "auburn",
+   "edgewood",
+   "enumclaw"
+  ]
+ },
+ "bothell": {
+  "pois": [
+   [
+    "Park at Bothell Landing",
+    "The Park at Bothell Landing is a riverside park home to the Bothell Historical Museum and the city's iconic pedestrian bridge."
+   ],
+   [
+    "Blyth Park",
+    "Blyth Park offers trails, playground equipment, and disc golf connecting to the Sammamish River Trail."
+   ],
+   [
+    "North Creek Forest",
+    "North Creek Forest is a wooded nature preserve protecting mature trees and habitat within the city."
+   ],
+   [
+    "Bothell City Hall",
+    "Bothell City Hall is the central hub for city government services downtown."
+   ],
+   [
+    "Sammamish River Trail",
+    "The Sammamish River Trail is a paved regional trail running through Bothell toward Seattle and Redmond."
+   ]
+  ],
+  "nearby": [
+   "kenmore",
+   "woodinville",
+   "kirkland",
+   "mill-creek",
+   "lynnwood",
+   "brier",
+   "lake-forest-park"
+  ]
+ },
+ "sumner": {
+  "pois": [
+   [
+    "Reuben A. Knoblauch Heritage Park",
+    "This downtown gathering place features a gazebo and a waterfall wall honoring local history."
+   ],
+   [
+    "Ryan House Museum",
+    "This historic home once belonged to the city's first elected mayor and now showcases local artifacts."
+   ],
+   [
+    "Sumner Link Trail",
+    "This paved multi use path follows the White River and connects to city parks for walking, running, and cycling."
+   ],
+   [
+    "Old Cannery Furniture Warehouse",
+    "This landmark furniture store doubles as a local visitor stop with model trains running overhead."
+   ],
+   [
+    "Sumner Cemetery",
+    "Established in 1864, this historic cemetery is one of the oldest sites in the community."
+   ]
+  ],
+  "nearby": [
+   "puyallup",
+   "bonney-lake",
+   "edgewood",
+   "pacific",
+   "auburn",
+   "fife",
+   "orting"
+  ]
+ },
+ "tacoma": {
+  "pois": [
+   [
+    "Point Defiance Park",
+    "This large waterfront park features old growth forest, gardens, and the Point Defiance Zoo and Aquarium at the mouth of Commencement Bay."
+   ],
+   [
+    "Museum of Glass",
+    "This waterfront museum is built around a Hot Shop amphitheater where visitors watch live glassblowing demonstrations."
+   ],
+   [
+    "Chihuly Bridge of Glass",
+    "This pedestrian bridge connects the Museum of Glass to downtown and is lined with Dale Chihuly glass installations."
+   ],
+   [
+    "Washington State History Museum",
+    "This downtown museum presents exhibits on the history of Washington state and the Pacific Northwest."
+   ],
+   [
+    "Stadium High School",
+    "This landmark school occupies a French chateau style building originally planned as a hotel in the 1890s."
+   ]
+  ],
+  "nearby": [
+   "fife",
+   "fircrest",
+   "university-place",
+   "ruston",
+   "lakewood",
+   "puyallup",
+   "federal-way",
+   "steilacoom"
+  ]
+ },
+ "tenino": {
+  "pois": [
+   [
+    "Tenino City Park",
+    "This central park offers picnic areas, a playground, ball fields, and a quarry pool for swimming."
+   ],
+   [
+    "Tenino Depot Museum",
+    "This museum houses local artifacts including the original press used to make Depression era wooden money."
+   ],
+   [
+    "Tenino City Hall",
+    "This civic building is made from the distinctive local sandstone that the town is known for quarrying."
+   ],
+   [
+    "Monarch Sculpture Park",
+    "This nonprofit contemporary sculpture park serves as a center for the arts on about five acres."
+   ]
+  ],
+  "nearby": [
+   "tumwater",
+   "olympia",
+   "centralia",
+   "lacey",
+   "roy"
+  ]
+ },
+ "tukwila": {
+  "pois": [
+   [
+    "Fort Dent Park",
+    "This large park offers soccer fields, a playground, and a disc golf course near the Green River."
+   ],
+   [
+    "Westfield Southcenter",
+    "This major regional shopping mall is one of the largest retail centers in the Puget Sound area."
+   ],
+   [
+    "Duwamish Hill Preserve",
+    "This natural area offers trails and views across the surrounding Green River valley."
+   ],
+   [
+    "Bicentennial Park",
+    "This riverside park beside the Green River includes a log cabin built by volunteers in 1976, plus picnic shelters and a playground."
+   ],
+   [
+    "Tukwila Community Center",
+    "This community center provides a fitness center, gym courts, and programs for residents of all ages."
+   ]
+  ],
+  "nearby": [
+   "seatac",
+   "renton",
+   "burien",
+   "kent",
+   "seattle",
+   "des-moines",
+   "normandy-park"
+  ]
+ },
+ "tumwater": {
+  "pois": [
+   [
+    "Tumwater Falls Park",
+    "This park along the Deschutes River features waterfall trails and a salmon run in late summer and fall."
+   ],
+   [
+    "Pioneer Park",
+    "This community park offers sports fields and scenic river views on land owned by the City of Tumwater."
+   ],
+   [
+    "Crosby House",
+    "This historic home in the Tumwater Historic District is operated by the Daughters of the Pioneers."
+   ],
+   [
+    "Tumwater Historical Park",
+    "This riverside park provides picnic facilities and access to the Deschutes River."
+   ]
+  ],
+  "nearby": [
+   "olympia",
+   "lacey",
+   "tenino",
+   "dupont",
+   "tacoma",
+   "steilacoom"
+  ]
+ },
+ "university-place": {
+  "pois": [
+   [
+    "Chambers Bay",
+    "This public golf course and park along Puget Sound hosted the U.S. Open and offers miles of scenic walking trails."
+   ],
+   [
+    "Chambers Creek Regional Park",
+    "This large regional park offers walking and biking trails, off leash dog areas, and the Grandview Trail with panoramic views."
+   ],
+   [
+    "Curran Apple Orchard Park",
+    "This community orchard features more than 200 apple trees, picnic areas, and walking trails."
+   ],
+   [
+    "Cirque Park",
+    "This neighborhood park provides athletic fields, a skate park, playgrounds, and picnic areas."
+   ]
+  ],
+  "nearby": [
+   "tacoma",
+   "fircrest",
+   "lakewood",
+   "steilacoom",
+   "dupont",
+   "ruston"
+  ]
+ },
+ "woodinville": {
+  "pois": [
+   [
+    "Chateau Ste. Michelle",
+    "This landmark winery estate is one of Washington's earliest and best known wineries and hosts events on its grounds."
+   ],
+   [
+    "Wilmot Gateway Park",
+    "This popular park includes a children's play area and sits near the Sammamish River Trail."
+   ],
+   [
+    "Columbia Winery",
+    "This longtime winery is among the state's earliest vineyards and a fixture of the Woodinville wine district."
+   ],
+   [
+    "Woodinville Heritage Society Museum",
+    "This museum is housed in the preserved 1931 DeYoung House and presents local history exhibits."
+   ],
+   [
+    "Woodinville Whiskey Co.",
+    "This distillery offers tasting experiences and tours beyond the area's many wineries."
+   ]
+  ],
+  "nearby": [
+   "bothell",
+   "kenmore",
+   "redmond",
+   "kirkland",
+   "duvall",
+   "mill-creek",
+   "lake-forest-park"
+  ]
+ },
+ "yarrow-point": {
+  "pois": [
+   [
+    "Morningside Park",
+    "This roughly eight acre park includes the Town Hall, a sport court, an event lawn, and trails down to the Lake Washington shoreline."
+   ],
+   [
+    "Wetherill Nature Preserve",
+    "This forested preserve shared with Hunts Point offers old estate gardens, big trees, and a loop walk near the lake."
+   ],
+   [
+    "Road End Beach",
+    "This public access point provides a small spot to reach the Lake Washington shoreline."
+   ],
+   [
+    "Points Loop Trail",
+    "This off street trail and sidewalk system links Yarrow Point with Hunts Point, Medina, and Clyde Hill."
+   ]
+  ],
+  "nearby": [
+   "hunts-point",
+   "clyde-hill",
+   "medina",
+   "kirkland",
+   "bellevue",
+   "mercer-island"
+  ]
+ },
+ "bremerton": {
+  "pois": [
+   [
+    "Harborside Fountain Park",
+    "Harborside Fountain Park is a waterfront plaza on the Bremerton boardwalk with fountains and an accessible playground."
+   ],
+   [
+    "USS Turner Joy",
+    "The USS Turner Joy is a retired Navy destroyer now preserved as a museum ship moored on the Bremerton waterfront."
+   ],
+   [
+    "Manette Bridge",
+    "The Manette Bridge spans the Port Washington Narrows and connects downtown Bremerton with the Manette neighborhood."
+   ],
+   [
+    "Evergreen Rotary Park",
+    "Evergreen Rotary Park sits just north of downtown and offers beach access, a boat launch, and walking paths."
+   ],
+   [
+    "Illahee State Park",
+    "Illahee State Park is a forested state park near Bremerton with a beach, trails, and picnic areas."
+   ]
+  ],
+  "nearby": [
+   "port-orchard",
+   "poulsbo",
+   "bainbridge-island",
+   "gig-harbor",
+   "seattle",
+   "tacoma"
+  ]
+ },
+ "brier": {
+  "pois": [
+   [
+    "Brier Park",
+    "Brier Park is the centerpiece of the city park system with athletic fields, courts, play equipment, and picnic space."
+   ],
+   [
+    "Brier City Hall",
+    "Brier City Hall sits along Brier Road, the city's main north-south route."
+   ],
+   [
+    "Brier Library",
+    "The Brier Library is a small neighborhood branch that serves as a hub for local reading and events."
+   ],
+   [
+    "Locust Creek Park",
+    "Locust Creek Park is a natural area in Brier popular for walking and hiking."
+   ]
+  ],
+  "nearby": [
+   "mountlake-terrace",
+   "lynnwood",
+   "edmonds",
+   "lake-forest-park",
+   "bothell",
+   "kenmore",
+   "shoreline"
+  ]
+ },
+ "buckley": {
+  "pois": [
+   [
+    "Heritage Park",
+    "Heritage Park is Buckley's largest park, stretching alongside the Foothills Trail and connecting recreational and community areas."
+   ],
+   [
+    "Foothills Trail",
+    "About two miles of the paved Foothills National Recreation Trail run through the heart of Buckley."
+   ],
+   [
+    "Foothills Historical Museum",
+    "The Foothills Historical Museum presents exhibits on the area's railroad, mining, and logging history."
+   ],
+   [
+    "Buckley Park",
+    "Buckley Park is a triangular green at Main Street and River Avenue known for a very large old-growth tree stump display."
+   ]
+  ],
+  "nearby": [
+   "enumclaw",
+   "bonney-lake",
+   "sumner",
+   "orting",
+   "black-diamond",
+   "puyallup"
+  ]
+ },
+ "burien": {
+  "pois": [
+   [
+    "Ed Munro Seahurst Park",
+    "Ed Munro Seahurst Park is a large shoreline park offering a saltwater beach, trails, and Puget Sound views."
+   ],
+   [
+    "Town Square Park",
+    "Town Square Park is a downtown plaza next to the Burien Library and City Hall with a spray fountain."
+   ],
+   [
+    "Highline Heritage Museum",
+    "The Highline Heritage Museum in Olde Burien preserves and shares the history of the Highline area."
+   ],
+   [
+    "Dottie Harper Park",
+    "Dottie Harper Park is a wooded park located near the Burien Community Center."
+   ]
+  ],
+  "nearby": [
+   "seatac",
+   "des-moines",
+   "normandy-park",
+   "tukwila",
+   "seattle",
+   "renton",
+   "federal-way"
+  ]
+ },
+ "carnation": {
+  "pois": [
+   [
+    "Tolt-MacDonald Park",
+    "Tolt-MacDonald Park spans hundreds of acres with trails and campgrounds at the confluence of the Snoqualmie and Tolt rivers."
+   ],
+   [
+    "Nick Loutsis Park",
+    "Nick Loutsis Park is a Carnation city park that includes a casual disc golf course."
+   ],
+   [
+    "Valley Memorial Park",
+    "Valley Memorial Park features a popular pump track for bikes, scooters, and skateboards."
+   ],
+   [
+    "River's Edge Park",
+    "River's Edge Park is one of the city's parks offering open space along the river valley."
+   ]
+  ],
+  "nearby": [
+   "duvall",
+   "redmond",
+   "snoqualmie",
+   "north-bend",
+   "sammamish",
+   "monroe"
+  ]
+ },
+ "centralia": {
+  "pois": [
+   [
+    "Fort Borst Park",
+    "Fort Borst Park is Centralia's signature park with trails, a lake, an arboretum, and the historic Borst Blockhouse."
+   ],
+   [
+    "George Washington Park",
+    "George Washington Park is Centralia's historic public square with a gazebo, benches, and interpretive signs."
+   ],
+   [
+    "Centralia Train Depot",
+    "The Centralia Train Depot, built in 1912, remains a working transportation hub and local landmark."
+   ],
+   [
+    "Seminary Hill Natural Area",
+    "Seminary Hill Natural Area offers hiking trails and scenic views above the city."
+   ]
+  ],
+  "nearby": [
+   "tenino",
+   "tumwater",
+   "olympia",
+   "lacey",
+   "dupont",
+   "roy"
+  ]
+ },
+ "clyde-hill": {
+  "pois": [
+   [
+    "Clyde Hill Park",
+    "Clyde Hill Park is a wooded city park just southwest of City Hall with tennis courts, a walking path, and lawn areas."
+   ],
+   [
+    "Muromoto Memorial Park",
+    "Muromoto Memorial Park is a small pocket park offering a viewpoint and pedestrian access."
+   ],
+   [
+    "Points Loop Trail",
+    "The regional Points Loop Trail links Clyde Hill with Medina, Yarrow Point, and Hunts Point."
+   ],
+   [
+    "Clyde Hill City Hall",
+    "Clyde Hill City Hall anchors the center of the small residential city next to Clyde Hill Elementary."
+   ]
+  ],
+  "nearby": [
+   "medina",
+   "hunts-point",
+   "yarrow-point",
+   "bellevue",
+   "kirkland",
+   "mercer-island"
+  ]
+ },
+ "covington": {
+  "pois": [
+   [
+    "Covington Community Park",
+    "Covington Community Park is a large community park with the Margaret Harto Pavilion, athletic field, playground, and courts."
+   ],
+   [
+    "Covington Aquatic Center",
+    "The Covington Aquatic Center houses an indoor pool with a water slide."
+   ],
+   [
+    "Jenkins Creek Park",
+    "Jenkins Creek Park and its trail form part of Covington's park and open space network."
+   ],
+   [
+    "Covington Historical Museum",
+    "The Covington Historical Museum features exhibits on the city's early settlers and logging industry."
+   ]
+  ],
+  "nearby": [
+   "maple-valley",
+   "kent",
+   "black-diamond",
+   "auburn",
+   "renton",
+   "federal-way"
+  ]
+ },
+ "des-moines": {
+  "pois": [
+   [
+    "Des Moines Marina",
+    "A full-service, city-operated marina on the East Passage of Puget Sound with roughly 900 boat slips."
+   ],
+   [
+    "Des Moines Beach Park",
+    "An eighteen acre city-owned park along the eastern shore of Puget Sound that includes a historic auditorium."
+   ],
+   [
+    "Des Moines Creek Trail",
+    "A paved trail that winds through a wooded ravine down toward Puget Sound."
+   ],
+   [
+    "MaST Center Aquarium",
+    "A marine science and technology center on the waterfront operated by Highline College."
+   ],
+   [
+    "Des Moines City Hall",
+    "The civic building that houses the city government offices."
+   ]
+  ],
+  "nearby": [
+   "normandy-park",
+   "burien",
+   "seatac",
+   "kent",
+   "federal-way",
+   "tukwila"
+  ]
+ },
+ "dupont": {
+  "pois": [
+   [
+    "DuPont Village Historic District",
+    "An early twentieth century company town neighborhood listed on the National Register of Historic Places."
+   ],
+   [
+    "DuPont Historical Museum",
+    "A local history museum on Barksdale Avenue in a building that once served as a butcher shop and the first city hall."
+   ],
+   [
+    "Sellers Park",
+    "The largest park in the historic village, with a playground, basketball court, and a large open field."
+   ],
+   [
+    "DuPont City Hall",
+    "The civic building on Civic Drive that houses city offices."
+   ]
+  ],
+  "nearby": [
+   "steilacoom",
+   "lakewood",
+   "lacey",
+   "olympia",
+   "tumwater",
+   "tacoma"
+  ]
+ },
+ "duvall": {
+  "pois": [
+   [
+    "Snoqualmie Valley Trail",
+    "A regional rail trail that begins in downtown Duvall and runs south through the Snoqualmie Valley."
+   ],
+   [
+    "McCormick Park",
+    "A riverfront park along the Snoqualmie River with open space and river access."
+   ],
+   [
+    "Historic Dougherty Farmstead",
+    "A preserved pioneer era farmhouse maintained by the city as a heritage site."
+   ],
+   [
+    "Duvall City Hall",
+    "The civic building serving the city government."
+   ]
+  ],
+  "nearby": [
+   "carnation",
+   "redmond",
+   "woodinville",
+   "monroe",
+   "snohomish",
+   "sammamish"
+  ]
+ },
+ "edgewood": {
+  "pois": [
+   [
+    "Edgewood Community Park",
+    "A city park near 36th Street East and Meridian Avenue East that opened in 2022."
+   ],
+   [
+    "Edgemont Park",
+    "A wooded five acre park with a playground, ball diamond, basketball court, and picnic shelter."
+   ],
+   [
+    "Nelson Nature Park",
+    "A passive park set in a serene wetland area with native plants and wildlife."
+   ],
+   [
+    "Nyholm Windmill",
+    "A local landmark that is incorporated into the city's official logo."
+   ],
+   [
+    "Edgewood City Hall",
+    "The civic building on Dom Calata Way East that houses city offices."
+   ]
+  ],
+  "nearby": [
+   "fife",
+   "puyallup",
+   "sumner",
+   "auburn",
+   "pacific",
+   "federal-way"
+  ]
+ },
+ "edmonds": {
+  "pois": [
+   [
+    "Edmonds-Kingston Ferry Terminal",
+    "A Washington State Ferries terminal with service across Puget Sound to Kingston."
+   ],
+   [
+    "Brackett's Landing",
+    "A waterfront park with a beach and the Edmonds Underwater Park marine sanctuary."
+   ],
+   [
+    "Edmonds City Park",
+    "A downtown park with a large playground and a seasonal spray park."
+   ],
+   [
+    "Edmonds Fishing Pier",
+    "A public fishing pier on the waterfront at the end of Dayton Street."
+   ],
+   [
+    "Edmonds City Hall",
+    "The civic building that houses the city government offices."
+   ]
+  ],
+  "nearby": [
+   "lynnwood",
+   "mountlake-terrace",
+   "mukilteo",
+   "shoreline",
+   "lake-forest-park",
+   "brier"
+  ]
+ },
+ "enumclaw": {
+  "pois": [
+   [
+    "Enumclaw Expo Center",
+    "A 72 acre event grounds that hosts the King County Fair and the Enumclaw Pro Rodeo."
+   ],
+   [
+    "Pinnacle Peak Park",
+    "A forested park, also known as Mount Peak, with a steep trail to a restored fire lookout and views of Mount Rainier."
+   ],
+   [
+    "Mud Mountain Dam Park",
+    "A park with forest overlook trails, picnic areas, and views of the White River gorge."
+   ],
+   [
+    "Enumclaw City Hall",
+    "The civic building on Griffin Avenue that houses city offices."
+   ]
+  ],
+  "nearby": [
+   "black-diamond",
+   "buckley",
+   "bonney-lake",
+   "maple-valley",
+   "covington",
+   "auburn"
+  ]
+ },
+ "everett": {
+  "pois": [
+   [
+    "Grand Avenue Park",
+    "A bluff-top park with sweeping views of Port Gardner Bay and the Olympic Mountains."
+   ],
+   [
+    "Langus Riverfront Park",
+    "A park on the Snohomish River with a boat launch, fishing pier, and a paved trail."
+   ],
+   [
+    "Howarth Park",
+    "A beach park on Puget Sound with an off-leash dog area and a playground."
+   ],
+   [
+    "Evergreen Arboretum and Gardens",
+    "A public garden with themed plantings, sculptures, and reflecting pools."
+   ],
+   [
+    "Everett City Hall",
+    "The civic building that serves as the seat of the city government."
+   ]
+  ],
+  "nearby": [
+   "mukilteo",
+   "marysville",
+   "lake-stevens",
+   "snohomish",
+   "mill-creek",
+   "lynnwood"
+  ]
+ },
+ "federal-way": {
+  "pois": [
+   [
+    "Dash Point State Park",
+    "A 461 acre Washington state park on Puget Sound with sandy shoreline and forested hiking and biking trails."
+   ],
+   [
+    "Steel Lake Park",
+    "A popular city park with a lake, a swimming beach, picnic areas, and trails."
+   ],
+   [
+    "Town Square Park",
+    "A downtown park near the Federal Way Performing Arts and Event Center."
+   ],
+   [
+    "Dumas Bay Centre",
+    "A city-owned retreat and conference facility that is home to the Knutzen Family Theatre."
+   ],
+   [
+    "Federal Way City Hall",
+    "The civic building that houses the city government offices."
+   ]
+  ],
+  "nearby": [
+   "des-moines",
+   "kent",
+   "auburn",
+   "tacoma",
+   "fife",
+   "edgewood",
+   "pacific"
+  ]
+ },
+ "fife": {
+  "pois": [
+   [
+    "Dacca Park",
+    "Dacca Park near the city center features baseball diamonds and a skate park and is home to the Fife History Museum."
+   ],
+   [
+    "Brookville Gardens Community Park",
+    "Brookville Gardens Community Park offers a pond, walking paths, and picnic areas."
+   ],
+   [
+    "Levee Pond Park",
+    "Levee Pond Park provides a pond and a walking trail for local residents."
+   ],
+   [
+    "Fife History Museum",
+    "The Fife History Museum shares the history of Fife and the surrounding area through exhibits and displays."
+   ]
+  ],
+  "nearby": [
+   "tacoma",
+   "edgewood",
+   "puyallup",
+   "sumner",
+   "fircrest",
+   "federal-way",
+   "pacific"
+  ]
+ },
+ "fircrest": {
+  "pois": [
+   [
+    "Fircrest Park",
+    "Fircrest Park is a 10 acre park with a playground, basketball court, swimming pool, wading pool, and ball fields."
+   ],
+   [
+    "Roy H. Murphy Community Center",
+    "The Roy H. Murphy Community Center sits within Fircrest Park and houses a fitness room, a gymnasium, and a youth room."
+   ],
+   [
+    "Masko Park",
+    "Masko Park includes a rhododendron memorial garden and is located next to City Hall."
+   ],
+   [
+    "Thelma Gilmur Park",
+    "Thelma Gilmur Park is a 7 acre park with foot trails around a wetland area."
+   ]
+  ],
+  "nearby": [
+   "tacoma",
+   "university-place",
+   "ruston",
+   "lakewood",
+   "steilacoom",
+   "fife",
+   "gig-harbor"
+  ]
+ },
+ "gig-harbor": {
+  "pois": [
+   [
+    "Skansie Brothers Park",
+    "Skansie Brothers Park features the historic Skansie Brothers Netshed, a Fishermen's Memorial, a splash pad, and harbor views."
+   ],
+   [
+    "Crescent Creek Park",
+    "Crescent Creek Park is a popular family park with a playground, ball field, and tennis and pickleball courts."
+   ],
+   [
+    "Eddon Boat Park",
+    "Eddon Boat Park offers kayak launching, harbor views, and the restored historic Eddon Boat Shop."
+   ],
+   [
+    "Harbor History Museum",
+    "The Harbor History Museum at the head of the bay presents the history of Gig Harbor and displays the wooden purse seiner Shenandoah."
+   ]
+  ],
+  "nearby": [
+   "tacoma",
+   "port-orchard",
+   "bremerton",
+   "university-place",
+   "fircrest",
+   "ruston",
+   "steilacoom"
+  ]
+ },
+ "gold-bar": {
+  "pois": [
+   [
+    "Wallace Falls State Park",
+    "Wallace Falls State Park spans over 1,100 acres of forest and offers trails to the Lower, Middle, and Upper Falls of the Wallace River."
+   ],
+   [
+    "Salmon Run Park",
+    "Salmon Run Park provides green space for walks within the Gold Bar area."
+   ],
+   [
+    "Prospector Park",
+    "Prospector Park offers open space for leisurely strolls near town."
+   ],
+   [
+    "Gold Bar City Hall",
+    "Gold Bar City Hall was expanded in 2001 to accommodate growth in municipal employees and services."
+   ]
+  ],
+  "nearby": [
+   "sultan",
+   "monroe",
+   "snohomish",
+   "duvall",
+   "granite-falls",
+   "lake-stevens",
+   "carnation"
+  ]
+ },
+ "granite-falls": {
+  "pois": [
+   [
+    "Jim Holm Park",
+    "Jim Holm Park sits across from City Hall and includes a children's playground, covered picnic area, basketball courts, and a skatepark."
+   ],
+   [
+    "Granite Falls Fish Ladder",
+    "The Granite Falls Fish Ladder on the Mountain Loop Highway is a year round fish ladder with walk over grating next to the city's namesake falls."
+   ],
+   [
+    "Granite Falls Historical Museum",
+    "The Granite Falls Historical Museum presents the history of the Mountain Loop Highway and the surrounding area."
+   ],
+   [
+    "Mountain Loop Highway",
+    "Granite Falls sits at the west entrance to the Mountain Loop Highway, a scenic route into the Mount Baker Snoqualmie National Forest."
+   ]
+  ],
+  "nearby": [
+   "lake-stevens",
+   "marysville",
+   "arlington",
+   "snohomish",
+   "everett",
+   "monroe",
+   "sultan"
+  ]
+ },
+ "hunts-point": {
+  "pois": [
+   [
+    "Hunts Point Park",
+    "Hunts Point Park is a centrally located green space with a playground and tennis courts."
+   ],
+   [
+    "Wetherill Nature Preserve",
+    "The Wetherill Nature Preserve comprises 16 acres of trails and woodland between Yarrow Point and Hunts Point."
+   ],
+   [
+    "Points Loop Trail",
+    "The Points Loop Trail is a walking and jogging pathway that connects Hunts Point to neighboring waterfront towns on Lake Washington."
+   ]
+  ],
+  "nearby": [
+   "clyde-hill",
+   "medina",
+   "yarrow-point",
+   "bellevue",
+   "kirkland",
+   "redmond",
+   "mercer-island"
+  ]
+ },
+ "issaquah": {
+  "pois": [
+   [
+    "Lake Sammamish State Park",
+    "Lake Sammamish State Park offers a day use park on the shore of Lake Sammamish with beaches and trails."
+   ],
+   [
+    "Issaquah Salmon Hatchery",
+    "The Issaquah Salmon Hatchery draws thousands of students and visitors each fall to watch salmon return to spawn in Issaquah Creek."
+   ],
+   [
+    "Issaquah Depot Museum",
+    "The Issaquah Depot Museum preserves a restored 1888 train depot listed on the National Register of Historic Places."
+   ],
+   [
+    "Gilman Town Hall Museum",
+    "The Gilman Town Hall Museum displays pioneer tools, mining artifacts, and household items from the era when Issaquah was called Gilman."
+   ]
+  ],
+  "nearby": [
+   "sammamish",
+   "bellevue",
+   "renton",
+   "newcastle",
+   "redmond",
+   "snoqualmie",
+   "north-bend"
+  ]
+ },
+ "kenmore": {
+  "pois": [
+   [
+    "Saint Edward State Park",
+    "Saint Edward State Park spans over 300 acres along Lake Washington with trails, sports fields, and nearly a mile of shoreline."
+   ],
+   [
+    "Log Boom Park",
+    "Log Boom Park provides panoramic views of Lake Washington and hosts the city's annual July 4 festivities."
+   ],
+   [
+    "Wallace Swamp Creek Park",
+    "Wallace Swamp Creek Park offers wildlife habitat and nature walks popular for birdwatching and photography."
+   ],
+   [
+    "Burke-Gilman Trail",
+    "The Burke-Gilman Trail passes through Kenmore with scenic views of Lake Washington and the surrounding wetlands."
+   ]
+  ],
+  "nearby": [
+   "bothell",
+   "lake-forest-park",
+   "shoreline",
+   "woodinville",
+   "kirkland",
+   "brier",
+   "mountlake-terrace"
+  ]
+ },
+ "kent": {
+  "pois": [
+   [
+    "Lake Meridian Park",
+    "Lake Meridian Park wraps the shore of 150 acre Lake Meridian with a sandy swimming beach, a boat launch, and a waterside playground."
+   ],
+   [
+    "accesso ShoWare Center",
+    "The accesso ShoWare Center is an arena that hosts Seattle Thunderbirds hockey games and community events."
+   ],
+   [
+    "Kent Station",
+    "Kent Station is an open air shopping and dining center with a movie theater near the downtown transit hub."
+   ],
+   [
+    "Mill Creek Canyon Earthworks Park",
+    "Mill Creek Canyon Earthworks Park is a wooded park known for its notable land art earthwork and walking trails."
+   ],
+   [
+    "Green River Trail",
+    "The Green River Trail offers an extensive paved path for walking and biking along the river."
+   ]
+  ],
+  "nearby": [
+   "auburn",
+   "renton",
+   "covington",
+   "federal-way",
+   "tukwila",
+   "des-moines",
+   "maple-valley"
+  ]
+ },
+ "kirkland": {
+  "pois": [
+   [
+    "Marina Park",
+    "Marina Park sits on Lake Washington with paved paths, a public beach, and views of the water in downtown Kirkland."
+   ],
+   [
+    "Juanita Bay Park",
+    "Juanita Bay Park is a 110 acre nature park with a boardwalk trail winding through wetlands along Lake Washington."
+   ],
+   [
+    "Cross Kirkland Corridor",
+    "The Cross Kirkland Corridor is a former railway line converted into a popular walking and biking trail."
+   ],
+   [
+    "Kirkland Performance Center",
+    "The Kirkland Performance Center hosts concerts, plays, and comedy shows in the downtown area."
+   ],
+   [
+    "Peter Kirk Building",
+    "The Peter Kirk Building is a historic landmark named after the city's founder."
+   ]
+  ],
+  "nearby": [
+   "bellevue",
+   "redmond",
+   "bothell",
+   "kenmore",
+   "woodinville",
+   "medina",
+   "yarrow-point"
+  ]
+ },
+ "lacey": {
+  "pois": [
+   [
+    "Woodland Creek Community Park",
+    "Woodland Creek Community Park is one of the largest parks in Lacey, covering more than 72 acres near the center of town."
+   ],
+   [
+    "Huntamer Park",
+    "Huntamer Park is a downtown gathering place that hosts the Lacey in Tune concert series and other seasonal events."
+   ],
+   [
+    "Lacey Museum",
+    "The Lacey Museum occupies the 1926 Russell House, which once served as a home, a fire station, and Lacey's first city hall."
+   ],
+   [
+    "Nisqually National Wildlife Refuge",
+    "The Nisqually National Wildlife Refuge is a large nature preserve on the Nisqually River delta with walking trails and an interpretive center."
+   ],
+   [
+    "Lacey Woodland Trail",
+    "The Lacey Woodland Trail is a paved path that parallels Pacific Avenue through the center of town."
+   ]
+  ],
+  "nearby": [
+   "olympia",
+   "tumwater",
+   "dupont",
+   "tenino",
+   "centralia"
+  ]
+ },
+ "lake-forest-park": {
+  "pois": [
+   [
+    "Horizon View Park",
+    "Horizon View Park is the highest point in the city, with sports fields, a playground, and wooded paved paths."
+   ],
+   [
+    "Grace Cole Nature Park",
+    "Grace Cole Nature Park is a wetland preserve with native plants, birds, and amphibians."
+   ],
+   [
+    "Lyon Creek Waterfront Preserve",
+    "The Lyon Creek Waterfront Preserve offers a stretch of Lake Washington shoreline and a dock for viewing the lake."
+   ],
+   [
+    "Third Place Commons",
+    "Third Place Commons at Lake Forest Park Town Center hosts community events alongside Third Place Books."
+   ],
+   [
+    "Burke-Gilman Trail",
+    "The Burke-Gilman Trail runs along the lakefront, giving residents access to a regional multi use path."
+   ]
+  ],
+  "nearby": [
+   "shoreline",
+   "kenmore",
+   "bothell",
+   "lynnwood",
+   "mountlake-terrace",
+   "brier",
+   "edmonds"
+  ]
+ },
+ "lake-stevens": {
+  "pois": [
+   [
+    "North Cove Park",
+    "North Cove Park is a waterfront park next to City Hall with a boardwalk, a fishing pier, a swim beach, and a public dock."
+   ],
+   [
+    "Lundeen Park",
+    "Lundeen Park is a family destination with a swim beach, a boat launch, and a playground on the lake."
+   ],
+   [
+    "Lake Stevens Historical Museum",
+    "The Lake Stevens Historical Museum is housed in the Grimm House, a former mill house."
+   ],
+   [
+    "Cavalero Community Park",
+    "Cavalero Community Park is a community park in the southwestern part of the city."
+   ],
+   [
+    "Eagle Ridge Park",
+    "Eagle Ridge Park includes the Lake Stevens Senior Center, soft trails, and open space."
+   ]
+  ],
+  "nearby": [
+   "everett",
+   "marysville",
+   "snohomish",
+   "mill-creek",
+   "granite-falls",
+   "arlington"
+  ]
+ },
+ "lakewood": {
+  "pois": [
+   [
+    "Fort Steilacoom Park",
+    "Fort Steilacoom Park is a 340 acre park with miles of trails, sports fields, an off leash dog park, and a lake."
+   ],
+   [
+    "American Lake Park",
+    "American Lake Park sits on the north shore of American Lake with a swimming beach, a playground, and a boat launch."
+   ],
+   [
+    "Harry Todd Park",
+    "Harry Todd Park is a 17 acre lakefront park in the Tillicum neighborhood."
+   ],
+   [
+    "Kiwanis Park",
+    "Kiwanis Park is home to the largest skate park in Lakewood along with play equipment and a walking path."
+   ],
+   [
+    "Wards Lake Park",
+    "Wards Lake Park is a 22 acre natural area with walking paths."
+   ]
+  ],
+  "nearby": [
+   "tacoma",
+   "university-place",
+   "steilacoom",
+   "dupont",
+   "fircrest",
+   "ruston"
+  ]
+ },
+ "lynnwood": {
+  "pois": [
+   [
+    "Lynndale Park",
+    "Lynndale Park is the city's largest park, with sports fields, picnic areas, native forest, and an amphitheater."
+   ],
+   [
+    "Scriber Lake Park",
+    "Scriber Lake Park is a wooded park with trails that alternate between paved sections, woodchip paths, and boardwalks."
+   ],
+   [
+    "Heritage Park",
+    "Heritage Park features historic buildings from Lynnwood's early days, including a restored interurban trolley car."
+   ],
+   [
+    "Lynnwood Recreation Center",
+    "The Lynnwood Recreation Center offers indoor pools, water slides, and a play area at the civic center."
+   ],
+   [
+    "Wilcox Park",
+    "Wilcox Park, the city's first park, was once a dairy farm and hosts the summer farmers market."
+   ]
+  ],
+  "nearby": [
+   "edmonds",
+   "mountlake-terrace",
+   "brier",
+   "mill-creek",
+   "bothell",
+   "mukilteo",
+   "everett"
+  ]
+ },
+ "maple-valley": {
+  "pois": [
+   [
+    "Lake Wilderness Park",
+    "Lake Wilderness Park offers swimming, fishing, boating, a playground, and picnic areas along the lake."
+   ],
+   [
+    "Lake Wilderness Arboretum",
+    "The Lake Wilderness Arboretum provides walking paths and display gardens within the park."
+   ],
+   [
+    "Gaffney's Lake Wilderness Lodge",
+    "Gaffney's Lake Wilderness Lodge is a 1950 modern building on the National Register of Historic Places, known for its carved cedar Thunderbird sculpture."
+   ],
+   [
+    "Cedar River Trail",
+    "The Cedar River Trail is a long paved path built on a former railroad with scenic river views."
+   ],
+   [
+    "Summit Park",
+    "Summit Park features athletic fields, a skate park, a dog park, and courts for pickleball and basketball."
+   ]
+  ],
+  "nearby": [
+   "covington",
+   "black-diamond",
+   "renton",
+   "kent",
+   "enumclaw",
+   "issaquah"
+  ]
+ },
+ "marysville": {
+  "pois": [
+   [
+    "Jennings Memorial Park",
+    "Jennings Memorial Park is a centerpiece of the Marysville parks system with trails, picnic areas, and playgrounds."
+   ],
+   [
+    "Ebey Waterfront Park",
+    "Ebey Waterfront Park offers a shoreline trail and boat launch along the Snohomish River delta near the restored Qwuloolt Estuary."
+   ],
+   [
+    "Comeford Park",
+    "Comeford Park sits in downtown Marysville near the Civic Center and includes a spray park and the city's historic water tower."
+   ],
+   [
+    "Marysville Opera House",
+    "The Marysville Opera House was built in 1911 and is now a restored venue used for community events."
+   ]
+  ],
+  "nearby": [
+   "everett",
+   "lake-stevens",
+   "arlington",
+   "snohomish",
+   "mukilteo",
+   "stanwood",
+   "granite-falls"
+  ]
+ },
+ "medina": {
+  "pois": [
+   [
+    "Medina Beach Park",
+    "Medina Beach Park combines shoreline access on Lake Washington with the city's civic buildings and a public dock."
+   ],
+   [
+    "Medina Park",
+    "Medina Park offers open lawns, walking paths, ponds, and a neighborhood green space setting."
+   ],
+   [
+    "Fairweather Park and Nature Preserve",
+    "Fairweather Park and Nature Preserve is a wooded natural area in the north part of Medina."
+   ],
+   [
+    "Viewpoint Park",
+    "Viewpoint Park overlooks Lake Washington and includes access toward the water."
+   ]
+  ],
+  "nearby": [
+   "bellevue",
+   "clyde-hill",
+   "hunts-point",
+   "yarrow-point",
+   "kirkland",
+   "mercer-island"
+  ]
+ },
+ "mercer-island": {
+  "pois": [
+   [
+    "Luther Burbank Park",
+    "Luther Burbank Park is a regional park on the northeast end of Mercer Island with Lake Washington waterfront, an amphitheater, and an off leash dog area."
+   ],
+   [
+    "Pioneer Park",
+    "Pioneer Park is a large forested park spanning about 113 acres with trails for hiking and nature walks."
+   ],
+   [
+    "Aubrey Davis Park",
+    "Aubrey Davis Park covers the lid over Interstate 90 and includes sports fields, playgrounds, and open space."
+   ],
+   [
+    "Mercerdale Park",
+    "Mercerdale Park sits at the base of the Mercer Island downtown area and is a popular gathering spot."
+   ]
+  ],
+  "nearby": [
+   "bellevue",
+   "seattle",
+   "renton",
+   "newcastle",
+   "kirkland",
+   "medina"
+  ]
+ },
+ "mill-creek": {
+  "pois": [
+   [
+    "Mill Creek Town Center",
+    "Mill Creek Town Center is a pedestrian friendly district on Main Street with shops, restaurants, and landscaped walkways that opened in 2004."
+   ],
+   [
+    "North Creek Trail",
+    "The North Creek Trail is part of Mill Creek's network of more than 23 miles of nature trails through the city."
+   ],
+   [
+    "Mill Creek Sports Park",
+    "Mill Creek Sports Park provides active recreation fields and facilities within the city's park system."
+   ],
+   [
+    "McCollum Park",
+    "McCollum Park near Mill Creek is home to the Northwest Stream Center, an environmental education facility."
+   ]
+  ],
+  "nearby": [
+   "everett",
+   "lynnwood",
+   "bothell",
+   "mukilteo",
+   "snohomish",
+   "mountlake-terrace"
+  ]
+ },
+ "monroe": {
+  "pois": [
+   [
+    "Evergreen State Fair Park",
+    "The Evergreen State Fair Park is a 193 acre site in Monroe that hosts the Evergreen State Fair and year round events."
+   ],
+   [
+    "Evergreen Speedway",
+    "Evergreen Speedway is located at the fairgrounds and is a longtime auto racing track in Washington State."
+   ],
+   [
+    "Al Borlin Park",
+    "Al Borlin Park features forested paths and access to the Skykomish River for swimming and kayaking."
+   ],
+   [
+    "Lake Tye Park",
+    "Lake Tye Park offers swimming, non motorized boating, and open recreation space."
+   ]
+  ],
+  "nearby": [
+   "snohomish",
+   "sultan",
+   "lake-stevens",
+   "duvall",
+   "everett",
+   "gold-bar"
+  ]
+ },
+ "mountlake-terrace": {
+  "pois": [
+   [
+    "Terrace Creek Park",
+    "Terrace Creek Park is the city's largest park at about 60 acres with natural and paved trails."
+   ],
+   [
+    "Ballinger Park",
+    "Ballinger Park borders Lake Ballinger and features a pond, wetlands, and water access."
+   ],
+   [
+    "Mountlake Terrace Recreation Pavilion",
+    "The Mountlake Terrace Recreation Pavilion is a community hub with a swimming pool, fitness center, and sports courts."
+   ],
+   [
+    "Veterans Memorial Park",
+    "Veterans Memorial Park sits a short walk from the library and City Hall in the city center."
+   ]
+  ],
+  "nearby": [
+   "edmonds",
+   "lynnwood",
+   "brier",
+   "shoreline",
+   "bothell",
+   "lake-forest-park"
+  ]
+ },
+ "mount-vernon": {
+  "pois": [
+   [
+    "Skagit Riverwalk Park",
+    "Skagit Riverwalk Park is a riverfront park in downtown Mount Vernon with a wide pedestrian walkway along the Skagit River."
+   ],
+   [
+    "Little Mountain Park",
+    "Little Mountain Park provides panoramic views of the Skagit Valley with walking trails and picnic spots at nearly 1,000 feet of elevation."
+   ],
+   [
+    "McIntyre Hall Performing Arts and Conference Center",
+    "McIntyre Hall is a performing arts and conference venue that hosts concerts and theatrical productions."
+   ],
+   [
+    "Downtown Mount Vernon",
+    "Downtown Mount Vernon features a revitalized riverfront with shops, galleries, and the seasonal farmers market."
+   ]
+  ],
+  "nearby": [
+   "anacortes",
+   "stanwood",
+   "arlington",
+   "marysville",
+   "oak-harbor"
+  ]
+ },
+ "mukilteo": {
+  "pois": [
+   [
+    "Mukilteo Lighthouse Park",
+    "Mukilteo Lighthouse Park spans more than 14 acres of waterfront with a sandy beach, boat launch, and shoreline walkway."
+   ],
+   [
+    "Mukilteo Light Station",
+    "The Mukilteo Light Station is a historic 1906 lighthouse near the ferry landing that offers seasonal tours."
+   ],
+   [
+    "Mukilteo Ferry Terminal",
+    "The Mukilteo ferry terminal connects to Clinton on Whidbey Island with a crossing of about 20 minutes."
+   ],
+   [
+    "Mukilteo Historical Society Museum",
+    "The Mukilteo Historical Society Museum documents the town's early history and the development of its ferry."
+   ]
+  ],
+  "nearby": [
+   "everett",
+   "edmonds",
+   "lynnwood",
+   "mill-creek",
+   "mountlake-terrace",
+   "marysville"
+  ]
+ },
+ "newcastle": {
+  "pois": [
+   [
+    "Lake Boren Park",
+    "Lake Boren Park is a central Newcastle park with walking paths, a playground, picnic shelters, and a fishing dock, and it hosts community events like the summer Concerts in the Park series."
+   ],
+   [
+    "The Golf Club at Newcastle",
+    "The Golf Club at Newcastle is a well known public golf facility offering sweeping views across the surrounding area."
+   ],
+   [
+    "Cougar Mountain Regional Wildland Park",
+    "Cougar Mountain Regional Wildland Park borders Newcastle to the east and offers an extensive network of hiking trails."
+   ],
+   [
+    "Coal Creek Trail",
+    "The Coal Creek Trail leads to Coal Creek Falls and reflects Newcastle's historic coal mining heritage."
+   ],
+   [
+    "Newcastle Historical Park",
+    "Newcastle Historical Park preserves part of the city's early mining history within its grounds."
+   ]
+  ],
+  "nearby": [
+   "bellevue",
+   "renton",
+   "issaquah",
+   "mercer-island",
+   "sammamish",
+   "kirkland",
+   "redmond"
+  ]
+ },
+ "normandy-park": {
+  "pois": [
+   [
+    "Marine View Park",
+    "Marine View Park offers trails down to the beach along Puget Sound as well as picnic areas."
+   ],
+   [
+    "City Hall Park",
+    "City Hall Park is a hub for Normandy Park athletic events, with paved walking trails, ball fields, and a children's play area."
+   ],
+   [
+    "Marvista Park",
+    "Marvista Park is a popular neighborhood play spot that also hosts seasonal events and concerts."
+   ],
+   [
+    "Nature Trails Park",
+    "Nature Trails Park is a wooded wetland preserve with passive walking trails."
+   ]
+  ],
+  "nearby": [
+   "burien",
+   "des-moines",
+   "seatac",
+   "tukwila",
+   "federal-way",
+   "kent",
+   "seattle"
+  ]
+ },
+ "north-bend": {
+  "pois": [
+   [
+    "Tanner Landing Park",
+    "Tanner Landing Park sits along the Middle Fork of the Snoqualmie River and connects to the Snoqualmie Valley Trail."
+   ],
+   [
+    "Rattlesnake Lake",
+    "Rattlesnake Lake near North Bend is a popular recreation area and the trailhead for the Rattlesnake Ledge hike."
+   ],
+   [
+    "Twede's Cafe",
+    "Twede's Cafe in downtown North Bend served as the Double R Diner in the television series Twin Peaks."
+   ],
+   [
+    "Mount Si",
+    "Mount Si rises above North Bend and is one of the most hiked peaks in Washington."
+   ],
+   [
+    "Olallie State Park",
+    "Olallie State Park offers riverside trails and waterfall views just east of North Bend."
+   ]
+  ],
+  "nearby": [
+   "snoqualmie",
+   "issaquah",
+   "sammamish",
+   "snoqualmie-pass",
+   "carnation",
+   "duvall",
+   "maple-valley"
+  ]
+ },
+ "oak-harbor": {
+  "pois": [
+   [
+    "Windjammer Park",
+    "Windjammer Park is a waterfront park in Oak Harbor featuring a Dutch windmill, a splash park, playgrounds, and a boat launch."
+   ],
+   [
+    "Deception Pass State Park",
+    "Deception Pass State Park, one of Washington's most visited state parks, features dramatic bridges, cliffs, and hiking trails near Oak Harbor."
+   ],
+   [
+    "Pacific Northwest Naval Air Museum",
+    "The Pacific Northwest Naval Air Museum showcases exhibits on Oak Harbor's naval aviation history."
+   ],
+   [
+    "Fort Nugent Park",
+    "Fort Nugent Park is a community park with soccer fields, open green space, and a disc golf course."
+   ],
+   [
+    "Flintstone Park",
+    "Flintstone Park sits along the Oak Harbor waterfront and features a concrete replica of Fred Flintstone's car."
+   ]
+  ],
+  "nearby": [
+   "anacortes",
+   "mount-vernon",
+   "stanwood",
+   "marysville",
+   "mukilteo",
+   "everett"
+  ]
+ },
+ "olympia": {
+  "pois": [
+   [
+    "Washington State Capitol",
+    "The Washington State Capitol Legislative Building anchors the Capitol Campus and has the tallest masonry dome in North America."
+   ],
+   [
+    "Percival Landing Park",
+    "Percival Landing Park is a waterfront boardwalk park and one of Olympia's most popular public spaces."
+   ],
+   [
+    "Watershed Park",
+    "Watershed Park covers about 153 acres of old growth forest trails near downtown Olympia."
+   ],
+   [
+    "Squaxin Park",
+    "Squaxin Park, formerly Priest Point Park, offers miles of hiking trails, saltwater shoreline, and picnic shelters."
+   ],
+   [
+    "Olympia Farmers Market",
+    "The Olympia Farmers Market is a long running public market near the downtown waterfront."
+   ]
+  ],
+  "nearby": [
+   "tumwater",
+   "lacey",
+   "tenino",
+   "dupont",
+   "centralia",
+   "steilacoom"
+  ]
+ },
+ "orting": {
+  "pois": [
+   [
+    "Foothills Trail",
+    "The Foothills Trail runs through Orting and provides a paved route for walking, biking, and horseback riding along the Puyallup River valley."
+   ],
+   [
+    "Main City Park",
+    "Main City Park in downtown Orting features open grass, a fountain, a rain garden, and the historic Orting Station Building."
+   ],
+   [
+    "Memorial Park",
+    "Memorial Park in Orting includes a memorial rock listing many local natives along with plantings and a walkway."
+   ],
+   [
+    "Mount Rainier views",
+    "Orting is well known for its sweeping views of Mount Rainier seen from points around town."
+   ]
+  ],
+  "nearby": [
+   "sumner",
+   "puyallup",
+   "bonney-lake",
+   "buckley",
+   "edgewood",
+   "enumclaw"
+  ]
+ },
+ "pacific": {
+  "pois": [
+   [
+    "Pacific City Park",
+    "Pacific City Park sits along the banks of the White River and features a playground, basketball court, stage, and picnic areas."
+   ],
+   [
+    "Interurban Trail",
+    "The Interurban Trail passes through Pacific as part of a regional bicycle and pedestrian corridor linking nearby cities."
+   ],
+   [
+    "White River",
+    "The White River runs along Pacific, with a levee walk offering riverside views."
+   ],
+   [
+    "Pacific Community Center",
+    "The Pacific Community Center and Senior Center host local programs and community events."
+   ]
+  ],
+  "nearby": [
+   "algona",
+   "auburn",
+   "sumner",
+   "edgewood",
+   "puyallup",
+   "federal-way"
+  ]
+ },
+ "port-orchard": {
+  "pois": [
+   [
+    "Port Orchard Waterfront Park",
+    "Port Orchard Waterfront Park sits along Sinclair Inlet with a popular playground and views of passing ferries and watercraft."
+   ],
+   [
+    "Bay Street Boardwalk",
+    "The Bay Street Boardwalk is a paved dog friendly waterfront trail with Olympic Mountain views."
+   ],
+   [
+    "Port Orchard Marina",
+    "The Port Orchard Marina offers guest moorage and calm water access for kayaking on Sinclair Inlet."
+   ],
+   [
+    "Port Orchard Farmers Market",
+    "The Port Orchard Farmers Market, held on the waterfront, is the oldest market on the Kitsap Peninsula."
+   ],
+   [
+    "Manchester State Park",
+    "Manchester State Park near Port Orchard offers tree lined hiking trails and waterfront access."
+   ]
+  ],
+  "nearby": [
+   "bremerton",
+   "gig-harbor",
+   "poulsbo",
+   "bainbridge-island",
+   "tacoma"
+  ]
+ },
+ "poulsbo": {
+  "pois": [
+   [
+    "Liberty Bay Waterfront Park",
+    "Liberty Bay Waterfront Park sits near downtown along the shoreline of Liberty Bay."
+   ],
+   [
+    "Poulsbo Fish Park",
+    "Poulsbo Fish Park offers about 40 acres of trails, boardwalks, and wildlife viewing."
+   ],
+   [
+    "First Lutheran Church",
+    "The First Lutheran Church is an iconic steepled landmark overlooking the downtown waterfront."
+   ],
+   [
+    "Sons of Norway Hall",
+    "The Sons of Norway Hall is one of the largest buildings in the historic downtown district."
+   ],
+   [
+    "Poulsbo Maritime Museum",
+    "The Poulsbo Maritime Museum documents the town's fishing and maritime history on Front Street."
+   ]
+  ],
+  "nearby": [
+   "bainbridge-island",
+   "bremerton",
+   "port-orchard",
+   "gig-harbor",
+   "edmonds",
+   "seattle"
+  ]
+ },
+ "puyallup": {
+  "pois": [
+   [
+    "Washington State Fairgrounds",
+    "The Washington State Fairgrounds hosts the Washington State Fair each September along with other events."
+   ],
+   [
+    "Pioneer Park",
+    "Pioneer Park is a downtown park with a playground and a statue of founder Ezra Meeker next to the library."
+   ],
+   [
+    "Meeker Mansion",
+    "The Meeker Mansion is a restored Victorian era home once owned by town founder Ezra Meeker."
+   ],
+   [
+    "Bradley Lake Park",
+    "Bradley Lake Park is a large park centered on a stocked fishing pond and walking paths."
+   ],
+   [
+    "Wildwood Park",
+    "Wildwood Park features old growth trees shading its network of hiking trails."
+   ]
+  ],
+  "nearby": [
+   "sumner",
+   "bonney-lake",
+   "edgewood",
+   "fife",
+   "tacoma",
+   "orting",
+   "auburn"
+  ]
+ },
+ "redmond": {
+  "pois": [
+   [
+    "Marymoor Park",
+    "Marymoor Park is a large regional park with trails, a velodrome, a climbing wall, and a concert venue."
+   ],
+   [
+    "Redmond Town Center",
+    "Redmond Town Center is an open air shopping, dining, and entertainment destination that hosts community events."
+   ],
+   [
+    "Old Redmond Schoolhouse",
+    "The Old Redmond Schoolhouse is a historic 1912 building that now houses community arts and heritage programs."
+   ],
+   [
+    "Sammamish River Trail",
+    "The paved Sammamish River Trail runs through Redmond and connects toward Woodinville and Bothell."
+   ],
+   [
+    "Idylwood Beach Park",
+    "Idylwood Beach Park is a popular lakeside park with a swim beach and picnic shelters on Lake Sammamish."
+   ]
+  ],
+  "nearby": [
+   "kirkland",
+   "bellevue",
+   "sammamish",
+   "woodinville",
+   "bothell",
+   "kenmore"
+  ]
+ },
+ "renton": {
+  "pois": [
+   [
+    "Gene Coulon Memorial Beach Park",
+    "Gene Coulon Memorial Beach Park is a waterfront park spanning about 57 acres along Lake Washington."
+   ],
+   [
+    "Cedar River Trail",
+    "The Cedar River Trail is a multi use path that follows the Cedar River through the city."
+   ],
+   [
+    "Renton History Museum",
+    "The Renton History Museum preserves and presents the city's local history."
+   ],
+   [
+    "Liberty Park",
+    "Liberty Park in downtown Renton features playgrounds, sports fields, and a skate park."
+   ],
+   [
+    "Greenwood Memorial Park",
+    "Greenwood Memorial Park is the site of the memorial and grave of musician Jimi Hendrix."
+   ]
+  ],
+  "nearby": [
+   "tukwila",
+   "kent",
+   "newcastle",
+   "seatac",
+   "bellevue",
+   "mercer-island"
+  ]
+ },
+ "roy": {
+  "pois": [
+   [
+    "Roy Pioneer Rodeo",
+    "The Roy Pioneer Rodeo is a long running rodeo event that draws participants and spectators to the town."
+   ],
+   [
+    "Roy Water Tower",
+    "An old steam train water tower remains in Roy as a reminder of its railroad era roots."
+   ],
+   [
+    "Historic Downtown Roy",
+    "The small town center retains early 1900s buildings from its railroad boomtown days."
+   ],
+   [
+    "Northern Pacific Prairie Line",
+    "Roy began as a whistle stop on the Northern Pacific Railroad Prairie Line in the 1870s."
+   ]
+  ],
+  "nearby": [
+   "lakewood",
+   "dupont",
+   "steilacoom",
+   "puyallup",
+   "tacoma",
+   "university-place",
+   "orting"
+  ]
+ },
+ "ruston": {
+  "pois": [
+   [
+    "Point Defiance Park",
+    "Point Defiance Park is a large waterfront park with old growth forest, gardens, and beaches next to Ruston."
+   ],
+   [
+    "Point Ruston",
+    "Point Ruston is a waterfront development with dining, shops, and a waterwalk along Commencement Bay."
+   ],
+   [
+    "Point Defiance Zoo and Aquarium",
+    "The Point Defiance Zoo and Aquarium is home to thousands of animals within Point Defiance Park."
+   ],
+   [
+    "Fort Nisqually Living History Museum",
+    "Fort Nisqually is a living history museum depicting early settler life in the Puget Sound region."
+   ],
+   [
+    "Ruston Way Waterfront",
+    "The Ruston Way waterfront promenade offers water views and connects a string of shoreline parks and piers."
+   ]
+  ],
+  "nearby": [
+   "tacoma",
+   "university-place",
+   "fircrest",
+   "gig-harbor",
+   "fife",
+   "lakewood"
+  ]
+ },
+ "sammamish": {
+  "pois": [
+   [
+    "Sammamish Commons",
+    "Sammamish Commons is a civic park that is home to the Sammamish City Hall and the city library."
+   ],
+   [
+    "Beaver Lake Park",
+    "Beaver Lake Park spans about 83 acres with a fishing dock, a rentable lodge, and forested trails."
+   ],
+   [
+    "Pine Lake Park",
+    "Pine Lake Park offers a swimming beach, sports facilities, and a playground along Pine Lake."
+   ],
+   [
+    "Sammamish Landing Park",
+    "Sammamish Landing Park provides waterfront access and a beach on Lake Sammamish."
+   ],
+   [
+    "Big Rock Park",
+    "Big Rock Park is a natural park named for a large glacial boulder among its evergreen trees."
+   ]
+  ],
+  "nearby": [
+   "issaquah",
+   "redmond",
+   "bellevue",
+   "kirkland",
+   "newcastle",
+   "renton"
+  ]
+ },
+ "seatac": {
+  "pois": [
+   [
+    "Seattle-Tacoma International Airport",
+    "Seattle-Tacoma International Airport is a major international airport serving the Seattle metropolitan area."
+   ],
+   [
+    "Angle Lake Park",
+    "Angle Lake Park features a sandy beach with a designated swimming area and lakeside picnic spots."
+   ],
+   [
+    "Highline SeaTac Botanical Garden",
+    "The Highline SeaTac Botanical Garden includes the Seike Japanese Garden and the Elda Behm Paradise Garden."
+   ],
+   [
+    "North SeaTac Park",
+    "North SeaTac Park is a large open space with trails and recreation areas for the community."
+   ],
+   [
+    "Des Moines Creek Trail",
+    "The Des Moines Creek Trail is a paved path winding through forested creek land near the airport."
+   ]
+  ],
+  "nearby": [
+   "tukwila",
+   "burien",
+   "des-moines",
+   "normandy-park",
+   "renton",
+   "kent"
+  ]
+ },
+ "seattle": {
+  "pois": [
+   [
+    "Space Needle",
+    "The Space Needle is a 605 foot observation tower built for the 1962 World's Fair and a defining symbol of the Seattle skyline."
+   ],
+   [
+    "Pike Place Market",
+    "Pike Place Market is one of the oldest continuously operated public farmers markets in the country and home to the original Starbucks."
+   ],
+   [
+    "Seattle Center",
+    "Seattle Center is a 74 acre arts and cultural campus that hosts the Space Needle, Chihuly Garden and Glass, and the Museum of Pop Culture."
+   ],
+   [
+    "Kerry Park",
+    "Kerry Park is a small Queen Anne hillside viewpoint known for its postcard view of the downtown skyline and Mount Rainier."
+   ],
+   [
+    "Pioneer Square",
+    "Pioneer Square is Seattle's original downtown neighborhood, recognized for its preserved late 19th century architecture."
+   ]
+  ],
+  "nearby": [
+   "shoreline",
+   "bellevue",
+   "mercer-island",
+   "burien",
+   "tukwila",
+   "renton",
+   "lake-forest-park"
+  ]
+ },
+ "shoreline": {
+  "pois": [
+   [
+    "Richmond Beach Saltwater Park",
+    "Richmond Beach Saltwater Park is Shoreline's Puget Sound beach, offering tide pools, shoreline trails, and Olympic Mountain views."
+   ],
+   [
+    "Hamlin Park",
+    "Hamlin Park is a wooded community park with forested trails and open recreation space on the city's east side."
+   ],
+   [
+    "Boeing Creek and Shoreview Park",
+    "Boeing Creek and Shoreview Park is a forested park system bordering Shoreline Community College with trails for walkers and runners."
+   ],
+   [
+    "Interurban Trail",
+    "The Interurban Trail is a paved multi use path that runs north to south through Shoreline for walking and cycling."
+   ],
+   [
+    "Shoreline Historical Museum",
+    "The Shoreline Historical Museum preserves and displays the local history of the Shoreline area."
+   ]
+  ],
+  "nearby": [
+   "seattle",
+   "lake-forest-park",
+   "edmonds",
+   "mountlake-terrace",
+   "kenmore",
+   "lynnwood",
+   "brier"
+  ]
+ },
+ "snohomish": {
+  "pois": [
+   [
+    "Historic Downtown Snohomish",
+    "Historic Downtown Snohomish is a preserved business district along the Snohomish River listed on the National Register of Historic Places."
+   ],
+   [
+    "Blackman House Museum",
+    "The Blackman House Museum is a local history museum set in one of the oldest homes in town, showing 19th century furnishings and artifacts."
+   ],
+   [
+    "Lord Hill Regional Park",
+    "Lord Hill Regional Park is a large natural area near Snohomish with many miles of forested hiking, biking, and equestrian trails."
+   ],
+   [
+    "Carnegie Library Building",
+    "The Carnegie Library building on Cedar Avenue is a historic structure that survives as a community and event space."
+   ]
+  ],
+  "nearby": [
+   "everett",
+   "monroe",
+   "lake-stevens",
+   "marysville",
+   "mill-creek",
+   "mukilteo",
+   "bothell"
+  ]
+ },
+ "snoqualmie-pass": {
+  "pois": [
+   [
+    "The Summit at Snoqualmie",
+    "The Summit at Snoqualmie is a ski area at the pass made up of four base areas including Alpental, Summit West, Summit Central, and Summit East."
+   ],
+   [
+    "Gold Creek Pond",
+    "Gold Creek Pond is a scenic lake near the pass with an accessible loop trail and Cascade mountain views."
+   ],
+   [
+    "Washington State Ski and Snowboard Museum",
+    "The Washington State Ski and Snowboard Museum at the pass documents the history of skiing in the Cascades."
+   ],
+   [
+    "Alpine Lakes Wilderness",
+    "The Alpine Lakes Wilderness surrounds Snoqualmie Pass and offers extensive hiking trails through the Central Cascades."
+   ]
+  ],
+  "nearby": [
+   "snoqualmie",
+   "north-bend",
+   "issaquah",
+   "carnation",
+   "sammamish"
+  ]
+ },
+ "snoqualmie": {
+  "pois": [
+   [
+    "Snoqualmie Falls",
+    "Snoqualmie Falls is a 268 foot waterfall that draws more than 1.5 million visitors a year to its viewing areas and surrounding park."
+   ],
+   [
+    "Northwest Railway Museum",
+    "The Northwest Railway Museum is the oldest continuously operating railway museum in Washington, with historic depots and weekend train rides."
+   ],
+   [
+    "Snoqualmie Point Park",
+    "Snoqualmie Point Park is a hilltop park with sweeping views of the Snoqualmie Valley, Mount Si, and the Cascade Range."
+   ],
+   [
+    "Snoqualmie Community Park",
+    "Snoqualmie Community Park offers athletic fields, play areas, and open space for the local community."
+   ]
+  ],
+  "nearby": [
+   "north-bend",
+   "snoqualmie-pass",
+   "carnation",
+   "issaquah",
+   "duvall",
+   "sammamish"
+  ]
+ },
+ "stanwood": {
+  "pois": [
+   [
+    "Stanwood City Hall",
+    "Stanwood City Hall was built in 1936 with help from the W.P.A. and still serves as the city's seat of government."
+   ],
+   [
+    "Floyd Norgaard Cultural Center",
+    "The Floyd Norgaard Cultural Center occupies a 1903 fraternal hall and hosts music, arts, and community events."
+   ],
+   [
+    "Church Creek Park",
+    "Church Creek Park features short nature trails that are popular with families and dog walkers."
+   ],
+   [
+    "Camano Island State Park",
+    "Camano Island State Park near Stanwood offers forested trails, saltwater beaches, and camping along Puget Sound."
+   ],
+   [
+    "Leque Island",
+    "Leque Island near Stanwood is a restored estuary with levee trails known for sweeping water views and bird watching."
+   ]
+  ],
+  "nearby": [
+   "arlington",
+   "marysville",
+   "mount-vernon",
+   "anacortes",
+   "everett",
+   "lake-stevens",
+   "oak-harbor"
+  ]
+ },
+ "steilacoom": {
+  "pois": [
+   [
+    "Sunnyside Beach Park",
+    "Sunnyside Beach Park offers roughly 1,400 feet of Puget Sound shoreline with public beach access, playgrounds, and picnic areas."
+   ],
+   [
+    "Fort Steilacoom Park",
+    "Fort Steilacoom Park is a 340 acre park with forest trails, Waughop Lake, an off leash dog area, and mountain views."
+   ],
+   [
+    "Steilacoom Historical Museum",
+    "The Steilacoom Historical Museum is located in the 1857 homestead of pioneer Nathaniel Orr."
+   ],
+   [
+    "Steilacoom Tribal Cultural Center and Museum",
+    "The Steilacoom Tribal Cultural Center and Museum highlights the heritage and traditions of the Puget Sound Salish people."
+   ]
+  ],
+  "nearby": [
+   "lakewood",
+   "dupont",
+   "university-place",
+   "tacoma",
+   "fircrest",
+   "ruston",
+   "lacey"
+  ]
+ },
+ "sultan": {
+  "pois": [
+   [
+    "Osprey Park",
+    "Osprey Park is Sultan's largest park, set along the Sultan River with forested trails and a salmon spawning ground."
+   ],
+   [
+    "Sultan River",
+    "The Sultan River flows past town to meet the Skykomish River and is a popular spot for fishing and the outdoors."
+   ],
+   [
+    "Traveler's Park",
+    "Traveler's Park on U.S. Route 2 features a tree round cut from a roughly 1,000 year old Douglas fir donated to the city in 1976."
+   ],
+   [
+    "Sultan Skate Park",
+    "The Sultan Skate Park, opened in 2008, is a downtown recreation spot for skaters."
+   ]
+  ],
+  "nearby": [
+   "monroe",
+   "gold-bar",
+   "snohomish",
+   "duvall",
+   "granite-falls",
+   "lake-stevens",
+   "everett"
+  ]
+ },
+ "algona": {
+  "pois": [
+   [
+    "John Matchett Memorial Park",
+    "Algona's main community park on Warde Street, a 3.75 acre space with a playground, gazebo, tennis courts and a ballfield at the heart of town."
+   ],
+   [
+    "Algona City Hall",
+    "The civic center at 200 Washington Blvd, where the city handles the permits that many Algona remodeling projects need."
+   ],
+   [
+    "Interurban Trail",
+    "The regional walking and biking trail that runs through the valley, linking Algona with Pacific, Auburn and Kent."
+   ],
+   [
+    "Game Farm Park, Auburn",
+    "A large park just north in neighboring Auburn, a short drive from most Algona neighborhoods."
+   ]
+  ],
+  "nearby": [
+   "auburn",
+   "pacific",
+   "kent",
+   "federal-way",
+   "sumner",
+   "edgewood",
+   "fife"
+  ]
+ }
+}

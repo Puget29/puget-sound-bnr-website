@@ -12,7 +12,7 @@ H1: Home Remodeling in {{city}}, WA
 
 With more than 5 years of experience, we plan every project with you from a free consultation to the final walkthrough, so you always know what is being built, why, and what comes next. One team handles the design, the planning, the construction and the cleanup.
 
-[Book your free consultation]   [Call (425) 696-4004]
+[Book your free consultation]   [Call (425) 696-7586]
 
 ---
 
@@ -93,7 +93,7 @@ We also work in Seattle and other Puget Sound communities. See all the places we
 
 ## Let's Build Something Exceptional in {{city}}
 
-If you are thinking about a project in {{city}}, the first step is simple. [Book your free consultation] or call (425) 696-4004, and we will come to your home, look at the project and tell you honestly what it needs.
+If you are thinking about a project in {{city}}, the first step is simple. [Book your free consultation] or call (425) 696-7586, and we will come to your home, look at the project and tell you honestly what it needs.
 
 ### Related pages
 

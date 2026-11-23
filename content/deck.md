@@ -1,7 +1,7 @@
 # DECK PAGE CONTENT
 
 TITLE TAG: Deck Building in Seattle, WA | Puget Sound BNR
-META DESCRIPTION: Custom deck building in Seattle and Bellevue. Design, framing, railings and finishes, with a free consultation. Call (425) 696-4004.
+META DESCRIPTION: Custom deck building in Seattle and Bellevue. Design, framing, railings and finishes, with a free consultation. Call (425) 696-7586.
 H1: Deck Building in Seattle, WA
 
 ---
@@ -14,7 +14,7 @@ Puget Sound BNR designs and builds decks for homeowners in Seattle, Bellevue and
 
 Whether you want a simple ground level deck, a raised deck off the back of the house, or a larger outdoor space with stairs and railings, we start by looking at how you want to use the space. Then we design something that fits your home, your yard and your budget.
 
-[Book your free consultation]   [Call (425) 696-4004]
+[Book your free consultation]   [Call (425) 696-7586]
 
 ---
 
@@ -143,7 +143,7 @@ A well planned deck project feels organized even on the messiest day, and that i
 - **Work that fits your home.** We design around your house, your yard and your budget, not a template.
 - **Respect for your home.** We protect your property, clean up daily and treat your yard the way we would treat our own.
 
-Ready to talk about your deck? [Get your free estimate] or call (425) 696-4004.
+Ready to talk about your deck? [Get your free estimate] or call (425) 696-7586.
 
 ---
 
@@ -191,7 +191,7 @@ Tell us where you are and we will let you know if we can take on your project.
 
 ### Let's Build Something Exceptional
 
-If you are thinking about a new deck, the first step is simple. [Book your free consultation] or call (425) 696-4004, and we will come to you, look at your yard and tell you honestly what it needs.
+If you are thinking about a new deck, the first step is simple. [Book your free consultation] or call (425) 696-7586, and we will come to you, look at your yard and tell you honestly what it needs.
 
 ### Related services
 
