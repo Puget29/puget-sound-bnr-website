@@ -37,3 +37,140 @@
   to = "/"
   status = 301
   force = true
+
+# Old WordPress addresses redirected to the pages they became.
+[[redirects]]
+  from = "/ppc-assets/privacy/"
+  to = "/privacy/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/kitchen-remodel-seattle/"
+  to = "/our-services/kitchen-remodeling/"
+  status = 301
+
+[[redirects]]
+  from = "/bathroom-remodel-seattle/"
+  to = "/our-services/bathroom-remodeling/"
+  status = 301
+
+[[redirects]]
+  from = "/roof-repair-company-in-seattle/"
+  to = "/our-services/roofing/"
+  status = 301
+
+[[redirects]]
+  from = "/siding-replacement/"
+  to = "/our-services/siding/"
+  status = 301
+
+[[redirects]]
+  from = "/flooring-replacement-in-seattle/"
+  to = "/our-services/flooring/"
+  status = 301
+
+[[redirects]]
+  from = "/bath-tub-to-shower-conversion/"
+  to = "/blog/bath-tub-to-shower-conversion/"
+  status = 301
+
+[[redirects]]
+  from = "/cedar-decking/"
+  to = "/blog/cedar-decking/"
+  status = 301
+
+[[redirects]]
+  from = "/small-kitchen-renovation/"
+  to = "/blog/small-kitchen-renovation/"
+  status = 301
+
+[[redirects]]
+  from = "/basement-wall-insulation/"
+  to = "/blog/basement-wall-insulation/"
+  status = 301
+
+[[redirects]]
+  from = "/wood-deck-replacement/"
+  to = "/blog/wood-deck-replacement/"
+  status = 301
+
+[[redirects]]
+  from = "/home-siding-repair-near-me/"
+  to = "/blog/home-siding-repair-near-me/"
+  status = 301
+
+[[redirects]]
+  from = "/home-renovation-near-me/"
+  to = "/blog/home-renovation-near-me/"
+  status = 301
+
+[[redirects]]
+  from = "/shower-remodel-near-me/"
+  to = "/blog/shower-remodel-near-me/"
+  status = 301
+
+[[redirects]]
+  from = "/kitchen-renovation-near-me/"
+  to = "/blog/kitchen-renovation-near-me/"
+  status = 301
+
+[[redirects]]
+  from = "/general-contractor-in-bellevue/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/general-contractor-in-kirkland/"
+  to = "/service-areas/kirkland/"
+  status = 301
+
+[[redirects]]
+  from = "/general-contractor-in-renton/"
+  to = "/service-areas/renton/"
+  status = 301
+
+[[redirects]]
+  from = "/deck-repair-seattle/"
+  to = "/our-services/deck-building/"
+  status = 301
+
+[[redirects]]
+  from = "/vinyl-siding-seattle/"
+  to = "/our-services/siding/"
+  status = 301
+
+[[redirects]]
+  from = "/seattle-prodigy-siding/"
+  to = "/our-services/siding/"
+  status = 301
+
+[[redirects]]
+  from = "/jacuzzi-bath-remodel/"
+  to = "/our-services/bathroom-remodeling/"
+  status = 301
+
+[[redirects]]
+  from = "/bathroom-remodel-seattle/soaking-tub-with-shower/"
+  to = "/our-services/bathroom-remodeling/"
+  status = 301
+
+[[redirects]]
+  from = "/bathroom-remodel-seattle/walk-in-bathtub-with-shower/"
+  to = "/our-services/bathroom-remodeling/"
+  status = 301
+
+[[redirects]]
+  from = "/seattle-basement-remodel/"
+  to = "/our-services/"
+  status = 301
+
+[[redirects]]
+  from = "/seattle-home-addition/"
+  to = "/our-services/adu-garage-conversion/"
+  status = 301
+
+[[redirects]]
+  from = "/testimonials/"
+  to = "/remodeling-projects/"
+  status = 301

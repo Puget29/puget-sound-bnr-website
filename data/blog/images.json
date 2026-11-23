@@ -1,1 +1,182 @@
-[]
+[
+  {
+    "url": "/assets/projects/project-14-960.webp",
+    "local": "assets/projects/project-14-960.webp",
+    "srcBase": "assets/projects/project-14",
+    "widths": [
+      612,
+      960
+    ],
+    "width": 960,
+    "height": 720,
+    "alt": "Blue house siding with a white corner post"
+  },
+  {
+    "url": "/assets/projects/project-15-960.webp",
+    "local": "assets/projects/project-15-960.webp",
+    "srcBase": "assets/projects/project-15",
+    "widths": [
+      640,
+      960
+    ],
+    "width": 960,
+    "height": 640,
+    "alt": "Walk in shower with tile walls and a bench next to a stacked washer and dryer"
+  },
+  {
+    "url": "/assets/projects/project-26-960.webp",
+    "local": "assets/projects/project-26-960.webp",
+    "srcBase": "assets/projects/project-26",
+    "widths": [
+      640,
+      960
+    ],
+    "width": 960,
+    "height": 1280,
+    "alt": "Shower with marble look tile and a black framed glass door"
+  },
+  {
+    "url": "/assets/projects/project-17-960.webp",
+    "local": "assets/projects/project-17-960.webp",
+    "srcBase": "assets/projects/project-17",
+    "widths": [
+      640,
+      960
+    ],
+    "width": 960,
+    "height": 1440,
+    "alt": "Tiled walk in shower with a glass door and a wood bench"
+  },
+  {
+    "url": "/assets/projects/project-44-960.webp",
+    "local": "assets/projects/project-44-960.webp",
+    "srcBase": "assets/projects/project-44",
+    "widths": [
+      640,
+      960
+    ],
+    "width": 960,
+    "height": 720,
+    "alt": "Composite deck with a black railing along a sloped yard"
+  },
+  {
+    "url": "/assets/projects/project-43-960.webp",
+    "local": "assets/projects/project-43-960.webp",
+    "srcBase": "assets/projects/project-43",
+    "widths": [
+      640,
+      960
+    ],
+    "width": 960,
+    "height": 720,
+    "alt": "Composite deck with a black railing"
+  },
+  {
+    "url": "/assets/projects/project-45-960.webp",
+    "local": "assets/projects/project-45-960.webp",
+    "srcBase": "assets/projects/project-45",
+    "widths": [
+      640,
+      960
+    ],
+    "width": 960,
+    "height": 720,
+    "alt": "Composite deck boards with a black metal railing"
+  },
+  {
+    "url": "/assets/projects/kitchen-02-960.webp",
+    "local": "assets/projects/kitchen-02-960.webp",
+    "srcBase": "assets/projects/kitchen-02",
+    "widths": [
+      640,
+      960
+    ],
+    "width": 960,
+    "height": 640,
+    "alt": "Kitchen with white cabinets, a dark island and a sliding glass door to the yard"
+  },
+  {
+    "url": "/assets/projects/kitchen-06-960.webp",
+    "local": "assets/projects/kitchen-06-960.webp",
+    "srcBase": "assets/projects/kitchen-06",
+    "widths": [
+      640,
+      960
+    ],
+    "width": 960,
+    "height": 640,
+    "alt": "White cabinets, a tile backsplash, a range hood and a quartz counter"
+  },
+  {
+    "url": "/assets/projects/kitchen-05-960.webp",
+    "local": "assets/projects/kitchen-05-960.webp",
+    "srcBase": "assets/projects/kitchen-05",
+    "widths": [
+      640,
+      960
+    ],
+    "width": 960,
+    "height": 640,
+    "alt": "Green cabinets, a stainless refrigerator and a range in a remodeled kitchen"
+  },
+  {
+    "url": "/assets/projects/project-59-960.webp",
+    "local": "assets/projects/project-59-960.webp",
+    "srcBase": "assets/projects/project-59",
+    "widths": [
+      640,
+      960
+    ],
+    "width": 960,
+    "height": 720,
+    "alt": "Wood framed shell of a two story ADU under construction"
+  },
+  {
+    "url": "/assets/projects/project-61-960.webp",
+    "local": "assets/projects/project-61-960.webp",
+    "srcBase": "assets/projects/project-61",
+    "widths": [
+      640,
+      960
+    ],
+    "width": 960,
+    "height": 720,
+    "alt": "Aerial view of a home with a new shingle roof"
+  },
+  {
+    "url": "/assets/projects/project-62-960.webp",
+    "local": "assets/projects/project-62-960.webp",
+    "srcBase": "assets/projects/project-62",
+    "widths": [
+      640,
+      960
+    ],
+    "width": 960,
+    "height": 1281,
+    "alt": "Aerial view of a home with a new roof among tall trees"
+  },
+  {
+    "url": "/assets/projects/project-58-960.webp",
+    "local": "assets/projects/project-58-960.webp",
+    "srcBase": "assets/projects/project-58",
+    "widths": [
+      640,
+      960
+    ],
+    "width": 960,
+    "height": 1280,
+    "alt": "ADU with a finished second story and siding in a backyard"
+  },
+  {
+    "url": "/assets/projects/kitchen-07-960.webp",
+    "local": "assets/projects/kitchen-07-960.webp",
+    "srcBase": "assets/projects/kitchen-07",
+    "widths": [
+      640,
+      960
+    ],
+    "width": 960,
+    "height": 640,
+    "alt": "Kitchen with green cabinets and an island open to the living room"
+  }
+]
