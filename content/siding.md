@@ -1,16 +1,16 @@
 # SIDING PAGE CONTENT
 
-TITLE TAG: Siding Replacement in Seattle, WA | Puget Sound BNR
-META DESCRIPTION: Siding replacement in Seattle from Puget Sound Builders & Renovation: durable materials installed with the details done right. Book a consultation now.
-H1: Siding Replacement in Seattle, WA
+TITLE TAG: Siding Replacement in Bellevue, WA | Puget Sound Builders
+META DESCRIPTION: Siding replacement in Bellevue from Puget Sound Builders & Renovation: durable materials installed with the details done right. Book a consultation now.
+H1: Siding Replacement in Bellevue, WA
 
 ---
 
-## Siding Replacement in Seattle, WA
+## Siding Replacement in Bellevue, WA
 
 Your siding is the first thing people see and the first thing the weather hits. In the Puget Sound area it handles months of rain, damp air, moss and the occasional windstorm, all year after year. When it is in good shape, it protects the walls behind it and makes the house look cared for. When it is failing, the damage usually starts where you cannot see it.
 
-Puget Sound BNR repairs and replaces siding for homeowners in Seattle, Bellevue and the surrounding Puget Sound communities. With more than 5 years of experience, we handle every project with you from a free consultation to the final walkthrough, so you always know what the house needs, what it will take and what comes next.
+Puget Sound BNR repairs and replaces siding for homeowners in Bellevue and the surrounding Puget Sound communities. With more than 5 years of experience, we handle every project with you from a free consultation to the final walkthrough, so you always know what the house needs, what it will take and what comes next.
 
 Whether you have a few damaged boards, a wall with water damage or a house that needs new siding all around, we start by looking at what is behind the surface. Then we tell you honestly what needs to be done now, what can wait and what it will cost to do it right.
 
@@ -105,11 +105,11 @@ These are planning guides, not a quote.
 
 ### Keep a contingency
 
-We recommend keeping 10% to 15% of the budget in reserve for a replacement. Once old siding comes off, we sometimes find damaged sheathing, old leaks, rot or outdated materials that nobody could see from outside. Many Seattle area homes are decades old, and some older materials need special handling. A reserve turns a surprise into a manageable decision instead of a crisis.
+We recommend keeping 10% to 15% of the budget in reserve for a replacement. Once old siding comes off, we sometimes find damaged sheathing, old leaks, rot or outdated materials that nobody could see from outside. Many Bellevue area homes are decades old, and some older materials need special handling. A reserve turns a surprise into a manageable decision instead of a crisis.
 
 ### Permits
 
-Whether you need a permit depends on the scope. Replacing siding in the same place often needs less review than work that changes the structure, windows, doors or sheathing. Rules differ between Seattle, Bellevue and other cities, so we check what applies to your project during the planning stage.
+Whether you need a permit depends on the scope. Replacing siding in the same place often needs less review than work that changes the structure, windows, doors or sheathing. Rules differ between Bellevue and other cities, so we check what applies to your project during the planning stage.
 
 ---
 
@@ -156,7 +156,7 @@ A well planned siding project feels organized even on the loudest day, and that 
 
 ## Why Homeowners Choose Puget Sound BNR for Siding
 
-- **More than 5 years of experience** building and renovating homes around Seattle and Bellevue.
+- **More than 5 years of experience** building and renovating homes around Bellevue and the Eastside.
 - **One team from start to finish.** Inspection, planning, repair or replacement and the final walkthrough are handled together, so nothing falls between trades.
 - **A free, honest consultation.** We tell you what your siding needs, what can wait and where you can save, even when that means a smaller repair instead of a replacement.
 - **Clear communication.** A written scope, a schedule you can plan around and one person you can call.
@@ -187,9 +187,9 @@ Common signs are soft or spongy boards, peeling paint that keeps coming back, st
 
 ### Do I need a permit to replace my siding?
 
-It depends on the scope, especially if the work involves sheathing, windows, doors or structure. Requirements differ between Seattle, Bellevue and other cities, and we help you with the permit requirements for your project.
+It depends on the scope, especially if the work involves sheathing, windows, doors or structure. Requirements differ between Bellevue and other cities, and we help you with the permit requirements for your project.
 
-### Which siding material is best for the Seattle area?
+### Which siding material is best for the Bellevue area?
 
 There is no single best choice. Fiber cement is popular for its durability. Vinyl costs less and needs little upkeep. Wood has a classic look but needs regular painting or staining. Metal is long lasting. We go through your options with you and tell you honestly which fits your home and budget.
 
@@ -203,9 +203,9 @@ We visit your home, look at the siding, and talk about what you have noticed, yo
 
 ---
 
-## Siding in Seattle, Bellevue and Surrounding Areas
+## Siding in Bellevue and Surrounding Areas
 
-We repair and replace siding in Seattle, Bellevue and surrounding Puget Sound communities. Each city has its own permit rules, and homes range from older Seattle houses to newer Eastside builds, so we plan every project around the house in front of us.
+We repair and replace siding in Bellevue and the surrounding Puget Sound communities. Each city has its own permit rules, and homes range from older houses to newer Eastside builds, so we plan every project around the house in front of us.
 
 Tell us where you are and we will let you know if we can take on your project.
 

@@ -211,7 +211,7 @@ for _p in _BLOG_POSTS:
   <header class="blog-post__head"><p class="blog-post__meta"><time datetime="{esc(_p['date'])}">{esc(_blog_date(_p['date']))}</time><span aria-hidden="true"> · </span><span>{esc(_p['author'])}</span></p><h1 class="h1" id="post-title">{esc(_p['title'])}</h1>{_hero}</header>
   <div class="blog-article__body">{_body_html}</div><p class="blog-back"><a href="/blog/">← Back to Blog</a></p>
 </div></article></main>\n'''
-        + lead_block("blog-contact", "blog-contact-title", "Let's talk about your project.", "Send a few details and we will take it from there. We reply within one business day.", _BLOG_FORM)
+        + lead_block("blog-contact", "blog-contact-title", "Let's talk about your project.", "Send a few details and we will take it from there. We reply within one business day.", _BLOG_FORM, htag="p")
         + footer(_up) + mbar(_up) + scripts(_up, False) + "</body>\n</html>\n")
     if not _desc:
         _post_html = _post_html.replace('<meta name="description" content="">\n', "")

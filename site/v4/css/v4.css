@@ -194,7 +194,7 @@ html.js .is-in .art :is(path, rect, line, circle, ellipse, polyline), html.js .a
 .foot__logo .lock b { font-family: var(--display); font-weight: 400; font-size: 1.3rem; line-height: 1.05; }
 .foot__logo .lock small { font-size: 0.8125rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-2); font-weight: 500; }
 .foot p { margin: 0; color: var(--text-2); line-height: 1.55; }
-.foot h2 { font-family: var(--display); font-weight: 600; font-size: .86rem; margin: 0 0 10px; color: var(--text); letter-spacing: .02em; }
+.foot h2, .foot .foot__h { font-family: var(--display); font-weight: 600; font-size: 1.05rem; margin: 0 0 10px; color: var(--text); letter-spacing: .02em; }
 .foot ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
 .foot__group li > a { color: var(--text-2); display: inline-flex; align-items: center; min-height: 40px; padding: 6px 0; text-decoration: none; transition: color .2s; }
 @media (hover: hover) and (pointer: fine) { .foot__group li > a:hover, .foot__logo:hover { color: var(--gold-l); } }

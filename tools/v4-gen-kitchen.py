@@ -349,12 +349,14 @@ def _long_service_page(sv, copy_file, page_key, photo_break_ids):
     form = form.replace('<section class="sec sec--slab lead"', '<section class="sec sec--slab lead kitchen-section long-service-form"')
     parts.append(form + "</main>\n" + footer(_UP) + mbar(_UP) + scripts(_UP, False) + "</body>\n</html>\n")
 
-    service_schema_name = meta["H1"].removesuffix(" in Seattle, WA")
+    service_schema_name = meta["H1"].removesuffix(" in Seattle, WA").removesuffix(" in Bellevue, WA")
+    _area = (["Bellevue, WA", "The Eastside", "Greater Seattle area"] if "Bellevue" in meta["H1"]
+             else [{"@type": "City", "name": "Seattle"}, {"@type": "City", "name": "Bellevue"}])
     ld = [_crumb_ld([("Home", "/"), ("Services", _SPU["overview"]), (service_name, path)]),
           {"@context": "https://schema.org", "@type": "Service", "@id": SITE + path + "#service", "name": service_schema_name,
            "serviceType": service_schema_name, "description": meta["META DESCRIPTION"], "url": SITE + path,
            "image": _abs_photo(sv["heroPhoto"]), "provider": {"@id": SITE + "/#localbusiness"},
-           "areaServed": [{"@type": "City", "name": "Seattle"}, {"@type": "City", "name": "Bellevue"}]},
+           "areaServed": _area},
           faq_ld([(q, [a]) for q, a in faq_pairs])]
     page = (head(meta["TITLE TAG"], meta["META DESCRIPTION"], path, _UP, photo_preload(_UP, sv["heroPhoto"]), ld)
             + f'<body class="long-service-page-body">\n<!-- {esc(service_name)} page generated from its approved copy file. -->\n'
@@ -371,7 +373,7 @@ def _long_service_page(sv, copy_file, page_key, photo_break_ids):
 # short _page() template from their service records (same as the other /our-services/ pages). The old
 # Seattle copy in content/deck.md, content/adu.md and content/painting.md is retained but no longer rendered.
 _long_only = _os.environ.get("V4_LONG_SERVICE", "").strip().lower()
-if _long_only not in ("", "bathroom", "roofing", "siding", "flooring"):
+if _long_only not in ("", "bathroom", "roofing", "flooring"):
     raise SystemExit("V4_LONG_SERVICE must name a supported long service page")
 if _long_only in ("", "bathroom"):
     _long_service_page(next(page for page in _ALL_SP if page["slug"] == "bathroom-remodeling"),
@@ -379,9 +381,6 @@ if _long_only in ("", "bathroom"):
 if _long_only in ("", "roofing"):
     _long_service_page(next(page for page in _ALL_SP if page["slug"] == "roofing"),
                        "roofing.md", "roofing", ["project-29", "project-61"])
-if _long_only in ("", "siding"):
-    _long_service_page(next(page for page in _ALL_SP if page["slug"] == "siding"),
-                       "siding.md", "siding", ["project-14", "project-14"])
 if _long_only in ("", "flooring"):
     _long_service_page(next(page for page in _ALL_SP if page["slug"] == "flooring"),
                        "flooring.md", "flooring", ["project-12", "project-12"])
@@ -672,9 +671,8 @@ def _km_main_page(sv, copy_file):
 
 
 # Pages that have no real, service-specific client project photos yet: their "Our <service> work"
-# gallery is skipped so the page never shows borrowed or misleading imagery. (siding is handled in
-# _long_service_page below.)
-_KM_NO_GALLERY = {"floor-main", "painting", "basement-remodeling", "attic-remodeling", "home-addition"}
+# gallery is skipped so the page never shows borrowed or misleading imagery.
+_KM_NO_GALLERY = {"floor-main", "painting", "basement-remodeling", "attic-remodeling", "home-addition", "siding"}
 
 # The main /our-services/ pages, each (record slug, content file). This full long-form design is
 # rolled out across all of them. Each record lives in data/service-pages.json or tools/v4-extra-services.json.
@@ -689,6 +687,7 @@ _KM_PAGES = [
     ("basement-remodeling", "basement-remodeling-main.md"),
     ("attic-remodeling", "attic-remodeling-main.md"),
     ("home-addition", "home-addition-main.md"),
+    ("siding", "siding-main.md"),
 ]
 for _km_slug, _km_copy in _KM_PAGES:
     _km_main_page(next(page for page in _ALL_SP if page["slug"] == _km_slug), _km_copy)

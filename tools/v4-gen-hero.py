@@ -65,7 +65,7 @@ _ICO = {
 def ico(name): return f'<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">{_ICO[name]}</svg>'
 
 # ---------------------------------------------------------------- lead block: one headline per page, form on the right
-def lead_block(sid, hid, h2, line, form_html, ph_img="", bg_img="", pts=None):
+def lead_block(sid, hid, h2, line, form_html, ph_img="", bg_img="", pts=None, htag="h2"):
     pts = pts or ["Free consultation", "Licensed, bonded and insured in Washington", "We reply within one business day"]
     li = "".join(f'<li>{ico("check")}<span>{esc(p)}</span></li>' for p in pts)
     bg = f'<div class="lead__bg" aria-hidden="true">{bg_img}</div><div class="lead__ov" aria-hidden="true"></div>' if bg_img else ""
@@ -73,7 +73,7 @@ def lead_block(sid, hid, h2, line, form_html, ph_img="", bg_img="", pts=None):
     return f'''<section class="sec sec--slab lead" id="{sid}" aria-labelledby="{hid}">
   {bg}
   <div class="wrap lead__grid">
-    <div class="lead__l rv"><h2 class="h2" id="{hid}">{h2}</h2><p class="lede">{line}</p>
+    <div class="lead__l rv"><{htag} class="h2" id="{hid}">{h2}</{htag}><p class="lede">{line}</p>
       <a class="lead__tel" href="tel:{PHONE_TEL}">{ico("phone")}<span>{PHONE_TXT}</span></a>
       <ul class="lead__pts">{li}</ul>{ph}</div>
     <div class="rv" style="--d:.1s">{form_html}</div>
