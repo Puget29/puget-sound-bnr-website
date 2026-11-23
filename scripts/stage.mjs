@@ -59,6 +59,69 @@ let remapped = 0;
 // Canonical and og:url of every staged page point at the page's own address on the production host (the blog posts still carried their old WordPress address).
 const SITE = /^SITE = "([^"]+)"/m.exec(fs.readFileSync('tools/v4-gen.py', 'utf8'))[1];
 const PREVIEW = process.env.PREVIEW === '1';
+
+// ---- Adopt external-automation blog posts (public/blog/) into the staged site --------------------
+// The blog automation tool pushes standalone pages to public/blog/<slug>/index.html plus a manifest
+// public/blog/posts.json. The build does not otherwise read public/, so adopt any NEW post here, BEFORE
+// the canonical/sitemap/tracking steps below, so those existing steps give each adopted page a non-www
+// self-canonical, a sitemap entry and (production only) the GTM container. Generated posts are never
+// touched: a slug already staged under build/stage/blog/ is skipped. Missing/malformed files fail safe.
+let adopted = 0;
+try {
+  const autoDir = path.join('public', 'blog');
+  const manifestFile = path.join(autoDir, 'posts.json');
+  const blogDir = path.join(stage, 'blog');
+  if (fs.existsSync(manifestFile) && fs.existsSync(blogDir)) {
+    let posts = [];
+    try {
+      const parsed = JSON.parse(fs.readFileSync(manifestFile, 'utf8'));
+      posts = Array.isArray(parsed) ? parsed : (parsed && Array.isArray(parsed.posts) ? parsed.posts : []);
+    } catch (err) {
+      console.error('stage: public/blog/posts.json is not valid JSON - automation blog adoption skipped');
+    }
+    const escHtml = (v) => String(v == null ? '' : v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    // One robots directive, PREVIEW-aware: production = index,follow; preview = noindex (matches generated pages).
+    const robotsTag = PREVIEW ? '<meta name="robots" content="noindex">' : '<meta name="robots" content="index, follow">';
+    // Automation card thumbnails live under /blog-images/uploads/...; copy them once if present.
+    if (fs.existsSync(path.join('public', 'blog-images')) && !fs.existsSync(path.join(stage, 'blog-images')))
+      fs.cpSync(path.join('public', 'blog-images'), path.join(stage, 'blog-images'), { recursive: true });
+    let indexHtml = fs.existsSync(path.join(blogDir, 'index.html')) ? fs.readFileSync(path.join(blogDir, 'index.html'), 'utf8') : '';
+    const seen = new Set();
+    const newCards = [];
+    for (const p of posts) {
+      const slug = p && typeof p.slug === 'string' ? p.slug : '';
+      // Validate/sanitize: lowercase slug, no separators or traversal, before using it in a filesystem path.
+      if (!/^[a-z0-9][a-z0-9-]*$/.test(slug)) { if (slug) console.error(`stage: automation blog slug ${JSON.stringify(slug)} is unsafe - skipped`); continue; }
+      if (seen.has(slug)) continue;                 // manifest listed the slug more than once
+      seen.add(slug);
+      const src = path.join(autoDir, slug, 'index.html');
+      const dest = path.join(blogDir, slug);
+      if (fs.existsSync(dest) || !fs.existsSync(src)) continue;   // never overwrite a generated post; need a source page
+      let page = fs.readFileSync(src, 'utf8');
+      // Exactly one robots directive: inject only when the page has none (the canonical walk below then
+      // rewrites the page's single www canonical to the non-www self address - no second canonical added).
+      if (!/<meta\s+name="robots"/i.test(page)) page = page.replace(/<\/head>/i, `  ${robotsTag}\n</head>`);
+      fs.mkdirSync(dest, { recursive: true });
+      fs.writeFileSync(path.join(dest, 'index.html'), page);
+      adopted++;
+      if (indexHtml && !indexHtml.includes(`data-blog-slug="${slug}"`))   // one card per slug, no duplicates
+        newCards.push({ slug, title: escHtml(p.title), excerpt: escHtml(p.excerpt), image: typeof p.image === 'string' ? escHtml(p.image) : '', date: typeof p.publishedAt === 'string' ? p.publishedAt : '' });
+    }
+    if (newCards.length && /class="[^"]*blog-grid/.test(indexHtml)) {
+      const cardsHtml = newCards.map((c) => {
+        const img = c.image ? `  <a class="blog-card__image" href="/blog/${c.slug}/" data-blog-slug="${c.slug}" aria-label="Read ${c.title}"><img src="${c.image}" width="960" height="720" alt="${c.title}" loading="lazy" decoding="async"></a>\n` : '';
+        const date = c.date ? `<p class="blog-card__date"><time datetime="${escHtml(c.date)}">${escHtml(c.date.slice(0, 10))}</time></p>\n    ` : '';
+        return `<article class="blog-card">\n${img}  <div class="blog-card__copy">\n    ${date}<h2><a href="/blog/${c.slug}/" data-blog-slug="${c.slug}">${c.title}</a></h2><p>${c.excerpt}</p>\n    <a class="blog-card__more" href="/blog/${c.slug}/" data-blog-slug="${c.slug}">Read article<span aria-hidden="true"> ↗</span></a></div>\n</article>`;
+      }).join('\n');
+      indexHtml = indexHtml.replace(/(<[^>]*class="[^"]*blog-grid[^"]*"[^>]*>)/, `$1\n${cardsHtml}`);
+      fs.writeFileSync(path.join(blogDir, 'index.html'), indexHtml);
+    }
+    if (adopted) console.log(`stage: adopted ${adopted} automation blog post(s) from public/blog/`);
+  }
+} catch (err) {
+  console.error('stage: automation blog adoption skipped due to error:', err && err.message);
+}
+
 const urls = [];
 (function walk(dir) {
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
