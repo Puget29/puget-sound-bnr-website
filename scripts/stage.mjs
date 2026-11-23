@@ -33,14 +33,17 @@ for (const [from, to] of [['css/site.min.css', 'css/site.min.css'], ['js/site.mi
   fs.copyFileSync(path.join('site', from), path.join(stage, to));
 }
 
-// The generators write the live WordPress addresses (/contact-us/, /kitchen-remodel-seattle/, /cedar-decking/ ...). The staged site has its own layout,
-// so every internal link is mapped to the page the build really creates. Built pages in site/v4/_root stay untouched (tools/home-live.py needs the live addresses).
 fs.cpSync(path.join('site', 'assets'), path.join(stage, 'assets'), { recursive: true });
-const links = JSON.parse(fs.readFileSync('tools/v4-links.json', 'utf8'));
-const routes = new Map([[links.contact, '/contact/'], [links.privacy, '/privacy/']]);
-for (const [key, live] of Object.entries(links.servicePages || {})) if (key !== 'overview') routes.set(live, `/our-services/${key}/`);
+// Service and all other pages are written directly to their public addresses by the generators
+// (tools/v4-links.json + _SPU), so their internal links need no remapping. (The earlier WordPress-layout
+// remap did not match this layout and rewrote correct /our-services/<svc>/ URLs to non-existent ones.)
+// The one fix-up still needed: blog posts cross-link using a bare /<slug>/ - map those to /blog/<slug>/,
+// but never a slug that is also a real staged page (e.g. /siding-replacement/ is the siding service page).
 const blogSlugs = fs.existsSync('data/blog/posts.json') ? JSON.parse(fs.readFileSync('data/blog/posts.json', 'utf8')).map(p => p.slug) : [];
-for (const slug of blogSlugs) if (!routes.has(`/${slug}/`)) routes.set(`/${slug}/`, `/blog/${slug}/`);   // a slug that is also a service address (siding-replacement) stays the service page
+const routes = new Map();
+for (const slug of blogSlugs)
+  if (!fs.existsSync(path.join(stage, slug, 'index.html')) && fs.existsSync(path.join(stage, 'blog', slug, 'index.html')))
+    routes.set(`/${slug}/`, `/blog/${slug}/`);
 let remapped = 0;
 (function walk(dir) {
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -119,4 +122,4 @@ if (fs.existsSync('ads')) {
     })(to);
   }
 }
-console.log(`staged in build/stage (${adsPages} Google Ads pages, ${remapped} links mapped to staged pages, ${urls.length} pages in sitemap${PREVIEW ? ', PREVIEW noindex' : ''})`);
+console.log(`staged in build/stage (${adsPages} Google Ads pages, ${remapped} blog links mapped, ${urls.length} pages in sitemap${PREVIEW ? ', PREVIEW noindex' : ''})`);
