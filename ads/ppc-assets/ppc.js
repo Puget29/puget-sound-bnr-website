@@ -1,4 +1,6 @@
 /* BNR PPC city pages. The three config lines below are injected by tools/ppc/build.py from ppc/config.json. Docs: docs/ppc-forms.md */
+/* Microsoft UET tag 343288326 + CallRail DNI swap.js. Added 2026-11-23 for Microsoft Ads tracking. */
+(function (w, d) { w.uetq = w.uetq || []; var u = d.createElement('script'); u.async = true; u.src = 'https://bat.bing.com/bat.js'; u.onload = function () { var o = { ti: '343288326', enableAutoSpaTracking: true }; o.q = w.uetq; w.uetq = new UET(o); w.uetq.push('pageLoad'); }; d.head.appendChild(u); var c = d.createElement('script'); c.async = true; c.src = 'https://cdn.callrail.com/companies/718739933/f764ddd9de3375a7dd16/12/swap.js'; d.body.appendChild(c); })(window, document);
 (function () {
   'use strict';
   var FORM = {"provider":"","endpoint":"","accessKey":"","thankYou":"/ppc-assets/thank-you/"};
