@@ -22,7 +22,7 @@ Every yard is different, so we build the scope around your home and how you want
 - **Decking materials, wood and composite.** Help comparing cedar, other woods and composite so the surface suits your use and upkeep.
 - **Multi level decks.** Stepped or tiered decks that work with a sloped Eastside lot and make the most of the grade.
 
-When a deck is part of a wider plan, we can coordinate it alongside a [home addition](/our-services/home-addition/), [siding](/siding-replacement/) or an [ADU and garage conversion](/our-services/adu-and-garage-conversion/) so the work stays coordinated under one team.
+When a deck is part of a wider plan, we can coordinate it alongside a [home addition](/our-services/home-addition/), [siding](/our-services/siding/) or an [ADU and garage conversion](/our-services/adu-and-garage-conversion/) so the work stays coordinated under one team.
 
 ## Remodeling and Building Services
 

@@ -420,7 +420,7 @@ _KM_BUILD = [
     ("Roofing", "/our-services/roofing/", "project-05", "50% 50%"),
     ("Deck building", "/our-services/deck-building/", "project-10", "50% 62%"),
     ("ADU and garage conversion", "/our-services/adu-garage-conversion/", "project-13", "50% 50%"),
-    ("Siding", "/siding-replacement/", "project-14", "80% 50%"),
+    ("Siding", "/our-services/siding/", "project-14", "80% 50%"),
     ("Flooring", "/our-services/floor-replacement/", "project-12", "50% 50%"),
     ("Painting", "/our-services/painting/", "asset:painting-card", "50% 50%"),
 ]

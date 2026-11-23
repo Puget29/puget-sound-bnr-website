@@ -1,5 +1,5 @@
 # SIDING (BELLEVUE, MAIN PAGE) CONTENT
-# Source copy for /siding-replacement/ (record: siding), rebuilt in the long-form main-page layout used
+# Source copy for /our-services/siding/ (record: siding), rebuilt in the long-form main-page layout used
 # by the other /our-services/ pages. Bellevue and Eastside focused. No prices, timelines, guarantees or
 # invented capabilities. Reuses only verified company claims. Permits and structure spoken to generally.
 

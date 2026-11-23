@@ -22,7 +22,7 @@ Every roof carries a different history and condition, so we build the scope arou
 - **Flashing and detail work.** Attention to valleys, chimneys, vents and the edges where most leaks begin.
 - **Guidance on local permits and codes.** Plain explanations of what Bellevue permits and codes mean for your roof.
 
-When a roof project touches the rest of the exterior, we can plan it alongside [siding replacement](/siding-replacement/), [deck building](/our-services/deck-building/) or a [home addition](/our-services/home-addition/) so the work stays coordinated under one team.
+When a roof project touches the rest of the exterior, we can plan it alongside [siding replacement](/our-services/siding/), [deck building](/our-services/deck-building/) or a [home addition](/our-services/home-addition/) so the work stays coordinated under one team.
 
 ## Remodeling and Building Services
 
