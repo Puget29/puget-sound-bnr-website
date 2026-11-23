@@ -82,6 +82,11 @@ try {
     const escHtml = (v) => String(v == null ? '' : v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
     // One robots directive, PREVIEW-aware: production = index,follow; preview = noindex (matches generated pages).
     const robotsTag = PREVIEW ? '<meta name="robots" content="noindex">' : '<meta name="robots" content="index, follow">';
+    // Adopted pages style their article text with dark inline colours on a transparent container, which
+    // assumes a light page. The site body is dark (--ink), so that body text would be invisible. Give the
+    // article container a white "paper" panel so all of its text is readable (its inner blocks already set
+    // their own light backgrounds). Scoped to .gs-blog-main, so the dark site header/footer are untouched.
+    const themeFix = '<style id="gs-adopt-theme">.gs-blog-main{background:#fff;color:#374151;border-radius:14px;margin:28px auto;box-shadow:0 2px 10px rgba(0,0,0,.18)}</style>';
     // Automation card thumbnails live under /blog-images/uploads/...; copy them once if present.
     if (fs.existsSync(path.join('public', 'blog-images')) && !fs.existsSync(path.join(stage, 'blog-images')))
       fs.cpSync(path.join('public', 'blog-images'), path.join(stage, 'blog-images'), { recursive: true });
@@ -101,6 +106,7 @@ try {
       // Exactly one robots directive: inject only when the page has none (the canonical walk below then
       // rewrites the page's single www canonical to the non-www self address - no second canonical added).
       if (!/<meta\s+name="robots"/i.test(page)) page = page.replace(/<\/head>/i, `  ${robotsTag}\n</head>`);
+      if (!page.includes('id="gs-adopt-theme"')) page = page.replace(/<\/head>/i, `  ${themeFix}\n</head>`);
       fs.mkdirSync(dest, { recursive: true });
       fs.writeFileSync(path.join(dest, 'index.html'), page);
       adopted++;
